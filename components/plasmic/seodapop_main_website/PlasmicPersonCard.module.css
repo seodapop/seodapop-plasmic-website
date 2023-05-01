@@ -1,0 +1,211 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 540px;
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  min-height: 0;
+  padding: 0px;
+}
+.img {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  height: 336px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.freeBox__cI3Ew {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  background: var(--token-DqaU8LCmnXbTsk);
+  min-width: 0;
+  min-height: 0;
+  padding: 13px 8px 31px 21px;
+}
+.freeBox__cI3Ew > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+.freeBox__cI3Ew > :global(.__wab_flex-container) > *,
+.freeBox__cI3Ew > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__cI3Ew > :global(.__wab_flex-container) > picture > img,
+.freeBox__cI3Ew
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 10px;
+}
+.freeBox__cI3Ew {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  background: var(--token-DqaU8LCmnXbTsk);
+  min-width: 0;
+  min-height: 0;
+  padding: 13px 8px 31px 21px;
+}
+.h1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetChildren {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--token-lUZx5WM3kjhgzC);
+  line-height: 1.2em;
+  letter-spacing: normal;
+}
+.freeBox__oCL {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetSlot {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffffb3;
+}
+.freeBox__ho4DT {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  margin-top: calc(0px + 10px) !important;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  min-width: 0;
+  padding: 0px;
+}
+.freeBox__ho4DT > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-left: calc(0px - 15px);
+  width: calc(100% + 15px);
+}
+.freeBox__ho4DT > :global(.__wab_flex-container) > *,
+.freeBox__ho4DT > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__ho4DT > :global(.__wab_flex-container) > picture > img,
+.freeBox__ho4DT
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 15px;
+}
+.freeBox__ho4DT {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  margin-top: calc(0px + 10px) !important;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  min-width: 0;
+  padding: 0px;
+}
+.link__ijt5Q {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  padding: 0px;
+}
+.svg__adivf {
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-lUZx5WM3kjhgzC);
+  width: 1em;
+  flex-shrink: 0;
+  height: 1em;
+}
+.link__n2XT {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  padding: 0px;
+}
+.svg__shGz {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-lUZx5WM3kjhgzC);
+  align-self: flex-start;
+  width: 1em;
+  flex-shrink: 0;
+  height: 1em;
+}
+.link__gnHkP {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  padding: 0px;
+}
+.svg__vKkxA {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-lUZx5WM3kjhgzC);
+  width: 1em;
+  flex-shrink: 0;
+  height: 1em;
+}
