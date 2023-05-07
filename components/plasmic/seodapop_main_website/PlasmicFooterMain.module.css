@@ -46,6 +46,7 @@
   min-width: 0;
   margin-left: calc(0px - 20px);
   width: calc(100% + 20px);
+  --plsmc-rc-col-gap: 20px;
 }
 .rowWrapper > :global(.__wab_flex-container) > *,
 .rowWrapper > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -56,6 +57,9 @@
   > picture
   > img {
   margin-left: 20px;
+}
+.rowWrapper {
+  --plsmc-rc-col-gap: 0px;
 }
 .rowWrapper {
   display: flex;
@@ -71,13 +75,13 @@
   padding: 8px;
 }
 .rowWrapper > :global(.__wab_flex-container) > :nth-child(3n + 1) {
-  width: calc((100% - 3 * 20px) * 6 / 12);
+  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
 .rowWrapper > :global(.__wab_flex-container) > :nth-child(3n + 2) {
-  width: calc((100% - 3 * 20px) * 3 / 12);
+  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 3 / 12);
 }
 .rowWrapper > :global(.__wab_flex-container) > :nth-child(3n + 3) {
-  width: calc((100% - 3 * 20px) * 3 / 12);
+  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 3 / 12);
 }
 @media (max-width: 640px) {
   .rowWrapper {
@@ -98,7 +102,7 @@
 }
 @media (max-width: 640px) {
   .rowWrapper > :global(.__wab_flex-container) > :nth-child(1n + 1) {
-    width: calc((100% - 1 * 20px) * 12 / 12);
+    width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
   }
 }
 .colmn1 {

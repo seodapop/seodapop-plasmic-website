@@ -233,6 +233,9 @@
   }
 }
 .columns___7ArkB {
+  --plsmc-rc-col-gap: 0px;
+}
+.columns___7ArkB {
   display: flex;
   position: relative;
   width: 100%;
@@ -245,16 +248,11 @@
   padding: 8px 42px 8px 36px;
 }
 .columns___7ArkB > :nth-child(1n + 1) {
-  width: calc((100% - 1 * 0px) * 12 / 12);
+  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
 }
 @media (max-width: 640px) {
   .columns___7ArkB {
     padding: 0px;
-  }
-}
-@media (max-width: 640px) {
-  .columns___7ArkB > :nth-child(1n + 1) {
-    width: calc((100% - 1 * 0px) * 12 / 12);
   }
 }
 .column__gpMvd {
@@ -314,6 +312,7 @@
   min-width: 0;
   margin-left: calc(0px - 20px);
   width: calc(100% + 20px);
+  --plsmc-rc-col-gap: 20px;
 }
 .columns__zOtG > :global(.__wab_flex-container) > *,
 .columns__zOtG > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -324,6 +323,9 @@
   > picture
   > img {
   margin-left: 20px;
+}
+.columns__zOtG {
+  --plsmc-rc-col-gap: 0px;
 }
 .columns__zOtG {
   display: flex;
@@ -338,10 +340,10 @@
   padding: 8px;
 }
 .columns__zOtG > :global(.__wab_flex-container) > :nth-child(2n + 1) {
-  width: calc((100% - 2 * 20px) * 7 / 12);
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 7 / 12);
 }
 .columns__zOtG > :global(.__wab_flex-container) > :nth-child(2n + 2) {
-  width: calc((100% - 2 * 20px) * 5 / 12);
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 5 / 12);
 }
 @media (max-width: 640px) {
   .columns__zOtG {
@@ -362,7 +364,7 @@
 }
 @media (max-width: 640px) {
   .columns__zOtG > :global(.__wab_flex-container) > :nth-child(1n + 1) {
-    width: calc((100% - 1 * 20px) * 12 / 12);
+    width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
   }
 }
 .column__h7SRr {
@@ -398,6 +400,9 @@
   }
 }
 .columns__cub3O {
+  --plsmc-rc-col-gap: 0px;
+}
+.columns__cub3O {
   display: flex;
   position: relative;
   width: 100%;
@@ -410,10 +415,10 @@
   padding: 8px;
 }
 .columns__cub3O > :nth-child(2n + 1) {
-  width: calc((100% - 2 * 0px) * 6 / 12);
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
 .columns__cub3O > :nth-child(2n + 2) {
-  width: calc((100% - 2 * 0px) * 6 / 12);
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
 @media (max-width: 640px) {
   .columns__cub3O {
@@ -423,7 +428,7 @@
 }
 @media (max-width: 640px) {
   .columns__cub3O > :nth-child(1n + 1) {
-    width: calc((100% - 1 * 0px) * 12 / 12);
+    width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
   }
 }
 .column___1IsIx {
@@ -511,6 +516,9 @@
   height: 1em;
 }
 .columns__rNKh {
+  --plsmc-rc-col-gap: 0px;
+}
+.columns__rNKh {
   display: flex;
   position: relative;
   width: 100%;
@@ -523,10 +531,10 @@
   padding: 8px;
 }
 .columns__rNKh > :nth-child(2n + 1) {
-  width: calc((100% - 2 * 0px) * 6 / 12);
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
 .columns__rNKh > :nth-child(2n + 2) {
-  width: calc((100% - 2 * 0px) * 6 / 12);
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
 @media (max-width: 640px) {
   .columns__rNKh {
@@ -536,7 +544,7 @@
 }
 @media (max-width: 640px) {
   .columns__rNKh > :nth-child(1n + 1) {
-    width: calc((100% - 1 * 0px) * 12 / 12);
+    width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
   }
 }
 .column__fGmZn {
@@ -622,6 +630,9 @@
   height: 1em;
 }
 .columns__e8LZ5 {
+  --plsmc-rc-col-gap: 0px;
+}
+.columns__e8LZ5 {
   display: flex;
   position: relative;
   width: 100%;
@@ -634,7 +645,7 @@
   padding: 8px;
 }
 .columns__e8LZ5 > :nth-child(1n + 1) {
-  width: calc((100% - 1 * 0px) * 12 / 12);
+  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
 }
 .column__yu2X {
   display: flex;
@@ -678,6 +689,9 @@
   height: 1em;
 }
 .columns__dh7Gj {
+  --plsmc-rc-col-gap: 0px;
+}
+.columns__dh7Gj {
   display: flex;
   position: relative;
   width: 100%;
@@ -690,7 +704,7 @@
   padding: 8px;
 }
 .columns__dh7Gj > :nth-child(1n + 1) {
-  width: calc((100% - 1 * 0px) * 12 / 12);
+  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
 }
 .column__cxPr9 {
   display: flex;
