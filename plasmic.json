@@ -190,7 +190,8 @@
           "name": "UploadWrapper",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerUpload"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "kmmGrmCVRJPgZ5NNJMDQ4v",
@@ -219,7 +220,8 @@
           "name": "WordpressProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-wordpress"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
@@ -474,32 +476,6 @@
             "modulePath": "../pages/-2.tsx"
           },
           "cssFilePath": "plasmic/seodapop_main_website/PlasmicBlog.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "XjHhZd1_gck",
-          "name": "NewPage",
-          "type": "managed",
-          "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
-          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicNewPage.tsx",
-          "importSpec": {
-            "modulePath": "../pages/-3.tsx"
-          },
-          "cssFilePath": "plasmic/seodapop_main_website/PlasmicNewPage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "htL_2u5Oso",
-          "name": "NewPage2",
-          "type": "managed",
-          "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
-          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicNewPage2.tsx",
-          "importSpec": {
-            "modulePath": "../pages/new-page.tsx"
-          },
-          "cssFilePath": "plasmic/seodapop_main_website/PlasmicNewPage2.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }
@@ -825,6 +801,30 @@
           "id": "Qr2f3ugv3a",
           "name": "Fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    },
+    {
+      "projectId": "YUiM7yqBWAqsh8KSnrdj7",
+      "projectApiToken": "yLKpJOE8mD6HqoNCSWF3Em8ut0LBzL7qb3QPqNeOLPjQsSBSc12yhYovnSRSekzgt1xjjbugBGDjOMLGMK4w",
+      "projectName": "plasmic-query",
+      "version": "0.17.0",
+      "cssFilePath": "plasmic/plasmic_query/plasmic_plasmic_query.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "ae7V86eNoXA",
+          "name": "DataFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-query"
+        },
+        {
+          "id": "0DrxdjD45dkx",
+          "name": "GraphqlFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-query"
         }
       ]
     }

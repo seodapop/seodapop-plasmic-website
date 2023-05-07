@@ -186,18 +186,7 @@ function PlasmicHomeFooterTop__RenderFunc(props: {
                   const $steps = {};
                   $steps["goToContactUs"] = true
                     ? (() => {
-                        const actionArgs = {
-                          destination: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "navigation",
-                              interactionUuid: "_-SgS6jjD",
-                              componentUuid: "Sh8nt7GR3decD",
-                              argName: "destination"
-                            },
-                            () => `/contact`
-                          )
-                        };
+                        const actionArgs = {};
                         return __wrapUserFunction(
                           {
                             type: "InteractionLoc",

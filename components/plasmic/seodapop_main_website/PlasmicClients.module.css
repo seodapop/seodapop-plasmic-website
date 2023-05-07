@@ -1137,7 +1137,23 @@
     position: relative;
   }
 }
+.freeBox__lyTk {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.dataFetcher:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .footerMain:global(.__wab_instance) {
   max-width: 100%;
-  position: relative;
 }

@@ -271,18 +271,7 @@ function PlasmicHome__RenderFunc(props: {
                         const $steps = {};
                         $steps["goToContactUs"] = true
                           ? (() => {
-                              const actionArgs = {
-                                destination: __wrapUserFunction(
-                                  {
-                                    type: "InteractionArgLoc",
-                                    actionName: "navigation",
-                                    interactionUuid: "Ai3Xu8vIQ",
-                                    componentUuid: "ZGwlmbejnPqDZ",
-                                    argName: "destination"
-                                  },
-                                  () => `/contact`
-                                )
-                              };
+                              const actionArgs = {};
                               return __wrapUserFunction(
                                 {
                                   type: "InteractionLoc",
@@ -536,18 +525,7 @@ function PlasmicHome__RenderFunc(props: {
                           const $steps = {};
                           $steps["goToAboutUs"] = true
                             ? (() => {
-                                const actionArgs = {
-                                  destination: __wrapUserFunction(
-                                    {
-                                      type: "InteractionArgLoc",
-                                      actionName: "navigation",
-                                      interactionUuid: "InTgwy8Kq",
-                                      componentUuid: "ZGwlmbejnPqDZ",
-                                      argName: "destination"
-                                    },
-                                    () => `/about-us`
-                                  )
-                                };
+                                const actionArgs = {};
                                 return __wrapUserFunction(
                                   {
                                     type: "InteractionLoc",

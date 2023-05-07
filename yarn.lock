@@ -718,6 +718,11 @@
   dependencies:
     antd "^5.1.6"
 
+"@plasmicpkgs/plasmic-query@^0.0.149":
+  version "0.0.149"
+  resolved "https://registry.yarnpkg.com/@plasmicpkgs/plasmic-query/-/plasmic-query-0.0.149.tgz#1d45b6e5d2f05bf8a4793c4080c4ca693c4e07b2"
+  integrity sha512-XsRU2UO4SUYtOA4eWsshtFsqP0aPM7HxlT8Ox1qTy5UHw5lsCyPEh7LFbgPWCze7J0R6/vOcOO5NbXTrhGbO7w==
+
 "@plasmicpkgs/plasmic-wordpress@^0.0.53":
   version "0.0.53"
   resolved "https://registry.yarnpkg.com/@plasmicpkgs/plasmic-wordpress/-/plasmic-wordpress-0.0.53.tgz#3ff7b33104012c2224e06c96240571f4953e9c93"
