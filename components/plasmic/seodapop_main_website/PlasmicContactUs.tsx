@@ -21,6 +21,12 @@ import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
+  usePlasmicDataConfig,
+  executePlasmicDataOp,
+  useDependencyAwareQuery
+} from "@plasmicapp/react-web/lib/data-sources";
+
+import {
   hasVariant,
   classNames,
   wrapWithClassName,
@@ -39,6 +45,7 @@ import {
 import Header from "../../Header"; // plasmic-import: UvDP15VkVO5hmb/component
 import TextInput from "../../TextInput"; // plasmic-import: SaP3xqfQev-ptP/component
 import Button from "../../Button"; // plasmic-import: mOwRf0tmmKT0O/component
+import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
 import HomeFooterTop from "../../HomeFooterTop"; // plasmic-import: Sh8nt7GR3decD/component
 import FooterMain from "../../FooterMain"; // plasmic-import: I_5el5M-Bk81Xi/component
 
@@ -76,8 +83,7 @@ export type PlasmicContactUs__OverridesType = {
   name4?: p.Flex<typeof TextInput>;
   textarea?: p.Flex<"textarea">;
   button?: p.Flex<typeof Button>;
-  h2?: p.Flex<"h2">;
-  h4?: p.Flex<"h4">;
+  dataFetcher?: p.Flex<typeof Fetcher>;
   footerTopSection?: p.Flex<"div">;
   homeFooterTop?: p.Flex<typeof HomeFooterTop>;
   footerMain?: p.Flex<typeof FooterMain>;
@@ -592,6 +598,16 @@ function PlasmicContactUs__RenderFunc(props: {
                           sty.column__ubxE0
                         )}
                       >
+                        <h2
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h2,
+                            projectcss.__wab_text,
+                            sty.h2__xmmJb
+                          )}
+                        >
+                          {"Address"}
+                        </h2>
                         {true ? (
                           <p.Stack
                             as={"div"}
@@ -601,70 +617,101 @@ function PlasmicContactUs__RenderFunc(props: {
                               sty.freeBox__dXRaX
                             )}
                           >
-                            <h2
-                              data-plasmic-name={"h2"}
-                              data-plasmic-override={overrides.h2}
+                            <Fetcher
+                              data-plasmic-name={"dataFetcher"}
+                              data-plasmic-override={overrides.dataFetcher}
                               className={classNames(
-                                projectcss.all,
-                                projectcss.h2,
-                                projectcss.__wab_text,
-                                sty.h2
+                                "__wab_instance",
+                                sty.dataFetcher
                               )}
+                              dataOp={{
+                                sourceId: "c9K6QXuqsPMk9CDgad3y6g",
+                                opId: "a98bd9bf-31a8-4f97-8c0e-a4cc6743cd1f",
+                                userArgs: {},
+                                cacheKey: "plasmic.$.HbdkyFqu3.$.",
+                                invalidatedKeys: null,
+                                roleId: null
+                              }}
+                              name={"GooglePlace" as const}
+                              queries={$queries}
                             >
-                              {"Address"}
-                            </h2>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__gaXe3
+                              {($queries: any) => (
+                                <React.Fragment>
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__gaXe3
+                                    )}
+                                  >
+                                    <div
+                                      className={
+                                        projectcss.__wab_expr_html_text
+                                      }
+                                      dangerouslySetInnerHTML={{
+                                        __html: (() => {
+                                          try {
+                                            return $queries.GooglePlace.data
+                                              .response.result.adr_address;
+                                          } catch (e) {
+                                            if (e instanceof TypeError) {
+                                              return "1234 Lorem Ipsum .\nLorem Ipsum , GA 30308\n1234567890";
+                                            }
+                                            throw e;
+                                          }
+                                        })()
+                                      }}
+                                    />
+                                  </div>
+                                  <h2
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.h2,
+                                      projectcss.__wab_text,
+                                      sty.h2__sCj8V
+                                    )}
+                                  >
+                                    {"Hours Of operation"}
+                                  </h2>
+                                  {(
+                                    (() => {
+                                      try {
+                                        return [0, 1, 2, 3, 4, 5, 6];
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return [];
+                                        }
+                                        throw e;
+                                      }
+                                    })() ?? []
+                                  ).map((currentItem, currentIndex) => (
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.__wab_text,
+                                        sty.text__a8Vnf
+                                      )}
+                                      key={currentIndex}
+                                    >
+                                      {(() => {
+                                        try {
+                                          return $queries.GooglePlace.data
+                                            .response.result
+                                            .current_opening_hours.weekday_text[
+                                            currentIndex
+                                          ];
+                                        } catch (e) {
+                                          if (e instanceof TypeError) {
+                                            return "1234 Lorem Ipsum .\nLorem Ipsum , GA 30308\n1234567890";
+                                          }
+                                          throw e;
+                                        }
+                                      })()}
+                                    </div>
+                                  ))}
+                                </React.Fragment>
                               )}
-                            >
-                              {
-                                "1234 Lorem Ipsum .\nLorem Ipsum , GA 30308\n1234567890"
-                              }
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__f2QGn
-                              )}
-                            >
-                              {"xyz@companyname.com"}
-                            </div>
-                            <h4
-                              data-plasmic-name={"h4"}
-                              data-plasmic-override={overrides.h4}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h4,
-                                projectcss.__wab_text,
-                                sty.h4
-                              )}
-                            >
-                              {"Address 2"}
-                            </h4>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__be1F5
-                              )}
-                            >
-                              {
-                                "1234 Lorem Ipsum .\nLorem Ipsum , GA 30308\n1234567890"
-                              }
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__ci39O
-                              )}
-                            >
-                              {"xyz@companyname.com"}
-                            </div>
+                            </Fetcher>
                           </p.Stack>
                         ) : null}
                       </div>
@@ -690,6 +737,25 @@ function PlasmicContactUs__RenderFunc(props: {
             data-plasmic-override={overrides.footerMain}
             className={classNames("__wab_instance", sty.footerMain)}
           />
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text___7ZuaH
+            )}
+          >
+            {(() => {
+              try {
+                return `Powered by seodaPop copyright © ${new Date().getFullYear()}`;
+              } catch (e) {
+                if (e instanceof TypeError) {
+                  return "Enter some text";
+                }
+                throw e;
+              }
+            })()}
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -711,8 +777,7 @@ const PlasmicDescendants = {
     "name4",
     "textarea",
     "button",
-    "h2",
-    "h4",
+    "dataFetcher",
     "footerTopSection",
     "homeFooterTop",
     "footerMain"
@@ -730,8 +795,7 @@ const PlasmicDescendants = {
     "name4",
     "textarea",
     "button",
-    "h2",
-    "h4"
+    "dataFetcher"
   ],
   formWrapper: [
     "formWrapper",
@@ -748,8 +812,7 @@ const PlasmicDescendants = {
   name4: ["name4"],
   textarea: ["textarea"],
   button: ["button"],
-  h2: ["h2"],
-  h4: ["h4"],
+  dataFetcher: ["dataFetcher"],
   footerTopSection: ["footerTopSection", "homeFooterTop"],
   homeFooterTop: ["homeFooterTop"],
   footerMain: ["footerMain"]
@@ -771,8 +834,7 @@ type NodeDefaultElementType = {
   name4: typeof TextInput;
   textarea: "textarea";
   button: typeof Button;
-  h2: "h2";
-  h4: "h4";
+  dataFetcher: typeof Fetcher;
   footerTopSection: "div";
   homeFooterTop: typeof HomeFooterTop;
   footerMain: typeof FooterMain;
@@ -850,8 +912,7 @@ export const PlasmicContactUs = Object.assign(
     name4: makeNodeComponent("name4"),
     textarea: makeNodeComponent("textarea"),
     button: makeNodeComponent("button"),
-    h2: makeNodeComponent("h2"),
-    h4: makeNodeComponent("h4"),
+    dataFetcher: makeNodeComponent("dataFetcher"),
     footerTopSection: makeNodeComponent("footerTopSection"),
     homeFooterTop: makeNodeComponent("homeFooterTop"),
     footerMain: makeNodeComponent("footerMain"),

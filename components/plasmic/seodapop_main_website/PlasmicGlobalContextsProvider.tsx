@@ -14,7 +14,6 @@ export interface GlobalContextsProviderProps {
   wordpressProviderProps?: Partial<
     Omit<React.ComponentProps<typeof WordpressProvider>, "children">
   >;
-
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
   >;
@@ -31,7 +30,7 @@ export default function GlobalContextsProvider(
       wordpressUrl={
         wordpressProviderProps && "wordpressUrl" in wordpressProviderProps
           ? wordpressProviderProps.wordpressUrl!
-          : ("https://seodapop.com" as const)
+          : ("https://old.seodapop.com" as const)
       }
     >
       <AntdConfigProvider

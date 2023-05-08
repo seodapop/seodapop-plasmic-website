@@ -281,3 +281,10 @@
   color: var(--token-DqaU8LCmnXbTsk);
   min-width: 0;
 }
+.text__uBmw {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}

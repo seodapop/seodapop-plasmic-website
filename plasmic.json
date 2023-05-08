@@ -473,7 +473,7 @@
           "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
           "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicBlog.tsx",
           "importSpec": {
-            "modulePath": "../pages/-2.tsx"
+            "modulePath": "../pages/blog.tsx"
           },
           "cssFilePath": "plasmic/seodapop_main_website/PlasmicBlog.module.css",
           "scheme": "blackbox",

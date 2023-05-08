@@ -143,24 +143,29 @@ function PlasmicBlog__RenderFunc(props: {
                     data-plasmic-override={overrides.freeBox}
                     className={classNames(projectcss.all, sty.freeBox)}
                   >
-                    <p.PlasmicLink
-                      data-plasmic-name={"link"}
-                      data-plasmic-override={overrides.link}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      <WordpressField
-                        data-plasmic-name={"blogTitle"}
-                        data-plasmic-override={overrides.blogTitle}
-                        className={classNames("__wab_instance", sty.blogTitle)}
-                        field={"title" as const}
-                      />
-                    </p.PlasmicLink>
+                    {true ? (
+                      <p.PlasmicLink
+                        data-plasmic-name={"link"}
+                        data-plasmic-override={overrides.link}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link
+                        )}
+                        component={Link}
+                        platform={"nextjs"}
+                      >
+                        <WordpressField
+                          data-plasmic-name={"blogTitle"}
+                          data-plasmic-override={overrides.blogTitle}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.blogTitle
+                          )}
+                          field={"title" as const}
+                        />
+                      </p.PlasmicLink>
+                    ) : null}
                   </div>
                 )}
               </ph.DataCtxReader>

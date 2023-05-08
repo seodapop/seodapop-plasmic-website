@@ -33,6 +33,7 @@
 }
 .link {
   display: flex;
+  color: var(--token-DqaU8LCmnXbTsk);
 }
 .blogTitle:global(.__wab_instance) {
   font-family: "Montserrat", sans-serif;

@@ -43,10 +43,10 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: UvDP15VkVO5hmb/component
+import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
 import Client from "../../Client"; // plasmic-import: x5jkr1w2VwXOBx/component
 import HomeFooterTop from "../../HomeFooterTop"; // plasmic-import: Sh8nt7GR3decD/component
 import FooterMain from "../../FooterMain"; // plasmic-import: I_5el5M-Bk81Xi/component
-import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
 
 import { useScreenVariants as useScreenVariantspgBiFjijh7ROsO } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: PgBiFjijh7ROsO/globalVariant
 
@@ -72,6 +72,7 @@ export type PlasmicClients__OverridesType = {
   foreground2?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
   text?: p.Flex<"div">;
+  dataFetcher?: p.Flex<typeof Fetcher>;
   clientsSection5?: p.Flex<"div">;
   footerTopSection?: p.Flex<"div">;
   homeFooterTop?: p.Flex<typeof HomeFooterTop>;
@@ -214,164 +215,357 @@ function PlasmicClients__RenderFunc(props: {
           </div>
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__yi8SU)}>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns___3KvL8)}
+              <Fetcher
+                data-plasmic-name={"dataFetcher"}
+                data-plasmic-override={overrides.dataFetcher}
+                className={classNames("__wab_instance", sty.dataFetcher)}
+                dataOp={{
+                  sourceId: "c9K6QXuqsPMk9CDgad3y6g",
+                  opId: "a98bd9bf-31a8-4f97-8c0e-a4cc6743cd1f",
+                  userArgs: {},
+                  cacheKey:
+                    "plasmic.$." +
+                    (() => {
+                      try {
+                        return undefined;
+                      } catch (e) {
+                        if (e instanceof TypeError) {
+                          return "";
+                        }
+                        throw e;
+                      }
+                    })() +
+                    ".$.Z1kQfDWna.$.",
+                  invalidatedKeys: null,
+                  roleId: null
+                }}
+                name={"googleInformation" as const}
+                queries={$queries}
               >
-                <div className={classNames(projectcss.all, sty.column__ijlrc)}>
+                {($queries: any) => (
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__c9N)}
+                    className={classNames(projectcss.all, sty.columns___3KvL8)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.columns__qUoPn)}
+                      className={classNames(projectcss.all, sty.column__ijlrc)}
                     >
-                      <div
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.freeBox__c9N)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.columns__qUoPn
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.column__iK67D
+                            )}
+                          >
+                            {true
+                              ? (
+                                  (() => {
+                                    try {
+                                      return [0];
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return [];
+                                      }
+                                      throw e;
+                                    }
+                                  })() ?? []
+                                ).map((currentItem, _012) => (
+                                  <Client
+                                    className={classNames(
+                                      "__wab_instance",
+                                      sty.client__zFpGj
+                                    )}
+                                    key={_012}
+                                    slot={(() => {
+                                      try {
+                                        return $queries.googleInformation.data
+                                          .response.result.reviews[currentItem]
+                                          .text;
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  >
+                                    <h2
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.h2,
+                                        projectcss.__wab_text,
+                                        sty.h2___38JaN
+                                      )}
+                                    >
+                                      {(() => {
+                                        try {
+                                          return $queries.googleInformation.data
+                                            .response.result.reviews[
+                                            currentItem
+                                          ].author_name;
+                                        } catch (e) {
+                                          if (e instanceof TypeError) {
+                                            return "Client name";
+                                          }
+                                          throw e;
+                                        }
+                                      })()}
+                                    </h2>
+                                  </Client>
+                                ))
+                              : null}
+                          </div>
+                        </div>
+                      </p.Stack>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.column__jLnGx)}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
                         className={classNames(
                           projectcss.all,
-                          sty.column__iK67D
+                          sty.freeBox__n1KIy
                         )}
                       >
-                        {true ? (
-                          <Client
-                            className={classNames(
-                              "__wab_instance",
-                              sty.client__zFpGj
-                            )}
-                          >
-                            <h2
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h2,
-                                projectcss.__wab_text,
-                                sty.h2___38JaN
-                              )}
-                            >
-                              {"Client name"}
-                            </h2>
-                          </Client>
-                        ) : null}
-                      </div>
+                        {true
+                          ? (
+                              (() => {
+                                try {
+                                  return [1];
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return [];
+                                  }
+                                  throw e;
+                                }
+                              })() ?? []
+                            ).map((currentItem, _012) => (
+                              <Client
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.client__vLSn0
+                                )}
+                                key={_012}
+                                slot={(() => {
+                                  try {
+                                    return $queries.googleInformation.data
+                                      .response.result.reviews[currentItem]
+                                      .text;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              >
+                                <h2
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.h2,
+                                    projectcss.__wab_text,
+                                    sty.h2___6TEjc
+                                  )}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $queries.googleInformation.data
+                                        .response.result.reviews[currentItem]
+                                        .author_name;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "Client name";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                </h2>
+                              </Client>
+                            ))
+                          : null}
+                      </p.Stack>
                     </div>
-                  </p.Stack>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__jLnGx)}>
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__n1KIy)}
-                  >
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        sty.columns___0IeCk
-                      )}
+                      className={classNames(projectcss.all, sty.column__voJqh)}
                     >
-                      <div
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
                         className={classNames(
                           projectcss.all,
-                          sty.column__eWpvw
+                          sty.freeBox__ldnnC
                         )}
                       >
-                        {true ? (
-                          <Client
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.columns__z40Pj
+                          )}
+                        >
+                          <div
                             className={classNames(
-                              "__wab_instance",
-                              sty.client__nwwn5
+                              projectcss.all,
+                              sty.column__wC2P
                             )}
                           >
-                            <h2
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h2,
-                                projectcss.__wab_text,
-                                sty.h2__mCvm7
-                              )}
-                            >
-                              {"Client name 2"}
-                            </h2>
-                          </Client>
-                        ) : null}
-                      </div>
+                            {true
+                              ? (
+                                  (() => {
+                                    try {
+                                      return [2];
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return [];
+                                      }
+                                      throw e;
+                                    }
+                                  })() ?? []
+                                ).map((currentItem, _012) => (
+                                  <Client
+                                    className={classNames(
+                                      "__wab_instance",
+                                      sty.client__rupeM
+                                    )}
+                                    key={_012}
+                                    slot={(() => {
+                                      try {
+                                        return $queries.googleInformation.data
+                                          .response.result.reviews[currentItem]
+                                          .text;
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  >
+                                    <h2
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.h2,
+                                        projectcss.__wab_text,
+                                        sty.h2__nvUbp
+                                      )}
+                                    >
+                                      {(() => {
+                                        try {
+                                          return $queries.googleInformation.data
+                                            .response.result.reviews[
+                                            currentItem
+                                          ].author_name;
+                                        } catch (e) {
+                                          if (e instanceof TypeError) {
+                                            return "Client name";
+                                          }
+                                          throw e;
+                                        }
+                                      })()}
+                                    </h2>
+                                  </Client>
+                                ))
+                              : null}
+                          </div>
+                        </div>
+                      </p.Stack>
                     </div>
-                  </p.Stack>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__voJqh)}>
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__ldnnC)}
-                  >
                     <div
-                      className={classNames(projectcss.all, sty.columns__z40Pj)}
+                      className={classNames(projectcss.all, sty.column__bvIfX)}
                     >
-                      <div
-                        className={classNames(projectcss.all, sty.column__wC2P)}
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.freeBox__c7H)}
                       >
-                        {true ? (
-                          <Client
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.columns__n71R0
+                          )}
+                        >
+                          <div
                             className={classNames(
-                              "__wab_instance",
-                              sty.client__iuEPk
+                              projectcss.all,
+                              sty.column__zTl5K
                             )}
                           >
-                            <h2
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h2,
-                                projectcss.__wab_text,
-                                sty.h2__l4F
-                              )}
-                            >
-                              {"Client name"}
-                            </h2>
-                          </Client>
-                        ) : null}
-                      </div>
+                            {true
+                              ? (
+                                  (() => {
+                                    try {
+                                      return [3];
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return [];
+                                      }
+                                      throw e;
+                                    }
+                                  })() ?? []
+                                ).map((currentItem, _012) => (
+                                  <Client
+                                    className={classNames(
+                                      "__wab_instance",
+                                      sty.client__xmQms
+                                    )}
+                                    key={_012}
+                                    slot={(() => {
+                                      try {
+                                        return $queries.googleInformation.data
+                                          .response.result.reviews[currentItem]
+                                          .text;
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  >
+                                    <h2
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.h2,
+                                        projectcss.__wab_text,
+                                        sty.h2__aUwh3
+                                      )}
+                                    >
+                                      {(() => {
+                                        try {
+                                          return $queries.googleInformation.data
+                                            .response.result.reviews[
+                                            currentItem
+                                          ].author_name;
+                                        } catch (e) {
+                                          if (e instanceof TypeError) {
+                                            return "Client name";
+                                          }
+                                          throw e;
+                                        }
+                                      })()}
+                                    </h2>
+                                  </Client>
+                                ))
+                              : null}
+                          </div>
+                        </div>
+                      </p.Stack>
                     </div>
                   </p.Stack>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__bvIfX)}>
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__c7H)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.columns__n71R0)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__zTl5K
-                        )}
-                      >
-                        {true ? (
-                          <Client
-                            className={classNames(
-                              "__wab_instance",
-                              sty.client__kbaHz
-                            )}
-                          >
-                            <h2
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h2,
-                                projectcss.__wab_text,
-                                sty.h2__giWfM
-                              )}
-                            >
-                              {"Client name"}
-                            </h2>
-                          </Client>
-                        ) : null}
-                      </div>
-                    </div>
-                  </p.Stack>
-                </div>
-              </p.Stack>
+                )}
+              </Fetcher>
             </div>
           ) : null}
           {true ? (
@@ -505,11 +699,15 @@ function PlasmicClients__RenderFunc(props: {
           </div>
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__lyTk)}>
-              <FooterMain
-                data-plasmic-name={"footerMain"}
-                data-plasmic-override={overrides.footerMain}
-                className={classNames("__wab_instance", sty.footerMain)}
-              />
+              {true ? (
+                <div className={classNames(projectcss.all, sty.freeBox__lCQxf)}>
+                  <FooterMain
+                    data-plasmic-name={"footerMain"}
+                    data-plasmic-override={overrides.footerMain}
+                    className={classNames("__wab_instance", sty.footerMain)}
+                  />
+                </div>
+              ) : null}
             </div>
           ) : null}
         </div>
@@ -526,6 +724,7 @@ const PlasmicDescendants = {
     "foreground2",
     "h1",
     "text",
+    "dataFetcher",
     "clientsSection5",
     "footerTopSection",
     "homeFooterTop",
@@ -536,6 +735,7 @@ const PlasmicDescendants = {
   foreground2: ["foreground2", "h1", "text"],
   h1: ["h1"],
   text: ["text"],
+  dataFetcher: ["dataFetcher"],
   clientsSection5: ["clientsSection5"],
   footerTopSection: ["footerTopSection", "homeFooterTop"],
   homeFooterTop: ["homeFooterTop"],
@@ -551,6 +751,7 @@ type NodeDefaultElementType = {
   foreground2: "div";
   h1: "h1";
   text: "div";
+  dataFetcher: typeof Fetcher;
   clientsSection5: "div";
   footerTopSection: "div";
   homeFooterTop: typeof HomeFooterTop;
@@ -622,6 +823,7 @@ export const PlasmicClients = Object.assign(
     foreground2: makeNodeComponent("foreground2"),
     h1: makeNodeComponent("h1"),
     text: makeNodeComponent("text"),
+    dataFetcher: makeNodeComponent("dataFetcher"),
     clientsSection5: makeNodeComponent("clientsSection5"),
     footerTopSection: makeNodeComponent("footerTopSection"),
     homeFooterTop: makeNodeComponent("homeFooterTop"),

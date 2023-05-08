@@ -326,6 +326,15 @@ function PlasmicFooterMain__RenderFunc(props: {
             </p.Stack>
           </div>
         ) : null}
+        <div
+          className={classNames(
+            projectcss.all,
+            projectcss.__wab_text,
+            sty.text__uBmw
+          )}
+        >
+          {""}
+        </div>
       </div>
     ) : null
   ) as React.ReactElement | null;
