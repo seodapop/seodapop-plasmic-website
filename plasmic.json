@@ -478,6 +478,19 @@
           "cssFilePath": "plasmic/seodapop_main_website/PlasmicBlog.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "H_9_PzWWma",
+          "name": "Blogslug",
+          "type": "managed",
+          "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
+          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicBlogslug.tsx",
+          "importSpec": {
+            "modulePath": "../pages/blog/[slug].tsx"
+          },
+          "cssFilePath": "plasmic/seodapop_main_website/PlasmicBlogslug.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [

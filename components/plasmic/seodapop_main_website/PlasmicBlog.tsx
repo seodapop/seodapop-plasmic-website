@@ -37,7 +37,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { WordpressFetcher } from "@plasmicpkgs/plasmic-wordpress"; // plasmic-import: pjFShxrixSi/codeComponent
-import { WordpressField } from "@plasmicpkgs/plasmic-wordpress"; // plasmic-import: 38Na4EoFMQU/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -59,7 +58,7 @@ export type PlasmicBlog__OverridesType = {
   getWordpressData?: p.Flex<typeof WordpressFetcher>;
   freeBox?: p.Flex<"div">;
   link?: p.Flex<"a"> & Partial<LinkProps>;
-  blogTitle?: p.Flex<typeof WordpressField>;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultBlogProps {}
@@ -132,42 +131,132 @@ function PlasmicBlog__RenderFunc(props: {
               data-plasmic-override={overrides.getWordpressData}
               className={classNames("__wab_instance", sty.getWordpressData)}
               key={currentIndex}
+              limit={5 as const}
               noAutoRepeat={false}
-              noLayout={true}
+              noLayout={false}
               queryType={"posts" as const}
             >
               <ph.DataCtxReader>
-                {$ctx => (
-                  <div
-                    data-plasmic-name={"freeBox"}
-                    data-plasmic-override={overrides.freeBox}
-                    className={classNames(projectcss.all, sty.freeBox)}
-                  >
-                    {true ? (
+                {$ctx =>
+                  ([2, 3, 4] ?? []).map((currentItem, currentIndex) => (
+                    <div
+                      data-plasmic-name={"freeBox"}
+                      data-plasmic-override={overrides.freeBox}
+                      className={classNames(projectcss.all, sty.freeBox)}
+                      key={currentIndex}
+                    >
                       <p.PlasmicLink
                         data-plasmic-name={"link"}
                         data-plasmic-override={overrides.link}
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
+                          projectcss.__wab_text,
                           sty.link
                         )}
                         component={Link}
+                        href={(() => {
+                          try {
+                            return `/blog/${$ctx.currentWordpressPost.slug}`;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                        onClick={async event => {
+                          const $steps = {};
+                          $steps["goToBlogslug"] = true
+                            ? (() => {
+                                const actionArgs = {
+                                  destination: __wrapUserFunction(
+                                    {
+                                      type: "InteractionArgLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "1nbiR8WD2",
+                                      componentUuid: "g6PgRV9F1F",
+                                      argName: "destination"
+                                    },
+                                    () =>
+                                      `/blog/${(() => {
+                                        try {
+                                          return $ctx.currentWordpressPost.slug;
+                                        } catch (e) {
+                                          if (e instanceof TypeError) {
+                                            return ``;
+                                          }
+                                          throw e;
+                                        }
+                                      })()}`
+                                  )
+                                };
+                                return __wrapUserFunction(
+                                  {
+                                    type: "InteractionLoc",
+                                    actionName: "navigation",
+                                    interactionUuid: "1nbiR8WD2",
+                                    componentUuid: "g6PgRV9F1F"
+                                  },
+                                  () =>
+                                    (({ destination }) => {
+                                      __nextRouter?.push(destination);
+                                    })?.apply(null, [actionArgs]),
+                                  actionArgs
+                                );
+                              })()
+                            : undefined;
+                          if (
+                            typeof $steps["goToBlogslug"] === "object" &&
+                            typeof $steps["goToBlogslug"].then === "function"
+                          ) {
+                            $steps["goToBlogslug"] = await __wrapUserPromise(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "navigation",
+                                interactionUuid: "1nbiR8WD2",
+                                componentUuid: "g6PgRV9F1F"
+                              },
+                              $steps["goToBlogslug"]
+                            );
+                          }
+                        }}
                         platform={"nextjs"}
                       >
-                        <WordpressField
-                          data-plasmic-name={"blogTitle"}
-                          data-plasmic-override={overrides.blogTitle}
-                          className={classNames(
-                            "__wab_instance",
-                            sty.blogTitle
-                          )}
-                          field={"title" as const}
-                        />
+                        {(() => {
+                          try {
+                            return $ctx.currentWordpressPost.title.rendered;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Some link text";
+                            }
+                            throw e;
+                          }
+                        })()}
                       </p.PlasmicLink>
-                    ) : null}
-                  </div>
-                )}
+                      <div
+                        data-plasmic-name={"text"}
+                        data-plasmic-override={overrides.text}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text
+                        )}
+                      >
+                        {(() => {
+                          try {
+                            return $ctx.currentWordpressPost.excerpt.rendered;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Enter some text";
+                            }
+                            throw e;
+                          }
+                        })()}
+                      </div>
+                    </div>
+                  ))
+                }
               </ph.DataCtxReader>
             </WordpressFetcher>
           ))}
@@ -178,11 +267,11 @@ function PlasmicBlog__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "getWordpressData", "freeBox", "link", "blogTitle"],
-  getWordpressData: ["getWordpressData", "freeBox", "link", "blogTitle"],
-  freeBox: ["freeBox", "link", "blogTitle"],
-  link: ["link", "blogTitle"],
-  blogTitle: ["blogTitle"]
+  root: ["root", "getWordpressData", "freeBox", "link", "text"],
+  getWordpressData: ["getWordpressData", "freeBox", "link", "text"],
+  freeBox: ["freeBox", "link", "text"],
+  link: ["link"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -192,7 +281,7 @@ type NodeDefaultElementType = {
   getWordpressData: typeof WordpressFetcher;
   freeBox: "div";
   link: "a";
-  blogTitle: typeof WordpressField;
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -258,7 +347,7 @@ export const PlasmicBlog = Object.assign(
     getWordpressData: makeNodeComponent("getWordpressData"),
     freeBox: makeNodeComponent("freeBox"),
     link: makeNodeComponent("link"),
-    blogTitle: makeNodeComponent("blogTitle"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicBlog
     internalVariantProps: PlasmicBlog__VariantProps,
