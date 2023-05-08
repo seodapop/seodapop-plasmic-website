@@ -1149,11 +1149,6 @@
   min-width: 0;
   padding: 8px;
 }
-.dataFetcher:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
 .footerMain:global(.__wab_instance) {
   max-width: 100%;
 }

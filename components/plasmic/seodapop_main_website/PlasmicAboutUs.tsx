@@ -209,7 +209,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                 >
                   {hasVariant(globalVariants, "screen", "sm")
                     ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                    : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
+                    : "\nOur passion is in working with business owners to ensure they have the best search engine exposure for their business. We focus on the right user experience to convert their website visitors into sales leads."}
                 </div>
               </p.Stack>
             </p.Stack>
@@ -259,13 +259,129 @@ function PlasmicAboutUs__RenderFunc(props: {
                             "__wab_instance",
                             sty.personCard___5FwKw
                           )}
-                          image={{
-                            src: "/plasmic/seodapop_main_website/images/team4Jpg.jpg",
-                            fullWidth: 370,
-                            fullHeight: 450,
-                            aspectRatio: undefined
-                          }}
-                          slot={"Job title"}
+                          image={
+                            "https://old.seodapop.com/wp-content/uploads/2014/06/IMG_1822-e1502097727507.jpg" as const
+                          }
+                          slot={
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__mKjy5
+                              )}
+                            >
+                              {"Founder,CEO"}
+                            </div>
+                          }
+                          slot2={
+                            <React.Fragment>
+                              {true ? (
+                                <p.PlasmicLink
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.a,
+                                    sty.link__tY1Kc
+                                  )}
+                                  component={Link}
+                                  href={`/`}
+                                  onClick={async event => {
+                                    const $steps = {};
+                                    $steps["updateStateVariable"] = true
+                                      ? (() => {
+                                          const actionArgs = {};
+                                          return __wrapUserFunction(
+                                            {
+                                              type: "InteractionLoc",
+                                              actionName: "updateVariable",
+                                              interactionUuid: "Wv3UpyYFX",
+                                              componentUuid: "abE5NBu71KAaq"
+                                            },
+                                            () =>
+                                              (({
+                                                variable,
+                                                value,
+                                                startIndex,
+                                                deleteCount
+                                              }) => {
+                                                const {
+                                                  objRoot,
+                                                  variablePath
+                                                } = variable;
+                                                undefined;
+                                              })?.apply(null, [actionArgs]),
+                                            actionArgs
+                                          );
+                                        })()
+                                      : undefined;
+                                    if (
+                                      typeof $steps["updateStateVariable"] ===
+                                        "object" &&
+                                      typeof $steps["updateStateVariable"]
+                                        .then === "function"
+                                    ) {
+                                      $steps["updateStateVariable"] =
+                                        await __wrapUserPromise(
+                                          {
+                                            type: "InteractionLoc",
+                                            actionName: "updateVariable",
+                                            interactionUuid: "Wv3UpyYFX",
+                                            componentUuid: "abE5NBu71KAaq"
+                                          },
+                                          $steps["updateStateVariable"]
+                                        );
+                                    }
+                                  }}
+                                  platform={"nextjs"}
+                                >
+                                  <IconIcon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg___5Ka9U
+                                    )}
+                                    href={"https://www.linkedin.com/" as const}
+                                    link={"https://www.linkedin.com/" as const}
+                                    role={"img"}
+                                  />
+                                </p.PlasmicLink>
+                              ) : null}
+                              <p.PlasmicLink
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.a,
+                                  sty.link___1Yr2W
+                                )}
+                                component={Link}
+                                href={`/`}
+                                platform={"nextjs"}
+                              >
+                                <Icon2Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__i1NQ
+                                  )}
+                                  role={"img"}
+                                />
+                              </p.PlasmicLink>
+                              <p.PlasmicLink
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.a,
+                                  sty.link__f2Zeq
+                                )}
+                                component={Link}
+                                href={`/`}
+                                platform={"nextjs"}
+                              >
+                                <Icon3Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__gnyU
+                                  )}
+                                  role={"img"}
+                                />
+                              </p.PlasmicLink>
+                            </React.Fragment>
+                          }
                         >
                           <h3
                             className={classNames(
@@ -275,7 +391,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3___8RKh
                             )}
                           >
-                            {"Lorem Ipsum"}
+                            {"Hamid Tavakoli"}
                           </h3>
                         </PersonCard>
                       </div>
@@ -290,12 +406,10 @@ function PlasmicAboutUs__RenderFunc(props: {
                             "__wab_instance",
                             sty.personCard__rpcK3
                           )}
-                          image={{
-                            src: "/plasmic/seodapop_main_website/images/tm1Jpg.jpg",
-                            fullWidth: 400,
-                            fullHeight: 400,
-                            aspectRatio: undefined
-                          }}
+                          image={
+                            "https://old.seodapop.com/wp-content/uploads/2014/06/IMG_1838-e1504506724781.jpg" as const
+                          }
+                          slot={"CO Founder, Vice president"}
                         >
                           <h3
                             className={classNames(
@@ -305,7 +419,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__l8ER
                             )}
                           >
-                            {"Lorem Ipsum"}
+                            {"Alexandra Santana"}
                           </h3>
                         </PersonCard>
                       </div>
@@ -321,11 +435,12 @@ function PlasmicAboutUs__RenderFunc(props: {
                             sty.personCard__hcFmp
                           )}
                           image={{
-                            src: "/plasmic/seodapop_main_website/images/team2Jpg3.jpg",
-                            fullWidth: 370,
-                            fullHeight: 450,
+                            src: "/plasmic/seodapop_main_website/images/img74B2C262B9F81Jpeg.jpg",
+                            fullWidth: 1170,
+                            fullHeight: 1162,
                             aspectRatio: undefined
                           }}
+                          slot={"CSR"}
                         >
                           <h3
                             className={classNames(
@@ -335,7 +450,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__g9Lm5
                             )}
                           >
-                            {"Lorem Ipsum"}
+                            {"Paula Pedrini"}
                           </h3>
                         </PersonCard>
                       </div>
@@ -351,11 +466,12 @@ function PlasmicAboutUs__RenderFunc(props: {
                             sty.personCard__ly0Da
                           )}
                           image={{
-                            src: "/plasmic/seodapop_main_website/images/images1Jpg.jpg",
-                            fullWidth: 225,
-                            fullHeight: 225,
+                            src: "/plasmic/seodapop_main_website/images/_1656010876757Jpeg.jpg",
+                            fullWidth: 368,
+                            fullHeight: 368,
                             aspectRatio: undefined
                           }}
+                          slot={"Software Engineer"}
                         >
                           <h3
                             className={classNames(
@@ -365,7 +481,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__uy3V8
                             )}
                           >
-                            {"Lorem Ipsum"}
+                            {"Danny Tsui"}
                           </h3>
                         </PersonCard>
                       </div>
@@ -381,11 +497,12 @@ function PlasmicAboutUs__RenderFunc(props: {
                             sty.personCard__aEim7
                           )}
                           image={{
-                            src: "/plasmic/seodapop_main_website/images/avatar3Png.png",
-                            fullWidth: 400,
-                            fullHeight: 400,
+                            src: "/plasmic/seodapop_main_website/images/_1680081041398Jpeg.jpg",
+                            fullWidth: 800,
+                            fullHeight: 800,
                             aspectRatio: undefined
                           }}
+                          slot={"Software Engineer"}
                         >
                           <h3
                             className={classNames(
@@ -395,7 +512,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3___3AgDx
                             )}
                           >
-                            {"Lorem Ipsum"}
+                            {"Tawhid Abdullah "}
                           </h3>
                         </PersonCard>
                       </div>
@@ -411,11 +528,12 @@ function PlasmicAboutUs__RenderFunc(props: {
                             sty.personCard__g1Osh
                           )}
                           image={{
-                            src: "/plasmic/seodapop_main_website/images/unnamedjpg.jpg",
-                            fullWidth: 370,
-                            fullHeight: 411,
+                            src: "/plasmic/seodapop_main_website/images/downloadjpeg.jpg",
+                            fullWidth: 225,
+                            fullHeight: 225,
                             aspectRatio: undefined
                           }}
+                          slot={"Software Engineer"}
                         >
                           <h3
                             className={classNames(
@@ -425,7 +543,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3___3X7NE
                             )}
                           >
-                            {"Lorem Ipsum"}
+                            {"Hiren Shukla"}
                           </h3>
                         </PersonCard>
                       </div>

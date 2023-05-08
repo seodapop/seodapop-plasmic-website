@@ -45,8 +45,8 @@ import {
 import Header from "../../Header"; // plasmic-import: UvDP15VkVO5hmb/component
 import Client from "../../Client"; // plasmic-import: x5jkr1w2VwXOBx/component
 import HomeFooterTop from "../../HomeFooterTop"; // plasmic-import: Sh8nt7GR3decD/component
-import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
 import FooterMain from "../../FooterMain"; // plasmic-import: I_5el5M-Bk81Xi/component
+import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
 
 import { useScreenVariants as useScreenVariantspgBiFjijh7ROsO } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: PgBiFjijh7ROsO/globalVariant
 
@@ -75,7 +75,6 @@ export type PlasmicClients__OverridesType = {
   clientsSection5?: p.Flex<"div">;
   footerTopSection?: p.Flex<"div">;
   homeFooterTop?: p.Flex<typeof HomeFooterTop>;
-  dataFetcher?: p.Flex<typeof Fetcher>;
   footerMain?: p.Flex<typeof FooterMain>;
 };
 
@@ -506,13 +505,6 @@ function PlasmicClients__RenderFunc(props: {
           </div>
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__lyTk)}>
-              <Fetcher
-                data-plasmic-name={"dataFetcher"}
-                data-plasmic-override={overrides.dataFetcher}
-                className={classNames("__wab_instance", sty.dataFetcher)}
-                queries={$queries}
-              />
-
               <FooterMain
                 data-plasmic-name={"footerMain"}
                 data-plasmic-override={overrides.footerMain}
@@ -537,7 +529,6 @@ const PlasmicDescendants = {
     "clientsSection5",
     "footerTopSection",
     "homeFooterTop",
-    "dataFetcher",
     "footerMain"
   ],
   header: ["header"],
@@ -548,7 +539,6 @@ const PlasmicDescendants = {
   clientsSection5: ["clientsSection5"],
   footerTopSection: ["footerTopSection", "homeFooterTop"],
   homeFooterTop: ["homeFooterTop"],
-  dataFetcher: ["dataFetcher"],
   footerMain: ["footerMain"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -564,7 +554,6 @@ type NodeDefaultElementType = {
   clientsSection5: "div";
   footerTopSection: "div";
   homeFooterTop: typeof HomeFooterTop;
-  dataFetcher: typeof Fetcher;
   footerMain: typeof FooterMain;
 };
 
@@ -636,7 +625,6 @@ export const PlasmicClients = Object.assign(
     clientsSection5: makeNodeComponent("clientsSection5"),
     footerTopSection: makeNodeComponent("footerTopSection"),
     homeFooterTop: makeNodeComponent("homeFooterTop"),
-    dataFetcher: makeNodeComponent("dataFetcher"),
     footerMain: makeNodeComponent("footerMain"),
 
     // Metadata about props expected for PlasmicClients

@@ -71,12 +71,12 @@
         {
           "type": "renderModule",
           "assetId": "abE5NBu71KAaq",
-          "checksum": "4c7672e03cb8e2d19e3140393fbff86e"
+          "checksum": "58b2c19f841d25e880fafda7346efb51"
         },
         {
           "type": "cssRules",
           "assetId": "abE5NBu71KAaq",
-          "checksum": "4c7672e03cb8e2d19e3140393fbff86e"
+          "checksum": "58b2c19f841d25e880fafda7346efb51"
         },
         {
           "type": "renderModule",
@@ -141,12 +141,12 @@
         {
           "type": "renderModule",
           "assetId": "rM945-IsPC-O6u",
-          "checksum": "cf0f2f5924e9f6914dbc5a4163418fb1"
+          "checksum": "a34fcf47178e40f6d44bea0e00b3de75"
         },
         {
           "type": "cssRules",
           "assetId": "rM945-IsPC-O6u",
-          "checksum": "cf0f2f5924e9f6914dbc5a4163418fb1"
+          "checksum": "a34fcf47178e40f6d44bea0e00b3de75"
         },
         {
           "type": "renderModule",
@@ -191,12 +191,12 @@
         {
           "type": "renderModule",
           "assetId": "qxI8sK4vboidUg",
-          "checksum": "93f281dc7ec546986af58cda1c8d940a"
+          "checksum": "3cf80757e4f98b41381e7640b3e2b15e"
         },
         {
           "type": "cssRules",
           "assetId": "qxI8sK4vboidUg",
-          "checksum": "93f281dc7ec546986af58cda1c8d940a"
+          "checksum": "3cf80757e4f98b41381e7640b3e2b15e"
         },
         {
           "type": "renderModule",
@@ -557,6 +557,26 @@
           "assetId": "eSHiknYGb4WLC3QGLYLFnQ",
           "type": "projectCss",
           "checksum": "21f83f4890b5b450d9e7b20e3fbb9158"
+        },
+        {
+          "type": "image",
+          "assetId": "jZIqa290j",
+          "checksum": "7e56b98861956c5029d1eb7b440b4779"
+        },
+        {
+          "type": "image",
+          "assetId": "IsCUi-7aQ",
+          "checksum": "c74c4baa7dfbc2a738127c6ef17d42d3"
+        },
+        {
+          "type": "image",
+          "assetId": "TGqLK9A42",
+          "checksum": "6e90878d16b5c31e526a04eaf483f433"
+        },
+        {
+          "type": "image",
+          "assetId": "sWH-VrNL6",
+          "checksum": "6eac8a2e022853889e636d28056cef10"
         }
       ],
       "codegenVersion": "0.0.1"

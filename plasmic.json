@@ -787,6 +787,26 @@
           "id": "6bxyMkL4T",
           "name": "darkenned-med.png",
           "filePath": "../public/plasmic/seodapop_main_website/images/darkennedMedpng.png"
+        },
+        {
+          "id": "jZIqa290j",
+          "name": "IMG_74B2C262B9F8-1.jpeg",
+          "filePath": "../public/plasmic/seodapop_main_website/images/img74B2C262B9F81Jpeg.jpg"
+        },
+        {
+          "id": "IsCUi-7aQ",
+          "name": "1656010876757.jpeg",
+          "filePath": "../public/plasmic/seodapop_main_website/images/_1656010876757Jpeg.jpg"
+        },
+        {
+          "id": "TGqLK9A42",
+          "name": "1680081041398.jpeg",
+          "filePath": "../public/plasmic/seodapop_main_website/images/_1680081041398Jpeg.jpg"
+        },
+        {
+          "id": "sWH-VrNL6",
+          "name": "download.jpeg",
+          "filePath": "../public/plasmic/seodapop_main_website/images/downloadjpeg.jpg"
         }
       ],
       "indirect": false,
@@ -826,7 +846,8 @@
           "name": "GraphqlFetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-query"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
