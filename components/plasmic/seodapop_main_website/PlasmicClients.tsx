@@ -208,7 +208,7 @@ function PlasmicClients__RenderFunc(props: {
                 >
                   {hasVariant(globalVariants, "screen", "sm")
                     ? "Lorem Ipsum is simply dummy text of the printing and typesetting "
-                    : "Lorem Ipsum is simply dummy text of the printing and typesetting "}
+                    : "Below is latest reviews from some of our clients, your can read more about this in our  google page."}
                 </div>
               </p.Stack>
             </p.Stack>
