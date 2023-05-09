@@ -587,7 +587,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                      "Our main goal is to put quality over quantity. Every application that we make is unique and deserves unique attention as well."
                     }
                   </div>
                 </p.Stack>

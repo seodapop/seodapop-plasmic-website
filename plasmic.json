@@ -491,6 +491,32 @@
           "cssFilePath": "plasmic/seodapop_main_website/PlasmicBlogslug.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "_lNaqgp2Dw",
+          "name": "PrivacyPolicy",
+          "type": "managed",
+          "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
+          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicPrivacyPolicy.tsx",
+          "importSpec": {
+            "modulePath": "../pages/privacy-policy.tsx"
+          },
+          "cssFilePath": "plasmic/seodapop_main_website/PlasmicPrivacyPolicy.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "AUoAQGybkt",
+          "name": "TermsOfService",
+          "type": "managed",
+          "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
+          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicTermsOfService.tsx",
+          "importSpec": {
+            "modulePath": "../pages/terms-of-service.tsx"
+          },
+          "cssFilePath": "plasmic/seodapop_main_website/PlasmicTermsOfService.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [

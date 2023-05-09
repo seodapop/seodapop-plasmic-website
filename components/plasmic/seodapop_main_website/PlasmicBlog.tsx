@@ -58,6 +58,7 @@ export type PlasmicBlog__OverridesType = {
   getWordpressData?: p.Flex<typeof WordpressFetcher>;
   freeBox?: p.Flex<"div">;
   link?: p.Flex<"a"> & Partial<LinkProps>;
+  img?: p.Flex<typeof p.PlasmicImg>;
   text?: p.Flex<"div">;
 };
 
@@ -125,125 +126,148 @@ function PlasmicBlog__RenderFunc(props: {
             sty.root
           )}
         >
-          {([2, 3, 4] ?? []).map((currentItem, currentIndex) => (
-            <WordpressFetcher
-              data-plasmic-name={"getWordpressData"}
-              data-plasmic-override={overrides.getWordpressData}
-              className={classNames("__wab_instance", sty.getWordpressData)}
-              key={currentIndex}
-              limit={5 as const}
-              noAutoRepeat={false}
-              noLayout={false}
-              queryType={"posts" as const}
-            >
-              <ph.DataCtxReader>
-                {$ctx =>
-                  ([2, 3, 4] ?? []).map((currentItem, currentIndex) => (
-                    <div
-                      data-plasmic-name={"freeBox"}
-                      data-plasmic-override={overrides.freeBox}
-                      className={classNames(projectcss.all, sty.freeBox)}
-                      key={currentIndex}
-                    >
-                      <p.PlasmicLink
-                        data-plasmic-name={"link"}
-                        data-plasmic-override={overrides.link}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          sty.link
-                        )}
-                        component={Link}
-                        href={(() => {
-                          try {
-                            return `/blog/${$ctx.currentWordpressPost.slug}`;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                        onClick={async event => {
-                          const $steps = {};
-                          $steps["goToBlogslug"] = true
-                            ? (() => {
-                                const actionArgs = {
-                                  destination: __wrapUserFunction(
-                                    {
-                                      type: "InteractionArgLoc",
-                                      actionName: "navigation",
-                                      interactionUuid: "1nbiR8WD2",
-                                      componentUuid: "g6PgRV9F1F",
-                                      argName: "destination"
-                                    },
-                                    () =>
-                                      `/blog/${(() => {
-                                        try {
-                                          return $ctx.currentWordpressPost.slug;
-                                        } catch (e) {
-                                          if (e instanceof TypeError) {
-                                            return ``;
-                                          }
-                                          throw e;
-                                        }
-                                      })()}`
-                                  )
-                                };
-                                return __wrapUserFunction(
-                                  {
-                                    type: "InteractionLoc",
-                                    actionName: "navigation",
-                                    interactionUuid: "1nbiR8WD2",
-                                    componentUuid: "g6PgRV9F1F"
-                                  },
-                                  () =>
-                                    (({ destination }) => {
-                                      __nextRouter?.push(destination);
-                                    })?.apply(null, [actionArgs]),
-                                  actionArgs
-                                );
-                              })()
-                            : undefined;
-                          if (
-                            typeof $steps["goToBlogslug"] === "object" &&
-                            typeof $steps["goToBlogslug"].then === "function"
-                          ) {
-                            $steps["goToBlogslug"] = await __wrapUserPromise(
+          <WordpressFetcher
+            data-plasmic-name={"getWordpressData"}
+            data-plasmic-override={overrides.getWordpressData}
+            className={classNames("__wab_instance", sty.getWordpressData)}
+            limit={10 as const}
+            noAutoRepeat={false}
+            noLayout={false}
+            queryType={"posts" as const}
+          >
+            <ph.DataCtxReader>
+              {$ctx => (
+                <div
+                  data-plasmic-name={"freeBox"}
+                  data-plasmic-override={overrides.freeBox}
+                  className={classNames(projectcss.all, sty.freeBox)}
+                >
+                  <p.PlasmicLink
+                    data-plasmic-name={"link"}
+                    data-plasmic-override={overrides.link}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link
+                    )}
+                    component={Link}
+                    href={(() => {
+                      try {
+                        return `/blog/${$ctx.currentWordpressPost.slug}`;
+                      } catch (e) {
+                        if (e instanceof TypeError) {
+                          return undefined;
+                        }
+                        throw e;
+                      }
+                    })()}
+                    onClick={async event => {
+                      const $steps = {};
+                      $steps["goToBlogslug"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              destination: __wrapUserFunction(
+                                {
+                                  type: "InteractionArgLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "1nbiR8WD2",
+                                  componentUuid: "g6PgRV9F1F",
+                                  argName: "destination"
+                                },
+                                () =>
+                                  `/blog/${(() => {
+                                    try {
+                                      return $ctx.currentWordpressPost.slug;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return ``;
+                                      }
+                                      throw e;
+                                    }
+                                  })()}`
+                              )
+                            };
+                            return __wrapUserFunction(
                               {
                                 type: "InteractionLoc",
                                 actionName: "navigation",
                                 interactionUuid: "1nbiR8WD2",
                                 componentUuid: "g6PgRV9F1F"
                               },
-                              $steps["goToBlogslug"]
+                              () =>
+                                (({ destination }) => {
+                                  __nextRouter?.push(destination);
+                                })?.apply(null, [actionArgs]),
+                              actionArgs
                             );
-                          }
-                        }}
-                        platform={"nextjs"}
-                      >
-                        {(() => {
-                          try {
-                            return $ctx.currentWordpressPost.title.rendered;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return "Some link text";
-                            }
-                            throw e;
-                          }
-                        })()}
-                      </p.PlasmicLink>
-                      <div
-                        data-plasmic-name={"text"}
-                        data-plasmic-override={overrides.text}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text
-                        )}
-                      >
-                        {(() => {
+                          })()
+                        : undefined;
+                      if (
+                        typeof $steps["goToBlogslug"] === "object" &&
+                        typeof $steps["goToBlogslug"].then === "function"
+                      ) {
+                        $steps["goToBlogslug"] = await __wrapUserPromise(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "1nbiR8WD2",
+                            componentUuid: "g6PgRV9F1F"
+                          },
+                          $steps["goToBlogslug"]
+                        );
+                      }
+                    }}
+                    platform={"nextjs"}
+                  >
+                    {(() => {
+                      try {
+                        return $ctx.currentWordpressPost.title.rendered;
+                      } catch (e) {
+                        if (e instanceof TypeError) {
+                          return "Some link text";
+                        }
+                        throw e;
+                      }
+                    })()}
+                  </p.PlasmicLink>
+                  <p.PlasmicImg
+                    data-plasmic-name={"img"}
+                    data-plasmic-override={overrides.img}
+                    alt={""}
+                    className={classNames(sty.img)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={(() => {
+                      try {
+                        return undefined;
+                      } catch (e) {
+                        if (e instanceof TypeError) {
+                          return undefined;
+                        }
+                        throw e;
+                      }
+                    })()}
+                  />
+
+                  <div
+                    data-plasmic-name={"text"}
+                    data-plasmic-override={overrides.text}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text
+                    )}
+                  >
+                    <div
+                      className={projectcss.__wab_expr_html_text}
+                      dangerouslySetInnerHTML={{
+                        __html: (() => {
                           try {
                             return $ctx.currentWordpressPost.excerpt.rendered;
                           } catch (e) {
@@ -252,14 +276,14 @@ function PlasmicBlog__RenderFunc(props: {
                             }
                             throw e;
                           }
-                        })()}
-                      </div>
-                    </div>
-                  ))
-                }
-              </ph.DataCtxReader>
-            </WordpressFetcher>
-          ))}
+                        })()
+                      }}
+                    />
+                  </div>
+                </div>
+              )}
+            </ph.DataCtxReader>
+          </WordpressFetcher>
         </div>
       </div>
     </React.Fragment>
@@ -267,10 +291,11 @@ function PlasmicBlog__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "getWordpressData", "freeBox", "link", "text"],
-  getWordpressData: ["getWordpressData", "freeBox", "link", "text"],
-  freeBox: ["freeBox", "link", "text"],
+  root: ["root", "getWordpressData", "freeBox", "link", "img", "text"],
+  getWordpressData: ["getWordpressData", "freeBox", "link", "img", "text"],
+  freeBox: ["freeBox", "link", "img", "text"],
   link: ["link"],
+  img: ["img"],
   text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -281,6 +306,7 @@ type NodeDefaultElementType = {
   getWordpressData: typeof WordpressFetcher;
   freeBox: "div";
   link: "a";
+  img: typeof p.PlasmicImg;
   text: "div";
 };
 
@@ -347,6 +373,7 @@ export const PlasmicBlog = Object.assign(
     getWordpressData: makeNodeComponent("getWordpressData"),
     freeBox: makeNodeComponent("freeBox"),
     link: makeNodeComponent("link"),
+    img: makeNodeComponent("img"),
     text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicBlog

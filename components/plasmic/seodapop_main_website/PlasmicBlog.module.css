@@ -34,6 +34,17 @@
 .link {
   position: relative;
 }
+.img {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
 .text {
   position: relative;
   width: 100%;

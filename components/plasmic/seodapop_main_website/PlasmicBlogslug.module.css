@@ -42,7 +42,18 @@
   min-width: 0;
   padding: 8px;
 }
-.wordpressField:global(.__wab_instance) {
+.h1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-DqaU8LCmnXbTsk);
+  min-width: 0;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
   max-width: 100%;
-  object-fit: cover;
+  min-width: 0;
 }

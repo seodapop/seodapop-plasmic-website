@@ -349,7 +349,7 @@ function PlasmicHome__RenderFunc(props: {
                       : ("228px" as const)
                   }
                   displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
+                  displayMaxWidth={"400px" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
                   displayWidth={"100%" as const}
@@ -367,7 +367,7 @@ function PlasmicHome__RenderFunc(props: {
                   className={classNames(sty.img___3HUe0)}
                   displayHeight={"356px" as const}
                   displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
+                  displayMaxWidth={"400px" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
                   displayWidth={"auto" as const}
@@ -394,7 +394,7 @@ function PlasmicHome__RenderFunc(props: {
                           : ("339px" as const)
                       }
                       displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
+                      displayMaxWidth={"300px" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
                       displayWidth={"237px" as const}
@@ -412,7 +412,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={classNames(sty.img___8V09S)}
                     displayHeight={"auto" as const}
                     displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
+                    displayMaxWidth={"400px" as const}
                     displayMinHeight={"0" as const}
                     displayMinWidth={"0" as const}
                     displayWidth={"auto" as const}

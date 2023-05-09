@@ -406,7 +406,7 @@
 .img__pxoh6 {
   position: relative;
   object-fit: cover;
-  max-width: 100%;
+  max-width: 400px;
   width: 100%;
   height: 228px;
   margin-top: 24px;
@@ -429,7 +429,7 @@
 .img___3HUe0 {
   position: relative;
   object-fit: cover;
-  max-width: 100%;
+  max-width: 400px;
   margin-top: 28px;
   height: 356px;
   flex-shrink: 0;
@@ -460,7 +460,7 @@
 .img__mTv72 {
   position: relative;
   object-fit: cover;
-  max-width: 100%;
+  max-width: 300px;
   width: 237px;
   height: 339px;
   margin-top: 0px;
@@ -491,7 +491,7 @@
 .img___8V09S {
   position: relative;
   object-fit: cover;
-  max-width: 100%;
+  max-width: 400px;
   margin-top: 40px;
 }
 .img___8V09S > picture > img {

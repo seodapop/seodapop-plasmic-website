@@ -43,7 +43,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { WordpressFetcher } from "@plasmicpkgs/plasmic-wordpress"; // plasmic-import: pjFShxrixSi/codeComponent
-import { WordpressField } from "@plasmicpkgs/plasmic-wordpress"; // plasmic-import: 38Na4EoFMQU/codeComponent
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -65,7 +64,8 @@ export type PlasmicBlogslug__OverridesType = {
   root?: p.Flex<"div">;
   wordpressFetcher?: p.Flex<typeof WordpressFetcher>;
   freeBox?: p.Flex<"div">;
-  wordpressField?: p.Flex<typeof WordpressField>;
+  h1?: p.Flex<"h1">;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultBlogslugProps {}
@@ -159,11 +159,52 @@ function PlasmicBlogslug__RenderFunc(props: {
                   data-plasmic-override={overrides.freeBox}
                   className={classNames(projectcss.all, sty.freeBox)}
                 >
-                  <WordpressField
-                    data-plasmic-name={"wordpressField"}
-                    data-plasmic-override={overrides.wordpressField}
-                    className={classNames("__wab_instance", sty.wordpressField)}
-                  />
+                  <h1
+                    data-plasmic-name={"h1"}
+                    data-plasmic-override={overrides.h1}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1
+                    )}
+                  >
+                    {(() => {
+                      try {
+                        return $ctx.currentWordpressPost.title.rendered;
+                      } catch (e) {
+                        if (e instanceof TypeError) {
+                          return "You won't believe what happens next.";
+                        }
+                        throw e;
+                      }
+                    })()}
+                  </h1>
+                  <div
+                    data-plasmic-name={"text"}
+                    data-plasmic-override={overrides.text}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text
+                    )}
+                  >
+                    <div
+                      className={projectcss.__wab_expr_html_text}
+                      dangerouslySetInnerHTML={{
+                        __html: (() => {
+                          try {
+                            return $ctx.currentWordpressPost.content.rendered;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Enter some text";
+                            }
+                            throw e;
+                          }
+                        })()
+                      }}
+                    />
+                  </div>
                 </div>
               )}
             </ph.DataCtxReader>
@@ -175,10 +216,11 @@ function PlasmicBlogslug__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "wordpressFetcher", "freeBox", "wordpressField"],
-  wordpressFetcher: ["wordpressFetcher", "freeBox", "wordpressField"],
-  freeBox: ["freeBox", "wordpressField"],
-  wordpressField: ["wordpressField"]
+  root: ["root", "wordpressFetcher", "freeBox", "h1", "text"],
+  wordpressFetcher: ["wordpressFetcher", "freeBox", "h1", "text"],
+  freeBox: ["freeBox", "h1", "text"],
+  h1: ["h1"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -187,7 +229,8 @@ type NodeDefaultElementType = {
   root: "div";
   wordpressFetcher: typeof WordpressFetcher;
   freeBox: "div";
-  wordpressField: typeof WordpressField;
+  h1: "h1";
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -252,7 +295,8 @@ export const PlasmicBlogslug = Object.assign(
     // Helper components rendering sub-elements
     wordpressFetcher: makeNodeComponent("wordpressFetcher"),
     freeBox: makeNodeComponent("freeBox"),
-    wordpressField: makeNodeComponent("wordpressField"),
+    h1: makeNodeComponent("h1"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicBlogslug
     internalVariantProps: PlasmicBlogslug__VariantProps,

@@ -163,7 +163,7 @@ function PlasmicFooterMain__RenderFunc(props: {
                     sty.link__pkCe
                   )}
                   component={Link}
-                  href={"https://www.plasmic.app/" as const}
+                  href={`/privacy-policy`}
                   platform={"nextjs"}
                 >
                   {"Privacy Policy"}
@@ -176,7 +176,7 @@ function PlasmicFooterMain__RenderFunc(props: {
                     sty.link__dr1P6
                   )}
                   component={Link}
-                  href={"https://www.plasmic.app/" as const}
+                  href={`/terms-of-service`}
                   platform={"nextjs"}
                 >
                   {"Terms of Service"}
@@ -195,7 +195,7 @@ function PlasmicFooterMain__RenderFunc(props: {
                     sty.h3__sf25Z
                   )}
                 >
-                  {"Nav Links"}
+                  {"Menu"}
                 </h3>
                 <p.PlasmicLink
                   className={classNames(
