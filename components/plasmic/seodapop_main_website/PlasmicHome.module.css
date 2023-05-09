@@ -466,7 +466,7 @@
   margin-top: 0px;
   align-self: auto;
   object-position: center 50%;
-  box-shadow: 0px 4px 16px 0px #00000033;
+  box-shadow: none;
   flex-shrink: 0;
 }
 .img__mTv72 > picture > img {
@@ -510,7 +510,12 @@
   max-width: 100%;
   justify-content: center;
   align-items: center;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+  transition-property: all;
+  transition-duration: 1s;
   min-width: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
   padding: 0px;
 }
 @media (max-width: 640px) {
@@ -1853,36 +1858,18 @@
   font-family: "Inter", sans-serif;
   text-align: center;
 }
-.freeBox__cEhdn {
-  display: flex;
+.img__smkel {
   position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
+  object-fit: cover;
   max-width: 100%;
-  background: #1c283e;
-  min-width: 0;
-  padding: 8px;
-}
-.freeBox__ci7C1 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   height: 588px;
-  max-width: 100%;
-  background: url("/plasmic/seodapop_main_website/images/img5097Jpg.jpg") top 50% left 50% / cover repeat;
-  min-width: 0;
-  padding: 8px;
+  flex-shrink: 0;
 }
-@media (max-width: 640px) {
-  .freeBox__ci7C1 {
-    height: 278px;
-  }
+.img__smkel > picture > img {
+  object-fit: cover;
+}
+.img__smkel > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
 }
 .homeFooterTop:global(.__wab_instance) {
   position: relative;

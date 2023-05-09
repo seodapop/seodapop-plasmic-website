@@ -946,11 +946,24 @@ function PlasmicHome__RenderFunc(props: {
               </p.Stack>
             </p.Stack>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__cEhdn)}>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__ci7C1)} />
-            ) : null}
-          </div>
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__smkel)}
+            displayHeight={"588px" as const}
+            displayMaxHeight={"none" as const}
+            displayMaxWidth={"100%" as const}
+            displayMinHeight={"0" as const}
+            displayMinWidth={"0" as const}
+            displayWidth={"auto" as const}
+            loading={"lazy" as const}
+            src={{
+              src: "/plasmic/seodapop_main_website/images/img5097Jpg.jpg",
+              fullWidth: 4032,
+              fullHeight: 3024,
+              aspectRatio: undefined
+            }}
+          />
+
           <HomeFooterTop
             data-plasmic-name={"homeFooterTop"}
             data-plasmic-override={overrides.homeFooterTop}
