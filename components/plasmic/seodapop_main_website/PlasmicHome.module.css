@@ -466,6 +466,7 @@
   margin-top: 0px;
   align-self: auto;
   object-position: center 50%;
+  box-shadow: 0px 4px 16px 0px #00000033;
   flex-shrink: 0;
 }
 .img__mTv72 > picture > img {
@@ -1861,8 +1862,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: url("/plasmic/seodapop_main_website/images/handG176868E991920Jpg.jpg") right 0% top 50% / cover no-repeat
-    fixed;
+  background: #1c283e;
   min-width: 0;
   padding: 8px;
 }
