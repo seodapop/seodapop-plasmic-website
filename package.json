@@ -12,9 +12,11 @@
     "@plasmicapp/cli": "^0.1.274",
     "@plasmicapp/loader-nextjs": "^1.0.177",
     "@plasmicapp/react-web": "^0.2.206",
+    "@plasmicpkgs/antd": "^2.0.50",
     "@plasmicpkgs/antd5": "^0.0.50",
     "@plasmicpkgs/plasmic-query": "^0.0.149",
     "@plasmicpkgs/plasmic-wordpress": "^0.0.53",
+    "antd": "^5.4.7",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
