@@ -199,7 +199,7 @@ function PlasmicServices__RenderFunc(props: {
                 >
                   {hasVariant(globalVariants, "screen", "sm")
                     ? "Lorem Ipsum is simply dummy text of the printing and typesetting indstandard dummy text ever since the 1500s."
-                    : "Lorem Ipsum is simply dummy text of the printing and typesetting indstandard dummy text ever since the 1500s."}
+                    : "We offer a wide variety of services for both marketing and Application development."}
                 </div>
               </p.Stack>
             </p.Stack>
@@ -228,7 +228,7 @@ function PlasmicServices__RenderFunc(props: {
                       sty.h2__iu7Hm
                     )}
                   >
-                    {"Service type"}
+                    {"Online Marketing"}
                   </h2>
                   <div
                     className={classNames(
@@ -238,7 +238,7 @@ function PlasmicServices__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                      " We believe that all the efforts of improvement should come together as a whole. When we do your marketing we want to make sure your website is running properly too. That is why we offer you a series of alternatives to make your website the most efficient. The Inbound Marketing Packages we offer come in different “sizes” to accommodate your needs but in essence they all work the same. What we do for your business is literally make it “Visible”.  We will make a campaign to make you come up at the top of the Google search or any other platform of your preference. Be it Google, Bing, Facebook, Instagram, we can make you come up atop the platform your business will profit the most from.\n\n"
                     }
                   </div>
                 </p.Stack>
@@ -263,6 +263,9 @@ function PlasmicServices__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceWhite__ht2Ye
                           )}
+                          slot2={
+                            "We are far from that days that a person could launch a website and be the only one on top of google for their business. These days there are lots of competition to  be on top of google. We will help you be on top of google with right tools. We do not just say that we can do it. We actually did it for ourselves too. Will be happy to show you our work. Give us a call"
+                          }
                         >
                           <h3
                             className={classNames(
@@ -272,7 +275,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__bUIxJ
                             )}
                           >
-                            {"Service name"}
+                            {"SEO (Search engine optimization)"}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -286,6 +289,9 @@ function PlasmicServices__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceWhite__kp4Fy
                           )}
+                          slot2={
+                            "#Social . This one is the newest trend. These days people spend more time on their social media site than going anywhere else on the internet. If you like to be successful you have to have a social presence in order for your potential customers to see you. We help you setup and post strategically in order to get more customers. We cover all the major social media sites for you such as linked in, Facebook, twitter, and Instagram. "
+                          }
                         >
                           <h3
                             className={classNames(
@@ -295,7 +301,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__eXD
                             )}
                           >
-                            {"Service name"}
+                            {"SMM (Social Media Marketing)"}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -309,6 +315,9 @@ function PlasmicServices__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceWhite__a9Ih
                           )}
+                          slot2={
+                            "PPC is like a photography. Maybe you have your cellphone to take a picture but is the picture that your cellphone takes is the same as the picture that a professional photographer takes with DSLR camera? We are that professional photographer that can leverage all ppc platforms power to make sure that you are not wasting money and only the real customers are clicking on your ads."
+                          }
                         >
                           <h3
                             className={classNames(
@@ -318,7 +327,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__fkdIf
                             )}
                           >
-                            {"Service name"}
+                            {"PPC (Pay-per-click optimization)"}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -332,6 +341,9 @@ function PlasmicServices__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceWhite__pTq1X
                           )}
+                          slot2={
+                            "We setup a profile for all the users that are visiting your website, and retarget them with our ads. We will use adwords retargeting capabilities plus facebook pixel technology to achieve our goal."
+                          }
                         >
                           <h3
                             className={classNames(
@@ -341,7 +353,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__quIf6
                             )}
                           >
-                            {"Service name"}
+                            {"RETARGETING"}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -355,6 +367,9 @@ function PlasmicServices__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceWhite__jx7E
                           )}
+                          slot2={
+                            "The way in which people learn and absorb information has drastically changed in the last few years. We now look to the internet to entertain us, distract us and teach us!. An emerging method of education is the use of “whiteboard animated videos” style. This is a simple, yet incredibly effective tool in delivering a message.  Teachers and businesses have taken advantage of this new tool because it is so engaging and effective.​\n"
+                          }
                         >
                           <h3
                             className={classNames(
@@ -364,7 +379,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__u0Eis
                             )}
                           >
-                            {"Service name"}
+                            {"Whiteboard Animated Videos "}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -378,6 +393,9 @@ function PlasmicServices__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceWhite___1MfRc
                           )}
+                          slot2={
+                            "Inbound marketing is the combination of all of the other services that we offer. The goal is the make the clients interested in your service and they call you directly instead of visiting your Ads to come to your website. We believe that inbound marketing is the best long-term marketing solution for most businesses. "
+                          }
                         >
                           <h3
                             className={classNames(
@@ -387,7 +405,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__jOJo3
                             )}
                           >
-                            {"Service name"}
+                            {"Inbound Marketing"}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -423,7 +441,7 @@ function PlasmicServices__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "sm")
                       ? "Service category"
-                      : "Service type"}
+                      : "Technical Counsulting"}
                   </h2>
                   <div
                     className={classNames(
@@ -433,7 +451,7 @@ function PlasmicServices__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+                      "With more than fifty years of combined experience in the technology space, we are more than cable of handling your technical needs."
                     }
                   </div>
                 </p.Stack>
@@ -459,9 +477,11 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceDark__yfV1L
                           )}
                           slot={
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                            "We are able to offer you the best tools for your application needs, we will cover security, cost, performance, and many other aspects to make sure that your application architecture is the best in class."
                           }
-                        />
+                        >
+                          {"Architect Design"}
+                        </ServiceDark>
                       ) : null}
                     </div>
                     <div
@@ -474,7 +494,7 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceDark___5Olkd
                           )}
                           slot={
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                            "We can review and audit your code base for any security, and programming pattern bugs. We will offer you a completer report once we finish our audits."
                           }
                         >
                           <div
@@ -484,7 +504,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.text___50FsP
                             )}
                           >
-                            {"Service name 3"}
+                            {"Code Base Audit"}
                           </div>
                         </ServiceDark>
                       ) : null}
@@ -499,9 +519,19 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceDark__r2UBw
                           )}
                           slot={
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                            "Do you have a court case in the technology field? Either you order a custom application or you are a company that creates a custom application and now you have a court case. We will be able to help you with your court case."
                           }
-                        />
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__sLzPj
+                            )}
+                          >
+                            {"Expert Witness In Technology"}
+                          </div>
+                        </ServiceDark>
                       ) : null}
                     </div>
                     <div
@@ -514,9 +544,19 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceDark__pdAEs
                           )}
                           slot={
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                            "We are able to integrate applications with different APIs and services. We can write well-written codes to accommodate all your integration needs. "
                           }
-                        />
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__wvl3G
+                            )}
+                          >
+                            {"Integration"}
+                          </div>
+                        </ServiceDark>
                       ) : null}
                     </div>
                     <div
@@ -529,9 +569,11 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceDark___9HqNz
                           )}
                           slot={
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                            "We can help you audit your application for HIPPA, PCI, GDPR, and ADA."
                           }
-                        />
+                        >
+                          {"Compliance Audit"}
+                        </ServiceDark>
                       ) : null}
                     </div>
                     <div
@@ -544,9 +586,11 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceDark__in0A
                           )}
                           slot={
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                            "We can help you upgrade your Legacy code to modern code with proper Architecture and an affordable price."
                           }
-                        />
+                        >
+                          {"Legacy Upgrades"}
+                        </ServiceDark>
                       ) : null}
                     </div>
                   </p.Stack>
@@ -578,7 +622,7 @@ function PlasmicServices__RenderFunc(props: {
                       sty.h2__lxKr
                     )}
                   >
-                    {"Service type"}
+                    {"Web Application Development"}
                   </h2>
                   <div
                     className={classNames(
@@ -588,7 +632,7 @@ function PlasmicServices__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                      "With more than 20 years of experience and over 100 website build and hosting over 500 websites we are confident that we will not disappoint you with our web design services. "
                     }
                   </div>
                 </p.Stack>

@@ -612,6 +612,9 @@ function PlasmicAboutUs__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceValue__wuOmS
                           )}
+                          slot={
+                            "We spend most of our time and effort on our products rather than marketing because we believe that our products are the best showcase of our work."
+                          }
                         >
                           <h3
                             className={classNames(
@@ -621,7 +624,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__na7PA
                             )}
                           >
-                            {"Value"}
+                            {"Let the Product Market Itself"}
                           </h3>
                         </ServiceValue>
                       ) : null}
@@ -636,7 +639,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                             sty.serviceValue__uEc21
                           )}
                           slot={
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                            "We constantly learning about new technologies and we are not afraid of using new technologies in our projects. As a result, we are always on top of new web technologies and we can offer the best services for our clients."
                           }
                         >
                           <h3
@@ -647,7 +650,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__yhU04
                             )}
                           >
-                            {"Service"}
+                            {"Learning Never Stops"}
                           </h3>
                         </ServiceValue>
                       ) : null}
@@ -662,7 +665,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                             sty.serviceValue__iOeE
                           )}
                           slot={
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                            "Over the years we build many applications both simple and complex. In all of our application development, we follow Agile methodology and we let our customers know about the status of their application."
                           }
                         >
                           <h3
@@ -673,7 +676,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__qjvn3
                             )}
                           >
-                            {"Value"}
+                            {"We Follow Agile (Software development cycle) "}
                           </h3>
                         </ServiceValue>
                       ) : null}
@@ -687,6 +690,9 @@ function PlasmicAboutUs__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceValue___3BN7B
                           )}
+                          slot={
+                            "As a company, we respect both each other and our clients. We believe in equality and respect. "
+                          }
                         >
                           <h3
                             className={classNames(
@@ -696,7 +702,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__fmsDi
                             )}
                           >
-                            {"Value"}
+                            {"Respect"}
                           </h3>
                         </ServiceValue>
                       ) : null}
@@ -710,6 +716,9 @@ function PlasmicAboutUs__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceValue__htt0L
                           )}
+                          slot={
+                            "Everyone in our company is responsible for everything. We do not believe in corporate structure, as a result, we have more of one level company structure. This will give us the ability to change and move fast."
+                          }
                         >
                           <h3
                             className={classNames(
@@ -719,7 +728,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__lmOj
                             )}
                           >
-                            {"Value"}
+                            {"Agile And Lean"}
                           </h3>
                         </ServiceValue>
                       ) : null}
@@ -733,6 +742,9 @@ function PlasmicAboutUs__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceValue__aVtly
                           )}
+                          slot={
+                            "We love everyone to learn to code. Thus we have outreach programs to teach programming to adults and internship programs to get young professionals to enter the workforce."
+                          }
                         >
                           <h3
                             className={classNames(
@@ -742,7 +754,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3___0KecH
                             )}
                           >
-                            {"Value"}
+                            {"Give Back To Community"}
                           </h3>
                         </ServiceValue>
                       ) : null}
