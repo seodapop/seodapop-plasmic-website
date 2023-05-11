@@ -113,6 +113,7 @@ function PlasmicPrivacyPolicy__RenderFunc(props: {
           property="og:title"
           content={PlasmicPrivacyPolicy.pageMetadata.title}
         />
+
         <meta
           key="twitter:title"
           name="twitter:title"
@@ -217,6 +218,7 @@ const PlasmicDescendants = {
     "homeFooterTop",
     "footerMain"
   ],
+
   header: ["header"],
   section: ["section", "h1", "text"],
   h1: ["h1"],
@@ -242,6 +244,7 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicPrivacyPolicy__OverridesType,
   DescendantsType<T>
 >;
+
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

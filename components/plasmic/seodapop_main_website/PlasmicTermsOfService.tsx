@@ -113,6 +113,7 @@ function PlasmicTermsOfService__RenderFunc(props: {
           property="og:title"
           content={PlasmicTermsOfService.pageMetadata.title}
         />
+
         <meta
           key="twitter:title"
           name="twitter:title"
@@ -217,6 +218,7 @@ const PlasmicDescendants = {
     "homeFooterTop",
     "footerMain"
   ],
+
   header: ["header"],
   section: ["section", "h1", "text"],
   h1: ["h1"],
@@ -242,6 +244,7 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicTermsOfService__OverridesType,
   DescendantsType<T>
 >;
+
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

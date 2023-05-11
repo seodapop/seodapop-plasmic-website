@@ -1,10 +1,21 @@
 
 import * as React from 'react';
-import Script from 'next/script';
 import { PlasmicCanvasHost } from '@plasmicapp/loader-nextjs';
 import { PLASMIC } from '../plasmic-init';
+import RichText
+  from "../components/PortableText";
 
+import { registerComponent } from '@plasmicapp/react-web/lib/host';
+
+registerComponent(RichText, {
+  name: "RichText",
+  props: {
+    values: 'object',
+    className: 'string',
+  },
+  importPath: './components/PortableText',
+})
 export default function PlasmicHost() {
   return PLASMIC && <PlasmicCanvasHost />;
 }
-    
+

@@ -861,7 +861,8 @@
           "name": "Fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "YUiM7yqBWAqsh8KSnrdj7",
