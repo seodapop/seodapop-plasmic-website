@@ -15,6 +15,7 @@ registerComponent(RichText, {
   },
   importPath: './components/PortableText',
 })
+
 export default function PlasmicHost() {
   return PLASMIC && <PlasmicCanvasHost />;
 }
