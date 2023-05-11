@@ -186,7 +186,18 @@ function PlasmicHomeFooterTop__RenderFunc(props: {
                   const $steps = {};
                   $steps["goToContactUs"] = true
                     ? (() => {
-                        const actionArgs = {};
+                        const actionArgs = {
+                          destination: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "navigation",
+                              interactionUuid: "_-SgS6jjD",
+                              componentUuid: "Sh8nt7GR3decD",
+                              argName: "destination"
+                            },
+                            () => `/contact`
+                          )
+                        };
                         return __wrapUserFunction(
                           {
                             type: "InteractionLoc",
@@ -269,7 +280,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicHomeFooterTop__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

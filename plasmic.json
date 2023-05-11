@@ -493,28 +493,15 @@
           "componentType": "page"
         },
         {
-          "id": "_lNaqgp2Dw",
-          "name": "PrivacyPolicy",
+          "id": "sTPn1uNXQV",
+          "name": "Pages",
           "type": "managed",
           "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
-          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicPrivacyPolicy.tsx",
+          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicPages.tsx",
           "importSpec": {
-            "modulePath": "../pages/privacy-policy.tsx"
+            "modulePath": "../pages/pages/[slug].tsx"
           },
-          "cssFilePath": "plasmic/seodapop_main_website/PlasmicPrivacyPolicy.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "AUoAQGybkt",
-          "name": "TermsOfService",
-          "type": "managed",
-          "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
-          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicTermsOfService.tsx",
-          "importSpec": {
-            "modulePath": "../pages/terms-of-service.tsx"
-          },
-          "cssFilePath": "plasmic/seodapop_main_website/PlasmicTermsOfService.module.css",
+          "cssFilePath": "plasmic/seodapop_main_website/PlasmicPages.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }
@@ -549,6 +536,26 @@
           "id": "t-AVM4cittjWAE",
           "name": "SearchsvgIcon",
           "moduleFilePath": "plasmic/seodapop_main_website/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "_bItU7RPaKR",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/seodapop_main_website/icons/PlasmicIcon__Icon4.tsx"
+        },
+        {
+          "id": "OiUk3E6LM3g",
+          "name": "Icon5Icon",
+          "moduleFilePath": "plasmic/seodapop_main_website/icons/PlasmicIcon__Icon5.tsx"
+        },
+        {
+          "id": "1yuRwJ6VGDP",
+          "name": "Icon28Icon",
+          "moduleFilePath": "plasmic/seodapop_main_website/icons/PlasmicIcon__Icon28.tsx"
+        },
+        {
+          "id": "gjJAKpMz6GI",
+          "name": "Icon38Icon",
+          "moduleFilePath": "plasmic/seodapop_main_website/icons/PlasmicIcon__Icon38.tsx"
         }
       ],
       "images": [
@@ -846,6 +853,11 @@
           "id": "sWH-VrNL6",
           "name": "download.jpeg",
           "filePath": "../public/plasmic/seodapop_main_website/images/downloadjpeg.jpg"
+        },
+        {
+          "id": "TMOAFfzCeo3",
+          "name": "image 3",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image3.svg"
         }
       ],
       "indirect": false,
@@ -860,9 +872,13 @@
           "id": "Qr2f3ugv3a",
           "name": "Fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        },
+        {
+          "id": "GosNOoYXIt",
+          "name": "RichText",
+          "componentImportPath": "./components/PortableText"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "YUiM7yqBWAqsh8KSnrdj7",
@@ -1068,6 +1084,35 @@
         }
       ],
       "jsBundleThemes": []
+    },
+    {
+      "projectId": "GTgVzsUHzMuCMexkxJk8C",
+      "projectApiToken": "1G7p9CRfRqoVA2FoUWW7jq7l6dnhLYhEGxFZBtm916KmPLvtWhOxDVtqvQ65NRsvjNRcH4R7UlEhJJkj6AQ",
+      "projectName": "plasmic-sanity-io",
+      "version": "1.16.0",
+      "cssFilePath": "plasmic/plasmic_sanity_io/plasmic_plasmic_sanity_io.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_sanity_io/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "9KPt6XktlFK",
+          "name": "SanityFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-sanity-io"
+        },
+        {
+          "id": "7avTLOjB-zZ",
+          "name": "SanityField",
+          "componentImportPath": "@plasmicpkgs/plasmic-sanity-io"
+        },
+        {
+          "id": "XenoJpDQeDb",
+          "name": "SanityCredentialsProvider",
+          "componentImportPath": "@plasmicpkgs/plasmic-sanity-io"
+        }
+      ]
     }
   ],
   "globalVariants": {

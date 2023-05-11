@@ -126,7 +126,6 @@ function PlasmicServices__RenderFunc(props: {
           property="og:title"
           content={PlasmicServices.pageMetadata.title}
         />
-
         <meta
           key="twitter:title"
           name="twitter:title"
@@ -658,6 +657,9 @@ function PlasmicServices__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceWhite__r5Ago
                           )}
+                          slot2={
+                            "Our services encompass authentic web design, powered by our team of skilled computer programmers who excel in writing code to breathe life into your website. We provide a range of options, from cost-effective WordPress templates to comprehensive full-stack web development that covers the entire process from start to finish."
+                          }
                         >
                           <h3
                             className={classNames(
@@ -667,7 +669,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__uIajj
                             )}
                           >
-                            {"Service name"}
+                            {"Website Development"}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -681,6 +683,9 @@ function PlasmicServices__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceWhite__y7W7S
                           )}
+                          slot2={
+                            "At our company, we specialize in API design and architecture to cater to all your API requirements. Our services include REST-based APIs as well as GraphQL. We take pleasure in assessing your needs and offering you the most suitable APIs to enhance your experience."
+                          }
                         >
                           <h3
                             className={classNames(
@@ -690,7 +695,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__hdkom
                             )}
                           >
-                            {"Services 2"}
+                            {"API Design"}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -704,6 +709,9 @@ function PlasmicServices__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceWhite__dbP7
                           )}
+                          slot2={
+                            "Our web development services cater to both monolithic CMS applications, including WordPress, and modern headless CMS architecture using platforms like sanity.io and contentful. Whether you prefer a traditional or contemporary approach to your web development, we've got you covered."
+                          }
                         >
                           <h3
                             className={classNames(
@@ -713,7 +721,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__g7A3
                             )}
                           >
-                            {"Service name"}
+                            {"CMS Development"}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -727,6 +735,9 @@ function PlasmicServices__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceWhite__qqSFh
                           )}
+                          slot2={
+                            "Our mobile application development services are designed to be compatible with both Android and iPhone, using the popular React Native framework. Whether you need a mobile app for your business or personal use, we have the expertise to deliver high-quality solutions that meet your needs."
+                          }
                         >
                           <h3
                             className={classNames(
@@ -736,7 +747,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__nvvY
                             )}
                           >
-                            {"Service name"}
+                            {"Mobile Application Development "}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -750,6 +761,9 @@ function PlasmicServices__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceWhite__zSuDn
                           )}
+                          slot2={
+                            "As the internet has evolved, it's become increasingly crucial for web applications to be ADA compliant. Despite previous practices, ensuring accessibility for all users is now more important than ever. That's why we offer auditing and modification services to help make your web application ADA compliant. Our team is equipped to assist you in meeting the standards set forth by the Americans with Disabilities Act."
+                          }
                         >
                           <h3
                             className={classNames(
@@ -759,7 +773,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__kMwZy
                             )}
                           >
-                            {"Service name"}
+                            {"ADA Upgrade"}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -773,6 +787,9 @@ function PlasmicServices__RenderFunc(props: {
                             "__wab_instance",
                             sty.serviceWhite__sjIGu
                           )}
+                          slot2={
+                            "Our team of UI experts is dedicated to crafting user-friendly designs that work seamlessly for your clients. We understand the importance of creating intuitive interfaces that don't confuse your clients, and we strive to deliver designs that are both aesthetically pleasing and highly functional. Let us help you design a UI that meets the needs of your business and your customers."
+                          }
                         >
                           <h3
                             className={classNames(
@@ -782,7 +799,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__uk5Fy
                             )}
                           >
-                            {"Service name"}
+                            {"UI/UX Research and design"}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -828,7 +845,6 @@ const PlasmicDescendants = {
     "homeFooterTop",
     "footerMain"
   ],
-
   header: ["header"],
   aboutUsBanner: ["aboutUsBanner", "foreground2", "h1"],
   foreground2: ["foreground2", "h1"],
@@ -862,7 +878,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicServices__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {
