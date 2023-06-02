@@ -1,7 +1,6 @@
 
 import * as React from 'react';
 import { PlasmicCanvasHost } from '@plasmicapp/loader-nextjs';
-import { PLASMIC } from '../plasmic-init';
 import RichText from "../components/PortableText";
 
 import { registerComponent } from '@plasmicapp/react-web/lib/host';
@@ -16,6 +15,6 @@ registerComponent(RichText, {
 });
 
 export default function PlasmicHost() {
-  return PLASMIC && <PlasmicCanvasHost />;
+  return <PlasmicCanvasHost />;
 }
 
