@@ -163,7 +163,52 @@ function PlasmicFooterMain__RenderFunc(props: {
                     sty.link__pkCe
                   )}
                   component={Link}
-                  href={`/privacy-policy`}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToPages"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            destination: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "navigation",
+                                interactionUuid: "7S1WecHve",
+                                componentUuid: "I_5el5M-Bk81Xi",
+                                argName: "destination"
+                              },
+                              () => `/pages/${"privacy-policy"}`
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "navigation",
+                              interactionUuid: "7S1WecHve",
+                              componentUuid: "I_5el5M-Bk81Xi"
+                            },
+                            () =>
+                              (({ destination }) => {
+                                __nextRouter?.push(destination);
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToPages"] === "object" &&
+                      typeof $steps["goToPages"].then === "function"
+                    ) {
+                      $steps["goToPages"] = await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "7S1WecHve",
+                          componentUuid: "I_5el5M-Bk81Xi"
+                        },
+                        $steps["goToPages"]
+                      );
+                    }
+                  }}
                   platform={"nextjs"}
                 >
                   {"Privacy Policy"}
@@ -176,7 +221,52 @@ function PlasmicFooterMain__RenderFunc(props: {
                     sty.link__dr1P6
                   )}
                   component={Link}
-                  href={`/terms-of-service`}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToPages"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            destination: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "navigation",
+                                interactionUuid: "1exjwU-K6",
+                                componentUuid: "I_5el5M-Bk81Xi",
+                                argName: "destination"
+                              },
+                              () => `/pages/${"terms-of-service"}`
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "navigation",
+                              interactionUuid: "1exjwU-K6",
+                              componentUuid: "I_5el5M-Bk81Xi"
+                            },
+                            () =>
+                              (({ destination }) => {
+                                __nextRouter?.push(destination);
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToPages"] === "object" &&
+                      typeof $steps["goToPages"].then === "function"
+                    ) {
+                      $steps["goToPages"] = await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "1exjwU-K6",
+                          componentUuid: "I_5el5M-Bk81Xi"
+                        },
+                        $steps["goToPages"]
+                      );
+                    }
+                  }}
                   platform={"nextjs"}
                 >
                   {"Terms of Service"}
@@ -365,7 +455,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicFooterMain__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

@@ -9,12 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.274",
+    "@plasmicapp/cli": "^0.1.275",
     "@plasmicapp/loader-nextjs": "^1.0.177",
     "@plasmicapp/react-web": "^0.2.206",
     "@plasmicpkgs/antd": "^2.0.50",
     "@plasmicpkgs/antd5": "^0.0.50",
     "@plasmicpkgs/plasmic-query": "^0.0.149",
+    "@plasmicpkgs/plasmic-sanity-io": "^1.0.108",
     "@plasmicpkgs/plasmic-wordpress": "^0.0.53",
     "@portabletext/react": "^3.0.0",
     "@sanity/client": "^6.0.1",
@@ -24,16 +25,16 @@
     "@sanity/ui": "^1.0.0",
     "@sanity/vision": "3",
     "@types/styled-components": "^5.1.0",
+    "antd": "^5.4.7",
     "dotenv": "^16.0.3",
     "html": "^1.0.0",
     "next": "^13.0.0",
     "next-sanity": "4.3.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "sanity": "^3.0.0",
     "styled-components": "^5.2.0",
-    "vhtml": "^2.2.0",
-    "antd": "^5.4.7",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "vhtml": "^2.2.0"
   },
   "devDependencies": {
     "@types/node": "18.7.7",

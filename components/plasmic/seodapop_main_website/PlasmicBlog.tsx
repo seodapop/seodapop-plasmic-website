@@ -166,28 +166,7 @@ function PlasmicBlog__RenderFunc(props: {
                       const $steps = {};
                       $steps["goToBlogslug"] = true
                         ? (() => {
-                            const actionArgs = {
-                              destination: __wrapUserFunction(
-                                {
-                                  type: "InteractionArgLoc",
-                                  actionName: "navigation",
-                                  interactionUuid: "1nbiR8WD2",
-                                  componentUuid: "g6PgRV9F1F",
-                                  argName: "destination"
-                                },
-                                () =>
-                                  `/blog/${(() => {
-                                    try {
-                                      return $ctx.currentWordpressPost.slug;
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return ``;
-                                      }
-                                      throw e;
-                                    }
-                                  })()}`
-                              )
-                            };
+                            const actionArgs = {};
                             return __wrapUserFunction(
                               {
                                 type: "InteractionLoc",
@@ -315,7 +294,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicBlog__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

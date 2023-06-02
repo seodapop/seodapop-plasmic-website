@@ -123,7 +123,6 @@ function PlasmicHome__RenderFunc(props: {
           property="og:title"
           content={PlasmicHome.pageMetadata.title}
         />
-
         <meta
           key="twitter:title"
           name="twitter:title"
@@ -249,7 +248,6 @@ function PlasmicHome__RenderFunc(props: {
                             </React.Fragment>
                           </h3>
                         }
-
                         <React.Fragment>{""}</React.Fragment>
                       </React.Fragment>
                     </div>
@@ -997,7 +995,6 @@ const PlasmicDescendants = {
     "homeFooterTop",
     "footerMain"
   ],
-
   header: ["header"],
   foreground2: ["foreground2", "h1", "h3", "contactButton"],
   h1: ["h1"],
@@ -1027,7 +1024,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicHome__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {
@@ -1098,7 +1094,7 @@ export const PlasmicHome = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "Web application development",
+      title: "Web application development San Diego",
       description: "",
       ogImageSrc: "",
       canonical: ""
