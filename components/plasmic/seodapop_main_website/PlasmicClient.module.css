@@ -23,19 +23,6 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 15px;
 }
-.root {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  background: #ffffffde;
-  position: relative;
-  min-width: 0;
-  padding: 20px;
-}
 .h2 {
   width: 100%;
   height: auto;

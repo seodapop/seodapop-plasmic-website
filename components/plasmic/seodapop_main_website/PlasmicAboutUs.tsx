@@ -113,6 +113,7 @@ function PlasmicAboutUs__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -129,7 +130,6 @@ function PlasmicAboutUs__RenderFunc(props: {
           property="og:title"
           content={PlasmicAboutUs.pageMetadata.title}
         />
-
         <meta
           key="twitter:title"
           name="twitter:title"
@@ -304,6 +304,9 @@ function PlasmicAboutUs__RenderFunc(props: {
                                                 startIndex,
                                                 deleteCount
                                               }) => {
+                                                if (!variable) {
+                                                  return;
+                                                }
                                                 const {
                                                   objRoot,
                                                   variablePath
@@ -588,7 +591,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Our main goal is to put quality over quantity. Every application that we make is unique and deserves unique attention as well."
+                      "At our core, quality takes precedence over everything else. We are deeply committed to delivering exceptional applications that stand out as unique and deserving of individualized attention. Our unwavering dedication lies in crafting customized solutions that precisely cater to the specific needs of our clients. With meticulous attention to detail and a focus on craftsmanship, we ensure that each project receives the utmost care it deserves, resulting in exceptional outcomes."
                     }
                   </div>
                 </p.Stack>
@@ -614,7 +617,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                             sty.serviceValue__wuOmS
                           )}
                           slot={
-                            "We spend most of our time and effort on our products rather than marketing because we believe that our products are the best showcase of our work."
+                            "Our focus is primarily on product development, relying on the belief that the quality of our work will serve as its own marketing tool. We prioritize delivering exceptional products that satisfy our clients, trusting that their positive experiences will generate word-of-mouth recommendations"
                           }
                         >
                           <h3
@@ -625,7 +628,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__na7PA
                             )}
                           >
-                            {"Let the Product Market Itself"}
+                            {"Create a product that sells itself."}
                           </h3>
                         </ServiceValue>
                       ) : null}
@@ -640,7 +643,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                             sty.serviceValue__uEc21
                           )}
                           slot={
-                            "We constantly learning about new technologies and we are not afraid of using new technologies in our projects. As a result, we are always on top of new web technologies and we can offer the best services for our clients."
+                            "Our continuous learning approach, embracing new technologies without hesitation in our projects. This commitment allow us to stay at the front of emerging web technologies, ensuring that we can provide our clients with cutting-edge solutions and deliver the highest quality services."
                           }
                         >
                           <h3
@@ -651,7 +654,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__yhU04
                             )}
                           >
-                            {"Learning Never Stops"}
+                            {"Learning is a life long journey, enjoy it."}
                           </h3>
                         </ServiceValue>
                       ) : null}
@@ -666,7 +669,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                             sty.serviceValue__iOeE
                           )}
                           slot={
-                            "Over the years we build many applications both simple and complex. In all of our application development, we follow Agile methodology and we let our customers know about the status of their application."
+                            "Throughout our years of experience, we have developed a wide range of applications, from simple to complex. In all our app development projects, we adhere to the Agile methodology. We believe constant communication with our customers, keeping them informed about the progress and status of their applications"
                           }
                         >
                           <h3
@@ -677,7 +680,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__qjvn3
                             )}
                           >
-                            {"We Follow Agile (Software development cycle) "}
+                            {"Trust happens only with transparency."}
                           </h3>
                         </ServiceValue>
                       ) : null}
@@ -692,7 +695,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                             sty.serviceValue___3BN7B
                           )}
                           slot={
-                            "As a company, we respect both each other and our clients. We believe in equality and respect. "
+                            "At SeodaPop, we foster a culture of mutual respect and inclusivity, both within our team and in our relationships with clients. We prioritize equality and recognize the significance of treating everyone with respect and fairness."
                           }
                         >
                           <h3
@@ -703,7 +706,9 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__fmsDi
                             )}
                           >
-                            {"Respect"}
+                            {
+                              "Respect: If you want to get it, you've got to give it."
+                            }
                           </h3>
                         </ServiceValue>
                       ) : null}
@@ -718,7 +723,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                             sty.serviceValue__htt0L
                           )}
                           slot={
-                            "Everyone in our company is responsible for everything. We do not believe in corporate structure, as a result, we have more of one level company structure. This will give us the ability to change and move fast."
+                            "A culture of collective responsibility within our company, where every individual takes ownership of their tasks and contributes to the overall success. We embrace a flat organizational structure, foregoing traditional corporate hierarchies. This facilitates rapid decision-making to adapt quickly to changes in the industry"
                           }
                         >
                           <h3
@@ -729,7 +734,9 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3__lmOj
                             )}
                           >
-                            {"Agile And Lean"}
+                            {
+                              "Responsibility is not to be given but to be shared."
+                            }
                           </h3>
                         </ServiceValue>
                       ) : null}
@@ -744,7 +751,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                             sty.serviceValue__aVtly
                           )}
                           slot={
-                            "We love everyone to learn to code. Thus we have outreach programs to teach programming to adults and internship programs to get young professionals to enter the workforce."
+                            "At SeodaPop, we are committed to making coding education accessible to everyone.  our internship programs offer valuable experiences and pathways for young professionals to enter the workforce. Our ultimate aim is to empower individuals from diverse backgrounds to acquire coding knowledge and thrive in the rapidly evolving field of technology."
                           }
                         >
                           <h3
@@ -755,7 +762,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                               sty.h3___0KecH
                             )}
                           >
-                            {"Give Back To Community"}
+                            {"To move forward, you have to give back."}
                           </h3>
                         </ServiceValue>
                       ) : null}
@@ -797,7 +804,6 @@ const PlasmicDescendants = {
     "homeFooterTop",
     "footerMain"
   ],
-
   aboutUsBanner: ["aboutUsBanner", "foreground2", "h1"],
   foreground2: ["foreground2", "h1"],
   h1: ["h1"],
@@ -831,7 +837,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicAboutUs__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

@@ -23,7 +23,7 @@ import * as ph from "@plasmicapp/react-web/lib/host";
 import {
   usePlasmicDataConfig,
   executePlasmicDataOp,
-  useDependencyAwareQuery
+  usePlasmicDataOp
 } from "@plasmicapp/react-web/lib/data-sources";
 
 import {
@@ -104,6 +104,7 @@ function PlasmicBlogslug__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   return (
@@ -140,7 +141,10 @@ function PlasmicBlogslug__RenderFunc(props: {
               try {
                 return $ctx.params.slug;
               } catch (e) {
-                if (e instanceof TypeError) {
+                if (
+                  e instanceof TypeError ||
+                  e?.plasmicType === "PlasmicUndefinedDataError"
+                ) {
                   return undefined;
                 }
                 throw e;
@@ -173,7 +177,10 @@ function PlasmicBlogslug__RenderFunc(props: {
                       try {
                         return $ctx.currentWordpressPost.title.rendered;
                       } catch (e) {
-                        if (e instanceof TypeError) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
                           return "You won't believe what happens next.";
                         }
                         throw e;
@@ -196,7 +203,10 @@ function PlasmicBlogslug__RenderFunc(props: {
                           try {
                             return $ctx.currentWordpressPost.content.rendered;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return "Enter some text";
                             }
                             throw e;
@@ -238,7 +248,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicBlogslug__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

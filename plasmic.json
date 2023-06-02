@@ -36,126 +36,151 @@
         {
           "id": "OvH7ENd3m7ug",
           "name": "AntdSelect",
+          "displayName": "plasmic-antd5-select",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSelect"
         },
         {
           "id": "ACzfHW-ZLLiW",
           "name": "AntdOption",
+          "displayName": "plasmic-antd5-option",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSelect"
         },
         {
           "id": "UyLCOYx2BYc4",
           "name": "AntdTable",
+          "displayName": "plasmic-antd5-table",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTable"
         },
         {
           "id": "OFZLDfR2iHmj",
           "name": "AntdColumn",
+          "displayName": "plasmic-antd5-table-column",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTable"
         },
         {
           "id": "-EU4JlrV3jtw",
           "name": "AntdColumnGroup",
+          "displayName": "plasmic-antd5-table-column-group",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTable"
         },
         {
           "id": "DmrLLHGTjGTE",
           "name": "AntdConfigProvider",
+          "displayName": "plasmic-antd5-config-provider",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerConfigProvider"
         },
         {
           "id": "aFHKFWNvs7",
           "name": "AntdCheckbox",
+          "displayName": "plasmic-antd5-checkbox",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCheckbox"
         },
         {
           "id": "2bM6vBkaxc",
           "name": "AntdCheckboxGroup",
+          "displayName": "plasmic-antd5-checkbox-group",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCheckbox"
         },
         {
           "id": "-CXVV9tXtP",
           "name": "AntdRadio",
+          "displayName": "plasmic-antd5-radio",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerRadio"
         },
         {
           "id": "C3Ce7Sqgay",
           "name": "AntdRadioButton",
+          "displayName": "plasmic-antd5-radio-button",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerRadio"
         },
         {
           "id": "PZQhrvIGy1",
           "name": "AntdRadioGroup",
+          "displayName": "plasmic-antd5-radio-group",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerRadio"
         },
         {
           "id": "xx93QbkHH5i",
           "name": "AntdModal",
+          "displayName": "plasmic-antd5-modal",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerModal"
         },
         {
           "id": "bx9Xzvf5_eu",
           "name": "AntdButton",
+          "displayName": "plasmic-antd5-button",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerButton"
         },
         {
           "id": "fo-n3xHvdqt",
           "name": "AntdMenu",
+          "displayName": "plasmic-antd5-menu",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
         },
         {
           "id": "QSmezaW-Gyu",
           "name": "AntdMenuItem",
+          "displayName": "plasmic-antd5-menu-item",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
         },
         {
           "id": "6ySly9jzXsR",
           "name": "AntdMenuItemGroup",
+          "displayName": "plasmic-antd5-menu-item-group",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
         },
         {
           "id": "pwJcAbVYC4M",
           "name": "AntdMenuDivider",
+          "displayName": "plasmic-antd5-menu-divider",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
         },
         {
           "id": "nL-8oPEfDNL",
           "name": "AntdSubMenu",
+          "displayName": "plasmic-antd5-submenu",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
         },
         {
           "id": "zIDEYq9RgLG",
           "name": "AntdDropdown",
+          "displayName": "plasmic-antd5-dropdown",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDropdown"
         },
         {
           "id": "5sJiSDZuAW",
           "name": "AntdOptionGroup",
+          "displayName": "plasmic-antd5-option-group",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSelect"
         },
         {
           "id": "TgJFzUZpvQ",
           "name": "FormWrapper",
+          "displayName": "plasmic-antd5-form",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
         },
         {
           "id": "EYHwZh9ILg",
           "name": "FormItemWrapper",
+          "displayName": "plasmic-antd5-form-item",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
         },
         {
           "id": "zEXrWX9naj",
           "name": "FormGroup",
+          "displayName": "plasmic-antd5-form-group",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
         },
         {
           "id": "M2mN_XzxO4",
           "name": "FormListWrapper",
+          "displayName": "plasmic-antd5-form-list",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
         },
         {
           "id": "Vf5hntD2SZ5",
           "name": "AntdInput",
+          "displayName": "plasmic-antd5-input",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput",
           "helper": {
             "name": "inputHelpers",
@@ -165,6 +190,7 @@
         {
           "id": "RW4q13RFtAd",
           "name": "AntdPassword",
+          "displayName": "plasmic-antd5-input-password",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput",
           "helper": {
             "name": "inputHelpers",
@@ -174,6 +200,7 @@
         {
           "id": "pTzGlMptTxd",
           "name": "AntdTextArea",
+          "displayName": "plasmic-antd5-textarea",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput",
           "helper": {
             "name": "inputHelpers",
@@ -183,15 +210,28 @@
         {
           "id": "wxD5qjEe3pU",
           "name": "AntdInputNumber",
+          "displayName": "plasmic-antd5-input-number",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput"
         },
         {
           "id": "Zzbfw0tfhA",
           "name": "UploadWrapper",
+          "displayName": "plasmic-antd5-upload",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerUpload"
+        },
+        {
+          "id": "-gkBqPikhk",
+          "name": "AntdSwitch",
+          "displayName": "plasmic-antd5-switch",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSwitch"
+        },
+        {
+          "id": "lKdkQL67fv",
+          "name": "AntdDatePicker",
+          "displayName": "plasmic-antd5-date-picker",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDatePicker"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "kmmGrmCVRJPgZ5NNJMDQ4v",
@@ -208,20 +248,22 @@
         {
           "id": "pjFShxrixSi",
           "name": "WordpressFetcher",
+          "displayName": "WordpressFetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-wordpress"
         },
         {
           "id": "38Na4EoFMQU",
           "name": "WordpressField",
+          "displayName": "WordpressField",
           "componentImportPath": "@plasmicpkgs/plasmic-wordpress"
         },
         {
           "id": "ABVULPU3AuC",
           "name": "WordpressProvider",
+          "displayName": "WordpressProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-wordpress"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
@@ -494,14 +536,27 @@
         },
         {
           "id": "sTPn1uNXQV",
-          "name": "Pages",
+          "name": "Pagesslug",
           "type": "managed",
           "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
-          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicPages.tsx",
+          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicPagesslug.tsx",
           "importSpec": {
             "modulePath": "../pages/pages/[slug].tsx"
           },
-          "cssFilePath": "plasmic/seodapop_main_website/PlasmicPages.module.css",
+          "cssFilePath": "plasmic/seodapop_main_website/PlasmicPagesslug.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "hHvPWKVFpN",
+          "name": "NewPage",
+          "type": "managed",
+          "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
+          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicNewPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.tsx"
+          },
+          "cssFilePath": "plasmic/seodapop_main_website/PlasmicNewPage.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }
@@ -858,6 +913,26 @@
           "id": "TMOAFfzCeo3",
           "name": "image 3",
           "filePath": "../public/plasmic/seodapop_main_website/images/image3.svg"
+        },
+        {
+          "id": "1_ZUKLXo2",
+          "name": "image 4",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image4.jpg"
+        },
+        {
+          "id": "4IsLXFqSR",
+          "name": "image 5",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image5.webp"
+        },
+        {
+          "id": "n6CwUMDcQ",
+          "name": "image 6",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image6.jpg"
+        },
+        {
+          "id": "sr7HOGUDu",
+          "name": "image 7",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image7.jpg"
         }
       ],
       "indirect": false,
@@ -866,17 +941,14 @@
         {
           "id": "P_dmI5SNPE",
           "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
           "componentImportPath": "@plasmicapp/react-web"
         },
         {
           "id": "Qr2f3ugv3a",
           "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
-        },
-        {
-          "id": "GosNOoYXIt",
-          "name": "RichText",
-          "componentImportPath": "./components/PortableText"
         }
       ]
     },
@@ -895,15 +967,16 @@
         {
           "id": "ae7V86eNoXA",
           "name": "DataFetcher",
+          "displayName": "hostless-plasmic-query-data-fetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-query"
         },
         {
           "id": "0DrxdjD45dkx",
           "name": "GraphqlFetcher",
+          "displayName": "hostless-plasmic-query-graphql-fetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-query"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "28Ba3BDvRe7EiWdfFNnLB6",
@@ -920,46 +993,55 @@
         {
           "id": "kv6Mk_JNYw",
           "name": "Button",
+          "displayName": "AntdButton",
           "componentImportPath": "antd/lib/button"
         },
         {
           "id": "iBC45mjTXv",
           "name": "Slider",
+          "displayName": "AntdSlider",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerSlider"
         },
         {
           "id": "tRueht1jub",
           "name": "Switch",
+          "displayName": "AntdSwitch",
           "componentImportPath": "antd/lib/switch"
         },
         {
           "id": "YRr0RPAdEj",
           "name": "Option",
+          "displayName": "AntdOption",
           "componentImportPath": "rc-select"
         },
         {
           "id": "Ay1H491feg",
           "name": "OptGroup",
+          "displayName": "AntdOptionGroup",
           "componentImportPath": "rc-select"
         },
         {
           "id": "2YpGIhkzkpc",
           "name": "Select",
+          "displayName": "AntdSelect",
           "componentImportPath": "antd/lib/select"
         },
         {
           "id": "yegZ392NLoV",
           "name": "CollapsePanel",
+          "displayName": "AntdCollapsePanel",
           "componentImportPath": "antd/lib/collapse/CollapsePanel"
         },
         {
           "id": "F10gpQ1ZhXY",
           "name": "Collapse",
+          "displayName": "AntdCollapse",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerCollapse"
         },
         {
           "id": "SAEWraOT2YV",
           "name": "Checkbox",
+          "displayName": "AntdCheckbox",
           "componentImportPath": "antd/lib/checkbox/Checkbox",
           "helper": {
             "name": "checkboxHelpers",
@@ -969,41 +1051,49 @@
         {
           "id": "m5zFS-kMOL-",
           "name": "CheckboxGroup",
+          "displayName": "AntdCheckboxGroup",
           "componentImportPath": "antd/lib/checkbox/Group"
         },
         {
           "id": "6DZuSUEKjFh",
           "name": "MenuDivider",
+          "displayName": "AntdMenuDivider",
           "componentImportPath": "antd/lib/menu/MenuDivider"
         },
         {
           "id": "HZ6EmQgIQJr",
           "name": "MenuItem",
+          "displayName": "AntdMenuItem",
           "componentImportPath": "antd/lib/menu/MenuItem"
         },
         {
           "id": "LGE6ExNG8fZ",
           "name": "ItemGroup",
+          "displayName": "AntdMenuItemGroup",
           "componentImportPath": "rc-menu"
         },
         {
           "id": "DSwQm8gUYob",
           "name": "SubMenu",
+          "displayName": "AntdSubMenu",
           "componentImportPath": "antd/lib/menu/SubMenu"
         },
         {
           "id": "Iz_hLKpHZDg",
           "name": "Menu",
+          "displayName": "AntdMenu",
           "componentImportPath": "antd/lib/menu/index"
         },
         {
           "id": "_C8wcdH3BDp",
           "name": "Carousel",
+          "displayName": "AntdCarousel",
           "componentImportPath": "antd/lib/carousel"
         },
         {
           "id": "tO9wrxr8Nbb",
           "name": "Input",
+          "displayName": "AntdInput",
           "componentImportPath": "antd/lib/input",
           "helper": {
             "name": "inputHelpers",
@@ -1013,6 +1103,7 @@
         {
           "id": "ZJIPHLoTjkN",
           "name": "TextArea",
+          "displayName": "AntdInputTextArea",
           "componentImportPath": "antd/lib/input/TextArea",
           "helper": {
             "name": "inputHelpers",
@@ -1022,6 +1113,7 @@
         {
           "id": "zDcn8vsMldu",
           "name": "Search",
+          "displayName": "AntdInputSearch",
           "componentImportPath": "antd/lib/input/Search",
           "helper": {
             "name": "inputHelpers",
@@ -1031,6 +1123,7 @@
         {
           "id": "fTDg0FM1tnD",
           "name": "Password",
+          "displayName": "AntdInputPassword",
           "componentImportPath": "antd/lib/input/Password",
           "helper": {
             "name": "inputHelpers",
@@ -1040,50 +1133,58 @@
         {
           "id": "uZueUXuqePq",
           "name": "InputGroup",
+          "displayName": "AntdInputGroup",
           "componentImportPath": "antd/lib/input/Group"
         },
         {
           "id": "cv59X4q0WK",
           "name": "Dropdown",
+          "displayName": "AntdDropdown",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerDropdown"
         },
         {
           "id": "cHUYQj2aKK",
           "name": "DropdownButton",
+          "displayName": "AntdDropdownButton",
           "componentImportPath": "antd/lib/dropdown/dropdown-button"
         },
         {
           "id": "p3HNI5RglT",
           "name": "TabPane",
+          "displayName": "AntdTabPane",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTabs"
         },
         {
           "id": "Hb-DVgvuk3",
           "name": "Tabs",
+          "displayName": "AntdTabs",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTabs"
         },
         {
           "id": "Q0BhxRa-Moi",
           "name": "Rate",
+          "displayName": "AntdRate",
           "componentImportPath": "antd/lib/rate"
         },
         {
           "id": "LF24IrAPbeRN",
           "name": "TableWrapper",
+          "displayName": "AntdTable",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTable"
         },
         {
           "id": "qJFaUEuzy9Ae",
           "name": "TableColumn",
+          "displayName": "AntdTableColumn",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTable"
         },
         {
           "id": "aOob39p1-Dlv",
           "name": "TableValue",
+          "displayName": "AntdTableValue",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTable"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "GTgVzsUHzMuCMexkxJk8C",
@@ -1100,17 +1201,40 @@
         {
           "id": "9KPt6XktlFK",
           "name": "SanityFetcher",
+          "displayName": "SanityFetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-sanity-io"
         },
         {
           "id": "7avTLOjB-zZ",
           "name": "SanityField",
+          "displayName": "SanityField",
           "componentImportPath": "@plasmicpkgs/plasmic-sanity-io"
         },
         {
           "id": "XenoJpDQeDb",
           "name": "SanityCredentialsProvider",
+          "displayName": "SanityCredentialsProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-sanity-io"
+        }
+      ]
+    },
+    {
+      "projectId": "r3ASNrnyvLLLAtDvzUioQ",
+      "projectApiToken": "eSFGpQaYCtO9sRbPuQ2Ll9dmLOg8I4oKhx6e1PuCrsfmUIVbFbSXcy32UrPTwF9zX2HVXA0xaIKJNhCMHvA",
+      "projectName": "react-slick",
+      "version": "3.15.0",
+      "cssFilePath": "plasmic/react_slick/plasmic_react_slick.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "HOQUyOpClJ",
+          "name": "Slider",
+          "displayName": "hostless-slider",
+          "componentImportPath": "react-slick"
         }
       ]
     }

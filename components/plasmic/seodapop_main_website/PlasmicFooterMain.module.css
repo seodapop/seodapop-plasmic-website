@@ -61,19 +61,6 @@
 .rowWrapper {
   --plsmc-rc-col-gap: 0px;
 }
-.rowWrapper {
-  display: flex;
-  width: 100%;
-  height: auto;
-  align-items: stretch;
-  flex-shrink: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 1380px;
-  flex-grow: 0;
-  min-width: 0;
-  padding: 8px;
-}
 .rowWrapper > :global(.__wab_flex-container) > :nth-child(3n + 1) {
   width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
@@ -90,12 +77,6 @@
 }
 @media (max-width: 640px) {
   .rowWrapper > :global(.__wab_flex-container) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 640px) {
-  .rowWrapper {
     flex-direction: row;
     flex-wrap: wrap;
   }

@@ -98,6 +98,7 @@ function PlasmicBlog__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   return (
@@ -156,7 +157,10 @@ function PlasmicBlog__RenderFunc(props: {
                       try {
                         return `/blog/${$ctx.currentWordpressPost.slug}`;
                       } catch (e) {
-                        if (e instanceof TypeError) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
                           return undefined;
                         }
                         throw e;
@@ -203,7 +207,10 @@ function PlasmicBlog__RenderFunc(props: {
                       try {
                         return $ctx.currentWordpressPost.title.rendered;
                       } catch (e) {
-                        if (e instanceof TypeError) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
                           return "Some link text";
                         }
                         throw e;
@@ -226,7 +233,10 @@ function PlasmicBlog__RenderFunc(props: {
                       try {
                         return undefined;
                       } catch (e) {
-                        if (e instanceof TypeError) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
                           return undefined;
                         }
                         throw e;
@@ -250,7 +260,10 @@ function PlasmicBlog__RenderFunc(props: {
                           try {
                             return $ctx.currentWordpressPost.excerpt.rendered;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return "Enter some text";
                             }
                             throw e;

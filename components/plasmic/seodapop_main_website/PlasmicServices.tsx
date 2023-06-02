@@ -110,6 +110,7 @@ function PlasmicServices__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -238,7 +239,7 @@ function PlasmicServices__RenderFunc(props: {
                     )}
                   >
                     {
-                      " We believe that all the efforts of improvement should come together as a whole. When we do your marketing we want to make sure your website is running properly too. That is why we offer you a series of alternatives to make your website the most efficient. The Inbound Marketing Packages we offer come in different “sizes” to accommodate your needs but in essence they all work the same. What we do for your business is literally make it “Visible”.  We will make a campaign to make you come up at the top of the Google search or any other platform of your preference. Be it Google, Bing, Facebook, Instagram, we can make you come up atop the platform your business will profit the most from.\n\n"
+                      " We believe that all the efforts of improvement should come together as a whole. When we do your marketing we want to make sure your website is running properly too. That is why we offer you a series of alternatives to make your website the most efficient. The Inbound Marketing Packages we offer come in different “sizes” to accommodate your needs but in essence they all work the same. What we do for your business is literally make it “Visible”.  We will make a campaign to make you come up at the top of the Google search or any other platform of your preference. Be it Google, Bing, Facebook, Instagram, we can make you come up atop the platform your business will profit the most from.\n\nWe believe in a holistic approach to improving your business. When we handle your marketing, we also ensure your website is running smoothly. Our Inbound Marketing Packages offer different options to suit your needs, but they all share the same goal: making your business visible. We'll create campaigns to boost your presence on platforms like Google, Bing, Facebook, or Instagram—whichever platform brings you the most benefit. With our expertise, we'll help you rise to the top of search results and get noticed by your target audience. Let's work together to make your business shine online!\n\n"
                     }
                   </div>
                 </p.Stack>
@@ -264,7 +265,7 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceWhite__ht2Ye
                           )}
                           slot2={
-                            "We are far from that days that a person could launch a website and be the only one on top of google for their business. These days there are lots of competition to  be on top of google. We will help you be on top of google with right tools. We do not just say that we can do it. We actually did it for ourselves too. Will be happy to show you our work. Give us a call"
+                            "Gone are the days when launching a website guaranteed top-ranking on Google. The online landscape has become highly competitive, making it challenging to secure a prominent position. We possess the right tools and expertise to help you rise above the competition and achieve top rankings on Google. Don't just take our word for it; we have successfully achieved this for our own business as well. We would be delighted to showcase our work and discuss how we can help your business thrive. Give us a call today to get started."
                           }
                         >
                           <h3
@@ -275,7 +276,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__bUIxJ
                             )}
                           >
-                            {"SEO (Search engine optimization)"}
+                            {"SEO \nSearch engine optimization"}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -290,7 +291,7 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceWhite__kp4Fy
                           )}
                           slot2={
-                            "#Social . This one is the newest trend. These days people spend more time on their social media site than going anywhere else on the internet. If you like to be successful you have to have a social presence in order for your potential customers to see you. We help you setup and post strategically in order to get more customers. We cover all the major social media sites for you such as linked in, Facebook, twitter, and Instagram. "
+                            "#Social . This one is the newest trend. These days people spend more time on their social media site than going anywhere else on the internet. If you like to be successful you have to have a social presence in order for your potential customers to see you. We help you setup and post strategically in order to get more customers. We cover all the major social media sites for you such as linked in, Facebook, twitter, and Instagram. \n\n\n"
                           }
                         >
                           <h3
@@ -301,7 +302,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.h3__eXD
                             )}
                           >
-                            {"SMM (Social Media Marketing)"}
+                            {"SMM \nSocial Media Marketing"}
                           </h3>
                         </ServiceWhite>
                       ) : null}
@@ -316,7 +317,17 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceWhite__a9Ih
                           )}
                           slot2={
-                            "PPC is like a photography. Maybe you have your cellphone to take a picture but is the picture that your cellphone takes is the same as the picture that a professional photographer takes with DSLR camera? We are that professional photographer that can leverage all ppc platforms power to make sure that you are not wasting money and only the real customers are clicking on your ads."
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__peQaY
+                              )}
+                            >
+                              {
+                                "PPC is like a photography. Maybe you have your cellphone to take a picture but is the picture that your cellphone takes is the same as the picture that a professional photographer takes with DSLR camera? We are that professional photographer that can leverage all ppc platforms power to make sure that you are not wasting money and only the real customers are clicking on your ads.\n\n\n"
+                              }
+                            </div>
                           }
                         >
                           <h3
@@ -342,7 +353,17 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceWhite__pTq1X
                           )}
                           slot2={
-                            "We setup a profile for all the users that are visiting your website, and retarget them with our ads. We will use adwords retargeting capabilities plus facebook pixel technology to achieve our goal."
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__o4MxB
+                              )}
+                            >
+                              {
+                                "By utilizing retargeting techniques, we can help you re-engage visitors who have previously shown interest in your services but haven't yet made a decision. Our retargeting campaigns are designed to deliver personalized and compelling messages to these prospects, reminding them of the value you offer and encouraging them to take the next step. With strategic retargeting, we can maximize your chances of converting interested leads into satisfied clients. Let us help you make the most out of your web development efforts through effective retargeting strategies."
+                              }
+                            </div>
                           }
                         >
                           <h3
@@ -368,7 +389,7 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceWhite__jx7E
                           )}
                           slot2={
-                            "The way in which people learn and absorb information has drastically changed in the last few years. We now look to the internet to entertain us, distract us and teach us!. An emerging method of education is the use of “whiteboard animated videos” style. This is a simple, yet incredibly effective tool in delivering a message.  Teachers and businesses have taken advantage of this new tool because it is so engaging and effective.​\n"
+                            "The way in which people learn and absorb information has drastically changed in the last few years. We now look to the internet to entertain us, distract us and teach us!. An emerging method of education is the use of “whiteboard animated videos” style. This is a simple, yet incredibly effective tool in delivering a message.  Teachers and businesses have taken advantage of this new tool because it is so engaging and effective.​\n\n"
                           }
                         >
                           <h3
@@ -394,7 +415,7 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceWhite___1MfRc
                           )}
                           slot2={
-                            "Inbound marketing is the combination of all of the other services that we offer. The goal is the make the clients interested in your service and they call you directly instead of visiting your Ads to come to your website. We believe that inbound marketing is the best long-term marketing solution for most businesses. "
+                            "Inbound marketing is a comprehensive approach that encompasses all the services we offer. Its primary objective is to generate client interest in your services, prompting them to contact you directly rather than solely relying on ads or website visits. By leveraging inbound strategies such as content creation, SEO optimization, social media engagement, and lead nurturing, we aim to attract, engage, and convert potential clients into loyal customers. Let us help you harness the power of inbound marketing to achieve lasting success for your business."
                           }
                         >
                           <h3
@@ -451,7 +472,7 @@ function PlasmicServices__RenderFunc(props: {
                     )}
                   >
                     {
-                      "With more than fifty years of combined experience in the technology space, we are more than cable of handling your technical needs."
+                      "With over 20 years of collective experience in the technology industry, we possess the expertise and knowledge required to address all your technical requirements. Our team is more than capable of handling any challenges or projects you may have. From software development to system integrations, we have a deep understanding of the technology landscape. Rest assured, we will bring our extensive experience to the table to provide you with top-notch solutions and meet your technical needs effectively."
                     }
                   </div>
                 </p.Stack>
@@ -477,10 +498,18 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceDark__yfV1L
                           )}
                           slot={
-                            "We are able to offer you the best tools for your application needs, we will cover security, cost, performance, and many other aspects to make sure that your application architecture is the best in class."
+                            "Our expertise allows us to provide you with the optimal tools for your application requirements. We take into account essential factors such as security, cost-efficiency, and performance to ensure that your application architecture is truly top-notch. By carefully considering these aspects and more, we guarantee that your application will excel in its class, delivering exceptional results and exceeding your expectations."
                           }
                         >
-                          {"Architect Design"}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__eWipQ
+                            )}
+                          >
+                            {"Architectual Design"}
+                          </div>
                         </ServiceDark>
                       ) : null}
                     </div>
@@ -494,7 +523,7 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceDark___5Olkd
                           )}
                           slot={
-                            "We can review and audit your code base for any security, and programming pattern bugs. We will offer you a completer report once we finish our audits."
+                            "We'll carefully dig into your code, keeping an eye out for any security vulnerabilities or programming pattern bugs. Once we're done, we'll put together a comprehensive report that breaks down our findings in a laid-back, easy-to-understand manner. Think of it as a friendly chat over a cup of coffee, where we'll share valuable insights to help you fine-tune your application. So sit back, relax, and let us handle the heavy lifting while you gain peace of mind."
                           }
                         >
                           <div
@@ -519,7 +548,7 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceDark__r2UBw
                           )}
                           slot={
-                            "Do you have a court case in the technology field? Either you order a custom application or you are a company that creates a custom application and now you have a court case. We will be able to help you with your court case."
+                            "Our Experts have extensive knowledge and experience in specific areas of technology and can provide their expertise and opinions during legal proceedings. We can assist in matters such as intellectual property disputes, patent infringement cases, data breaches, software development disputes, and more. It is important to engage an expert witness with the relevant qualifications, expertise, and credibility to effectively support your case in court."
                           }
                         >
                           <div
@@ -544,7 +573,7 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceDark__pdAEs
                           )}
                           slot={
-                            "We are able to integrate applications with different APIs and services. We can write well-written codes to accommodate all your integration needs. "
+                            "At SeodaPop we excel in seamlessly integrating applications with various APIs and services. Our experienced team is skilled in writing clean and efficient code to meet all your integration requirements. Whether you need to connect your application with popular third-party services, payment gateways, social media platforms, or any other APIs, we've got you covered. Our expertise ensures smooth and reliable communication between different systems, enabling enhanced functionality and improved user experiences. Trust us to handle your integration needs with precision and deliver well-written code that seamlessly accommodates all your integration goals."
                           }
                         >
                           <div
@@ -554,7 +583,7 @@ function PlasmicServices__RenderFunc(props: {
                               sty.text__wvl3G
                             )}
                           >
-                            {"Integration"}
+                            {"Integrations"}
                           </div>
                         </ServiceDark>
                       ) : null}
@@ -569,7 +598,7 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceDark___9HqNz
                           )}
                           slot={
-                            "We can help you audit your application for HIPPA, PCI, GDPR, and ADA."
+                            "We specialize in conducting comprehensive audits for various compliance standards, including HIPAA, PCI, GDPR, and ADA.  Whether you need to ensure the security and privacy of healthcare data, protect sensitive payment card information, comply with data protection laws in the European Union, or make your application accessible for individuals with disabilities, we've got you covered. Our auditing process will identify any gaps or areas of non-compliance, allowing us to provide actionable recommendations and help you achieve and maintain the necessary standards. Rest assured that your application will meet the compliance requirements relevant to your industry."
                           }
                         >
                           {"Compliance Audit"}
@@ -586,7 +615,7 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceDark__in0A
                           )}
                           slot={
-                            "We can help you upgrade your Legacy code to modern code with proper Architecture and an affordable price."
+                            "If you're looking to upgrade your legacy code to modern standards with a focus on proper architecture, we've got you covered. Our team specializes in transforming outdated codebases into efficient, maintainable, and scalable solutions. We understand the challenges that come with legacy systems, and we're here to help you navigate the upgrade process seamlessly bring it up to date with the latest technologies. Rest assured, we offer our services at an affordable price, ensuring that you receive exceptional value for your investment. Let us handle the code upgrade, so you can enjoy the benefits of a modern, robust, and cost-effective application."
                           }
                         >
                           {"Legacy Upgrades"}
@@ -632,7 +661,7 @@ function PlasmicServices__RenderFunc(props: {
                     )}
                   >
                     {
-                      "With more than 20 years of experience and over 100 website build and hosting over 500 websites we are confident that we will not disappoint you with our web design services. "
+                      "With over two decades of experience and a remarkable track record of building over 100 websites and hosting more than 500 websites, we are highly confident in our ability to deliver exceptional web design services. Our extensive expertise in the field ensures that we will not only meet but exceed your expectations. We understand the importance of a well-crafted website in today's digital landscape, and our team is dedicated to creating visually stunning and user-friendly websites that effectively represent your brand and drive results. You can trust us to bring your vision to life and provide you with a website that leaves a lasting impression on your audience."
                     }
                   </div>
                 </p.Stack>
@@ -658,7 +687,7 @@ function PlasmicServices__RenderFunc(props: {
                             sty.serviceWhite__r5Ago
                           )}
                           slot2={
-                            "Our services encompass authentic web design, powered by our team of skilled computer programmers who excel in writing code to breathe life into your website. We provide a range of options, from cost-effective WordPress templates to comprehensive full-stack web development that covers the entire process from start to finish."
+                            "Our services include authentic web design brought to life by skilled programmers. We offer various options, from cost-effective WordPress templates to comprehensive full-stack web development. Our range of services caters to your specific needs, providing a seamless and engaging user experience. From concept to execution, we handle every aspect of the web development process, ensuring a high-quality result that exceeds your expectations."
                           }
                         >
                           <h3

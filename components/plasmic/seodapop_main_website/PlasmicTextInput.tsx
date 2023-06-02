@@ -75,6 +75,16 @@ export type PlasmicTextInput__ArgsType = {
   name?: string;
   "aria-label"?: string;
   "aria-labelledby"?: string;
+  type?:
+    | "text"
+    | "password"
+    | "hidden"
+    | "number"
+    | "date"
+    | "datetime-local"
+    | "time"
+    | "email"
+    | "tel";
 };
 type ArgPropType = keyof PlasmicTextInput__ArgsType;
 export const PlasmicTextInput__ArgProps = new Array<ArgPropType>(
@@ -84,7 +94,8 @@ export const PlasmicTextInput__ArgProps = new Array<ArgPropType>(
   "value",
   "name",
   "aria-label",
-  "aria-labelledby"
+  "aria-labelledby",
+  "type"
 );
 
 export type PlasmicTextInput__OverridesType = {
@@ -101,6 +112,16 @@ export interface DefaultTextInputProps extends pp.BaseTextInputProps {
   name?: string;
   "aria-label"?: string;
   "aria-labelledby"?: string;
+  type?:
+    | "text"
+    | "password"
+    | "hidden"
+    | "number"
+    | "date"
+    | "datetime-local"
+    | "time"
+    | "email"
+    | "tel";
   color?: SingleChoiceArg<"dark">;
 }
 
@@ -147,7 +168,9 @@ function PlasmicTextInput__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -183,7 +206,6 @@ function PlasmicTextInput__RenderFunc(props: {
         onChangeProp: "onChange"
       }
     ],
-
     [$props, $ctx]
   );
   const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
@@ -347,7 +369,7 @@ function PlasmicTextInput__RenderFunc(props: {
   ) as React.ReactElement | null;
 }
 
-function useBehavior<P extends pp.BaseTextInputProps>(
+function useBehavior<P extends pp.PlumeTextInputProps>(
   props: P,
   ref: pp.TextInputRef
 ) {
@@ -393,7 +415,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicTextInput__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

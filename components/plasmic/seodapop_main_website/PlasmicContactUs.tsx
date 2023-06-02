@@ -23,7 +23,7 @@ import * as ph from "@plasmicapp/react-web/lib/host";
 import {
   usePlasmicDataConfig,
   executePlasmicDataOp,
-  useDependencyAwareQuery
+  usePlasmicDataOp
 } from "@plasmicapp/react-web/lib/data-sources";
 
 import {
@@ -125,7 +125,9 @@ function PlasmicContactUs__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -351,10 +353,12 @@ function PlasmicContactUs__RenderFunc(props: {
                                     );
                                   }}
                                   placeholder={"" as const}
-                                  value={p.generateStateValueProp($state, [
-                                    "name",
-                                    "value"
-                                  ])}
+                                  value={
+                                    p.generateStateValueProp($state, [
+                                      "name",
+                                      "value"
+                                    ]) ?? ""
+                                  }
                                 />
                               ) : null}
                             </div>
@@ -392,10 +396,12 @@ function PlasmicContactUs__RenderFunc(props: {
                                   );
                                 }}
                                 placeholder={"" as const}
-                                value={p.generateStateValueProp($state, [
-                                  "name2",
-                                  "value"
-                                ])}
+                                value={
+                                  p.generateStateValueProp($state, [
+                                    "name2",
+                                    "value"
+                                  ]) ?? ""
+                                }
                               />
                             </div>
                           </div>
@@ -437,10 +443,12 @@ function PlasmicContactUs__RenderFunc(props: {
                                   );
                                 }}
                                 placeholder={"" as const}
-                                value={p.generateStateValueProp($state, [
-                                  "name3",
-                                  "value"
-                                ])}
+                                value={
+                                  p.generateStateValueProp($state, [
+                                    "name3",
+                                    "value"
+                                  ]) ?? ""
+                                }
                               />
                             </div>
                             <div
@@ -475,10 +483,12 @@ function PlasmicContactUs__RenderFunc(props: {
                                   );
                                 }}
                                 placeholder={"" as const}
-                                value={p.generateStateValueProp($state, [
-                                  "name3",
-                                  "value"
-                                ])}
+                                value={
+                                  p.generateStateValueProp($state, [
+                                    "name3",
+                                    "value"
+                                  ]) ?? ""
+                                }
                               />
                             </div>
                           </div>
@@ -522,10 +532,12 @@ function PlasmicContactUs__RenderFunc(props: {
                                   );
                                 }}
                                 placeholder={"" as const}
-                                value={p.generateStateValueProp($state, [
-                                  "name4",
-                                  "value"
-                                ])}
+                                value={
+                                  p.generateStateValueProp($state, [
+                                    "name4",
+                                    "value"
+                                  ]) ?? ""
+                                }
                               />
                             </div>
                           </div>
@@ -575,6 +587,7 @@ function PlasmicContactUs__RenderFunc(props: {
                                       "__wab_instance",
                                       sty.button
                                     )}
+                                    submitsForm={true}
                                   >
                                     <div
                                       className={classNames(
@@ -654,7 +667,11 @@ function PlasmicContactUs__RenderFunc(props: {
                                             return $queries.GooglePlace.data
                                               .response.result.adr_address;
                                           } catch (e) {
-                                            if (e instanceof TypeError) {
+                                            if (
+                                              e instanceof TypeError ||
+                                              e?.plasmicType ===
+                                                "PlasmicUndefinedDataError"
+                                            ) {
                                               return "1234 Lorem Ipsum .\nLorem Ipsum , GA 30308\n1234567890";
                                             }
                                             throw e;
@@ -678,7 +695,11 @@ function PlasmicContactUs__RenderFunc(props: {
                                       try {
                                         return [0, 1, 2, 3, 4, 5, 6];
                                       } catch (e) {
-                                        if (e instanceof TypeError) {
+                                        if (
+                                          e instanceof TypeError ||
+                                          e?.plasmicType ===
+                                            "PlasmicUndefinedDataError"
+                                        ) {
                                           return [];
                                         }
                                         throw e;
@@ -701,7 +722,11 @@ function PlasmicContactUs__RenderFunc(props: {
                                             currentIndex
                                           ];
                                         } catch (e) {
-                                          if (e instanceof TypeError) {
+                                          if (
+                                            e instanceof TypeError ||
+                                            e?.plasmicType ===
+                                              "PlasmicUndefinedDataError"
+                                          ) {
                                             return "1234 Lorem Ipsum .\nLorem Ipsum , GA 30308\n1234567890";
                                           }
                                           throw e;
@@ -749,7 +774,10 @@ function PlasmicContactUs__RenderFunc(props: {
               try {
                 return `Powered by seodaPop copyright © ${new Date().getFullYear()}`;
               } catch (e) {
-                if (e instanceof TypeError) {
+                if (
+                  e instanceof TypeError ||
+                  e?.plasmicType === "PlasmicUndefinedDataError"
+                ) {
                   return "Enter some text";
                 }
                 throw e;

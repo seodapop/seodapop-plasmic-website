@@ -101,6 +101,7 @@ function PlasmicHomeFooterTop__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -159,7 +160,7 @@ function PlasmicHomeFooterTop__RenderFunc(props: {
             >
               {hasVariant(globalVariants, "screen", "sm")
                 ? "Rapidiously revolutionize future-proof niches, and authoritatively \nrestore user-centric e-markets."
-                : "Whether you need a new website, or you want to improve an existing one, we approach each of our projects with a passion for innovation and imagination – creating high quality, high performing digital experiences that turn your website in to a marketing machine that gets long-lasting, tangible results for your business.\n\n"}
+                : "Whether you're looking to build a brand-new website or enhance an existing one, we're thrilled to bring our passion for innovation and creativity to every project. Our ultimate aim is to craft remarkable digital experiences that not only meet high-quality standards but also deliver exceptional performance. Our mission is to transform your website into a dynamic marketing powerhouse, generating tangible and enduring results for your business. Count on our friendly team and expertise to create an engaging online presence that truly makes a difference.\n\n"}
             </div>
           </p.Stack>
           <p.Stack

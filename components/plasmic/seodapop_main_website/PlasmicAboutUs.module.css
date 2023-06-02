@@ -37,16 +37,6 @@
   > img {
   margin-left: 16px;
 }
-.freeBox__o1Ek1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  justify-content: center;
-  min-width: 0;
-  padding: 2px 16px 0px;
-}
 @media (max-width: 640px) {
   .freeBox__o1Ek1 {
     width: 100%;
@@ -57,13 +47,6 @@
 @media (max-width: 640px) {
   .freeBox__o1Ek1 > :global(.__wab_flex-container) {
     min-width: 0;
-  }
-}
-@media (max-width: 640px) {
-  .freeBox__o1Ek1 {
-    width: 100%;
-    min-width: 0;
-    padding: 32px;
   }
 }
 .header__lhPxY:global(.__wab_instance) {
@@ -115,14 +98,6 @@
   > img {
   margin-top: 32px;
 }
-.foreground2 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1080px;
-  align-self: center;
-  min-width: 0;
-}
 .freeBox__kar5 {
   display: flex;
   position: relative;
@@ -142,11 +117,6 @@
   > picture
   > img {
   margin-top: 16px;
-}
-.freeBox__kar5 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
 }
 .h1 {
   padding-top: 0px;
@@ -291,18 +261,6 @@
 .row1 {
   --plsmc-rc-col-gap: 0px;
 }
-.row1 {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 1117px;
-  align-items: stretch;
-  flex-shrink: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-width: 0;
-  padding: 8px;
-}
 .row1 > :global(.__wab_flex-container) > :nth-child(3n + 1) {
   width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
 }
@@ -323,14 +281,6 @@
   .row1 > :global(.__wab_flex-container) {
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 0;
-  }
-}
-@media (max-width: 640px) {
-  .row1 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 100%;
     min-height: 0;
   }
 }
@@ -857,17 +807,6 @@
   margin-left: 32px;
   margin-top: 32px;
 }
-.freeBox__cbHhC {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  align-self: center;
-  width: 100%;
-  max-width: 1380px;
-  min-width: 0;
-}
 @media (max-width: 640px) {
   .freeBox__cbHhC {
     display: flex;
@@ -894,14 +833,6 @@
     > picture
     > img {
     margin-left: 0px;
-  }
-}
-@media (max-width: 640px) {
-  .freeBox__cbHhC {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-width: 0;
   }
 }
 .freeBox__myY92 {
@@ -934,20 +865,6 @@
   > img {
   margin-top: 16px;
 }
-.freeBox__myY92 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  background: none;
-  box-shadow: none;
-  align-self: flex-start;
-  max-width: 100%;
-  width: 100%;
-  min-width: 0;
-  border-radius: 16px;
-  padding: 63px 24px 24px;
-}
 .freeBox__cDlj8 {
   display: flex;
   position: relative;
@@ -973,15 +890,6 @@
   > img {
   margin-top: 8px;
 }
-.freeBox__cDlj8 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
-}
 .h2___8FWyq {
   position: relative;
   width: 100%;
@@ -992,9 +900,9 @@
 }
 .text__sqhOq {
   align-self: flex-start;
-  max-width: 807px;
+  max-width: 1288px;
   padding-right: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 65px;
   width: 100%;
   min-width: 0;
 }
@@ -1024,17 +932,6 @@
   > picture
   > img {
   margin-left: 16px;
-}
-.freeBox__ymT7W {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  top: auto;
-  left: auto;
-  width: 100%;
-  min-width: 0;
 }
 .serviceRow {
   display: flex;
@@ -1073,19 +970,6 @@
 .serviceRow {
   --plsmc-rc-col-gap: 0px;
 }
-.serviceRow {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  align-items: stretch;
-  flex-shrink: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-width: 0;
-  min-height: 0;
-  padding: 20px 0px 8px;
-}
 .serviceRow > :global(.__wab_flex-container) > :nth-child(3n + 1) {
   width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
 }
@@ -1118,12 +1002,6 @@
     > picture
     > img {
     margin-top: 15px;
-  }
-}
-@media (max-width: 640px) {
-  .serviceRow {
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 @media (max-width: 640px) {
@@ -1194,6 +1072,9 @@
 }
 .serviceValue___3BN7B:global(.__wab_instance) {
   position: relative;
+}
+.h3__fmsDi {
+  padding-bottom: 0px;
 }
 .column__vroAl {
   display: flex;

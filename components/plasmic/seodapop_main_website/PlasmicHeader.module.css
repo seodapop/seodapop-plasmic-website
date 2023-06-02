@@ -20,16 +20,6 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 16px;
 }
-.root {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  position: relative;
-  min-width: 0;
-  padding: 16px;
-}
 @media (max-width: 640px) {
   .root {
     width: 100%;
@@ -40,13 +30,6 @@
 @media (max-width: 640px) {
   .root > :global(.__wab_flex-container) {
     min-width: 0;
-  }
-}
-@media (max-width: 640px) {
-  .root {
-    width: 100%;
-    min-width: 0;
-    padding: 32px;
   }
 }
 .freeBox__hZk8Y {
@@ -75,16 +58,6 @@
   > img {
   margin-left: 16px;
 }
-.freeBox__hZk8Y {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1380px;
-  min-width: 0;
-}
 @media (max-width: 640px) {
   .freeBox__hZk8Y {
     display: flex;
@@ -112,13 +85,6 @@
     > img {
     margin-left: 0px;
     margin-top: 16px;
-  }
-}
-@media (max-width: 640px) {
-  .freeBox__hZk8Y {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
 .link__eNaWg {
@@ -172,13 +138,6 @@
   > img {
   margin-left: 8px;
 }
-.freeBox__reSlh {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
 @media (max-width: 640px) {
   .freeBox__reSlh > :global(.__wab_flex-container) {
     flex-wrap: wrap;
@@ -197,12 +156,6 @@
     > picture
     > img {
     margin-top: 8px;
-  }
-}
-@media (max-width: 640px) {
-  .freeBox__reSlh {
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }
 .aboutUs {
@@ -236,23 +189,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.aboutUs {
-  position: relative;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  -webkit-transition-property: all;
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.5s;
-  border-radius: 6px;
-  padding: 10px 16px;
-  border: 1px solid transparent;
 }
 .svg___2Es7U {
   width: 24px;
@@ -310,23 +246,6 @@
   > img {
   margin-left: 8px;
 }
-.link__n7Bz {
-  position: relative;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  -webkit-transition-property: all;
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.5s;
-  border-radius: 6px;
-  padding: 10px 16px;
-  border: 1px solid transparent;
-}
 .svg___8BeFl {
   width: 24px;
   height: 24px;
@@ -382,23 +301,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.link__ox2M {
-  position: relative;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  -webkit-transition-property: all;
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.5s;
-  border-radius: 6px;
-  padding: 10px 16px;
-  border: 1px solid transparent;
 }
 .svg__uhmk5 {
   width: 24px;
@@ -456,23 +358,6 @@
   > img {
   margin-left: 8px;
 }
-.link__r2DA {
-  position: relative;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  -webkit-transition-property: all;
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.5s;
-  border-radius: 6px;
-  padding: 10px 16px;
-  border: 1px solid transparent;
-}
 .svg___2Kdu4 {
   width: 24px;
   height: 24px;
@@ -528,23 +413,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.link__iOfi {
-  position: relative;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  -webkit-transition-property: all;
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.5s;
-  border-radius: 6px;
-  padding: 10px 16px;
-  border: 1px solid transparent;
 }
 .svg___4NUiR {
   width: 24px;

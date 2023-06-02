@@ -103,6 +103,7 @@ function PlasmicServiceValue__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   return (
@@ -166,7 +167,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicServiceValue__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {
