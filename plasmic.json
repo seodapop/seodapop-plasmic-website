@@ -951,6 +951,12 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        },
+        {
+          "id": "uiwkpktCDX",
+          "name": "RichText",
+          "displayName": "RichText",
+          "componentImportPath": "./components/PortableText"
         }
       ]
     },

@@ -232,19 +232,21 @@ function PlasmicPagesslug__RenderFunc(props: {
                           sty.h1
                         )}
                       >
-                        {(() => {
-                          try {
-                            return $ctx.sanityItems[0].title;
-                          } catch (e) {
-                            if (
-                              e instanceof TypeError ||
-                              e?.plasmicType === "PlasmicUndefinedDataError"
-                            ) {
-                              return "You won't believe what happens next.";
+                        <React.Fragment>
+                          {(() => {
+                            try {
+                              return $ctx.sanityItems[0].title;
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return "You won't believe what happens next.";
+                              }
+                              throw e;
                             }
-                            throw e;
-                          }
-                        })()}
+                          })()}
+                        </React.Fragment>
                       </h1>
                     </div>
                   )}

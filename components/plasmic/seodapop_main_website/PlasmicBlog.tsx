@@ -203,19 +203,21 @@ function PlasmicBlog__RenderFunc(props: {
                     }}
                     platform={"nextjs"}
                   >
-                    {(() => {
-                      try {
-                        return $ctx.currentWordpressPost.title.rendered;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return "Some link text";
+                    <React.Fragment>
+                      {(() => {
+                        try {
+                          return $ctx.currentWordpressPost.title.rendered;
+                        } catch (e) {
+                          if (
+                            e instanceof TypeError ||
+                            e?.plasmicType === "PlasmicUndefinedDataError"
+                          ) {
+                            return "Some link text";
+                          }
+                          throw e;
                         }
-                        throw e;
-                      }
-                    })()}
+                      })()}
+                    </React.Fragment>
                   </p.PlasmicLink>
                   <p.PlasmicImg
                     data-plasmic-name={"img"}
