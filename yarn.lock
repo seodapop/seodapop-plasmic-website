@@ -977,7 +977,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@plasmicapp/cli@^0.1.275":
+"@plasmicapp/cli@^0.1.289":
   version "0.1.289"
   resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.289.tgz#4b77c0438061c558c06561ba5fe029cf7da1b65c"
   integrity sha512-u8nlLjmf7YBgL2Z8Lw1AFIchJqv+CMEGS9BqwGnVZomNJnPfqYvgatF3XqO5fOUR5fKmR/hv/0IXL1Oz2Rh/bA==

@@ -15,9 +15,11 @@ export interface GlobalContextsProviderProps {
   wordpressProviderProps?: Partial<
     Omit<React.ComponentProps<typeof WordpressProvider>, "children">
   >;
+
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
   >;
+
   sanityCredentialsProviderProps?: Partial<
     Omit<React.ComponentProps<typeof SanityCredentialsProvider>, "children">
   >;
