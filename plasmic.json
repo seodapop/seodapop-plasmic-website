@@ -997,7 +997,7 @@
           "id": "kv6Mk_JNYw",
           "name": "Button",
           "displayName": "AntdButton",
-          "componentImportPath": "antd/lib/button"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerButton"
         },
         {
           "id": "iBC45mjTXv",
@@ -1009,31 +1009,31 @@
           "id": "tRueht1jub",
           "name": "Switch",
           "displayName": "AntdSwitch",
-          "componentImportPath": "antd/lib/switch"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerSwitch"
         },
         {
           "id": "YRr0RPAdEj",
           "name": "Option",
           "displayName": "AntdOption",
-          "componentImportPath": "rc-select"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerOption"
         },
         {
           "id": "Ay1H491feg",
           "name": "OptGroup",
           "displayName": "AntdOptionGroup",
-          "componentImportPath": "rc-select"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerOption"
         },
         {
           "id": "2YpGIhkzkpc",
           "name": "Select",
           "displayName": "AntdSelect",
-          "componentImportPath": "antd/lib/select"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerSelect"
         },
         {
           "id": "yegZ392NLoV",
           "name": "CollapsePanel",
           "displayName": "AntdCollapsePanel",
-          "componentImportPath": "antd/lib/collapse/CollapsePanel"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerCollapse"
         },
         {
           "id": "F10gpQ1ZhXY",
@@ -1045,7 +1045,7 @@
           "id": "SAEWraOT2YV",
           "name": "Checkbox",
           "displayName": "AntdCheckbox",
-          "componentImportPath": "antd/lib/checkbox/Checkbox",
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerCheckbox",
           "helper": {
             "name": "checkboxHelpers",
             "importPath": "@plasmicpkgs/antd/skinny/registerCheckbox"
@@ -1055,49 +1055,49 @@
           "id": "m5zFS-kMOL-",
           "name": "CheckboxGroup",
           "displayName": "AntdCheckboxGroup",
-          "componentImportPath": "antd/lib/checkbox/Group"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerCheckbox"
         },
         {
           "id": "6DZuSUEKjFh",
           "name": "MenuDivider",
           "displayName": "AntdMenuDivider",
-          "componentImportPath": "antd/lib/menu/MenuDivider"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerMenu"
         },
         {
           "id": "HZ6EmQgIQJr",
           "name": "MenuItem",
           "displayName": "AntdMenuItem",
-          "componentImportPath": "antd/lib/menu/MenuItem"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerMenu"
         },
         {
           "id": "LGE6ExNG8fZ",
-          "name": "ItemGroup",
+          "name": "MenuItemGroup",
           "displayName": "AntdMenuItemGroup",
-          "componentImportPath": "rc-menu"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerMenu"
         },
         {
           "id": "DSwQm8gUYob",
           "name": "SubMenu",
           "displayName": "AntdSubMenu",
-          "componentImportPath": "antd/lib/menu/SubMenu"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerMenu"
         },
         {
           "id": "Iz_hLKpHZDg",
           "name": "Menu",
           "displayName": "AntdMenu",
-          "componentImportPath": "antd/lib/menu/index"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerMenu"
         },
         {
           "id": "_C8wcdH3BDp",
           "name": "Carousel",
           "displayName": "AntdCarousel",
-          "componentImportPath": "antd/lib/carousel"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerCarousel"
         },
         {
           "id": "tO9wrxr8Nbb",
           "name": "Input",
           "displayName": "AntdInput",
-          "componentImportPath": "antd/lib/input",
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerInput",
           "helper": {
             "name": "inputHelpers",
             "importPath": "@plasmicpkgs/antd/skinny/registerInput"
@@ -1107,7 +1107,7 @@
           "id": "ZJIPHLoTjkN",
           "name": "TextArea",
           "displayName": "AntdInputTextArea",
-          "componentImportPath": "antd/lib/input/TextArea",
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerInput",
           "helper": {
             "name": "inputHelpers",
             "importPath": "@plasmicpkgs/antd/skinny/registerInput"
@@ -1117,7 +1117,7 @@
           "id": "zDcn8vsMldu",
           "name": "Search",
           "displayName": "AntdInputSearch",
-          "componentImportPath": "antd/lib/input/Search",
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerInput",
           "helper": {
             "name": "inputHelpers",
             "importPath": "@plasmicpkgs/antd/skinny/registerInput"
@@ -1127,7 +1127,7 @@
           "id": "fTDg0FM1tnD",
           "name": "Password",
           "displayName": "AntdInputPassword",
-          "componentImportPath": "antd/lib/input/Password",
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerInput",
           "helper": {
             "name": "inputHelpers",
             "importPath": "@plasmicpkgs/antd/skinny/registerInput"
@@ -1137,7 +1137,7 @@
           "id": "uZueUXuqePq",
           "name": "InputGroup",
           "displayName": "AntdInputGroup",
-          "componentImportPath": "antd/lib/input/Group"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerInput"
         },
         {
           "id": "cv59X4q0WK",
@@ -1149,7 +1149,7 @@
           "id": "cHUYQj2aKK",
           "name": "DropdownButton",
           "displayName": "AntdDropdownButton",
-          "componentImportPath": "antd/lib/dropdown/dropdown-button"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerDropdown"
         },
         {
           "id": "p3HNI5RglT",
@@ -1167,7 +1167,7 @@
           "id": "Q0BhxRa-Moi",
           "name": "Rate",
           "displayName": "AntdRate",
-          "componentImportPath": "antd/lib/rate"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerRate"
         },
         {
           "id": "LF24IrAPbeRN",

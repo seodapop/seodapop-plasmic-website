@@ -295,22 +295,27 @@ function PlasmicClients__RenderFunc(props: {
                                       sty.client__zFpGj
                                     )}
                                     key={_012}
-                                    slot={(() => {
-                                      try {
-                                        return $queries.googleInformation.data
-                                          .response.result.reviews[currentItem]
-                                          .text;
-                                      } catch (e) {
-                                        if (
-                                          e instanceof TypeError ||
-                                          e?.plasmicType ===
-                                            "PlasmicUndefinedDataError"
-                                        ) {
-                                          return "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ";
-                                        }
-                                        throw e;
-                                      }
-                                    })()}
+                                    slot={
+                                      <React.Fragment>
+                                        {(() => {
+                                          try {
+                                            return $queries.googleInformation
+                                              .data.response.result.reviews[
+                                              currentItem
+                                            ].text;
+                                          } catch (e) {
+                                            if (
+                                              e instanceof TypeError ||
+                                              e?.plasmicType ===
+                                                "PlasmicUndefinedDataError"
+                                            ) {
+                                              return "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ";
+                                            }
+                                            throw e;
+                                          }
+                                        })()}
+                                      </React.Fragment>
+                                    }
                                   >
                                     <h2
                                       className={classNames(
@@ -320,23 +325,25 @@ function PlasmicClients__RenderFunc(props: {
                                         sty.h2___38JaN
                                       )}
                                     >
-                                      {(() => {
-                                        try {
-                                          return $queries.googleInformation.data
-                                            .response.result.reviews[
-                                            currentItem
-                                          ].author_name;
-                                        } catch (e) {
-                                          if (
-                                            e instanceof TypeError ||
-                                            e?.plasmicType ===
-                                              "PlasmicUndefinedDataError"
-                                          ) {
-                                            return "Client name";
+                                      <React.Fragment>
+                                        {(() => {
+                                          try {
+                                            return $queries.googleInformation
+                                              .data.response.result.reviews[
+                                              currentItem
+                                            ].author_name;
+                                          } catch (e) {
+                                            if (
+                                              e instanceof TypeError ||
+                                              e?.plasmicType ===
+                                                "PlasmicUndefinedDataError"
+                                            ) {
+                                              return "Client name";
+                                            }
+                                            throw e;
                                           }
-                                          throw e;
-                                        }
-                                      })()}
+                                        })()}
+                                      </React.Fragment>
                                     </h2>
                                   </Client>
                                 ))
@@ -379,22 +386,26 @@ function PlasmicClients__RenderFunc(props: {
                                   sty.client__vLSn0
                                 )}
                                 key={_012}
-                                slot={(() => {
-                                  try {
-                                    return $queries.googleInformation.data
-                                      .response.result.reviews[currentItem]
-                                      .text;
-                                  } catch (e) {
-                                    if (
-                                      e instanceof TypeError ||
-                                      e?.plasmicType ===
-                                        "PlasmicUndefinedDataError"
-                                    ) {
-                                      return "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
+                                slot={
+                                  <React.Fragment>
+                                    {(() => {
+                                      try {
+                                        return $queries.googleInformation.data
+                                          .response.result.reviews[currentItem]
+                                          .text;
+                                      } catch (e) {
+                                        if (
+                                          e instanceof TypeError ||
+                                          e?.plasmicType ===
+                                            "PlasmicUndefinedDataError"
+                                        ) {
+                                          return "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  </React.Fragment>
+                                }
                               >
                                 <h2
                                   className={classNames(
@@ -404,22 +415,24 @@ function PlasmicClients__RenderFunc(props: {
                                     sty.h2___6TEjc
                                   )}
                                 >
-                                  {(() => {
-                                    try {
-                                      return $queries.googleInformation.data
-                                        .response.result.reviews[currentItem]
-                                        .author_name;
-                                    } catch (e) {
-                                      if (
-                                        e instanceof TypeError ||
-                                        e?.plasmicType ===
-                                          "PlasmicUndefinedDataError"
-                                      ) {
-                                        return "Client name";
+                                  <React.Fragment>
+                                    {(() => {
+                                      try {
+                                        return $queries.googleInformation.data
+                                          .response.result.reviews[currentItem]
+                                          .author_name;
+                                      } catch (e) {
+                                        if (
+                                          e instanceof TypeError ||
+                                          e?.plasmicType ===
+                                            "PlasmicUndefinedDataError"
+                                        ) {
+                                          return "Client name";
+                                        }
+                                        throw e;
                                       }
-                                      throw e;
-                                    }
-                                  })()}
+                                    })()}
+                                  </React.Fragment>
                                 </h2>
                               </Client>
                             ))
@@ -472,22 +485,27 @@ function PlasmicClients__RenderFunc(props: {
                                       sty.client__rupeM
                                     )}
                                     key={_012}
-                                    slot={(() => {
-                                      try {
-                                        return $queries.googleInformation.data
-                                          .response.result.reviews[currentItem]
-                                          .text;
-                                      } catch (e) {
-                                        if (
-                                          e instanceof TypeError ||
-                                          e?.plasmicType ===
-                                            "PlasmicUndefinedDataError"
-                                        ) {
-                                          return "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ";
-                                        }
-                                        throw e;
-                                      }
-                                    })()}
+                                    slot={
+                                      <React.Fragment>
+                                        {(() => {
+                                          try {
+                                            return $queries.googleInformation
+                                              .data.response.result.reviews[
+                                              currentItem
+                                            ].text;
+                                          } catch (e) {
+                                            if (
+                                              e instanceof TypeError ||
+                                              e?.plasmicType ===
+                                                "PlasmicUndefinedDataError"
+                                            ) {
+                                              return "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ";
+                                            }
+                                            throw e;
+                                          }
+                                        })()}
+                                      </React.Fragment>
+                                    }
                                   >
                                     <h2
                                       className={classNames(
@@ -497,23 +515,25 @@ function PlasmicClients__RenderFunc(props: {
                                         sty.h2__nvUbp
                                       )}
                                     >
-                                      {(() => {
-                                        try {
-                                          return $queries.googleInformation.data
-                                            .response.result.reviews[
-                                            currentItem
-                                          ].author_name;
-                                        } catch (e) {
-                                          if (
-                                            e instanceof TypeError ||
-                                            e?.plasmicType ===
-                                              "PlasmicUndefinedDataError"
-                                          ) {
-                                            return "Client name";
+                                      <React.Fragment>
+                                        {(() => {
+                                          try {
+                                            return $queries.googleInformation
+                                              .data.response.result.reviews[
+                                              currentItem
+                                            ].author_name;
+                                          } catch (e) {
+                                            if (
+                                              e instanceof TypeError ||
+                                              e?.plasmicType ===
+                                                "PlasmicUndefinedDataError"
+                                            ) {
+                                              return "Client name";
+                                            }
+                                            throw e;
                                           }
-                                          throw e;
-                                        }
-                                      })()}
+                                        })()}
+                                      </React.Fragment>
                                     </h2>
                                   </Client>
                                 ))
@@ -565,22 +585,27 @@ function PlasmicClients__RenderFunc(props: {
                                       sty.client__xmQms
                                     )}
                                     key={_012}
-                                    slot={(() => {
-                                      try {
-                                        return $queries.googleInformation.data
-                                          .response.result.reviews[currentItem]
-                                          .text;
-                                      } catch (e) {
-                                        if (
-                                          e instanceof TypeError ||
-                                          e?.plasmicType ===
-                                            "PlasmicUndefinedDataError"
-                                        ) {
-                                          return "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ";
-                                        }
-                                        throw e;
-                                      }
-                                    })()}
+                                    slot={
+                                      <React.Fragment>
+                                        {(() => {
+                                          try {
+                                            return $queries.googleInformation
+                                              .data.response.result.reviews[
+                                              currentItem
+                                            ].text;
+                                          } catch (e) {
+                                            if (
+                                              e instanceof TypeError ||
+                                              e?.plasmicType ===
+                                                "PlasmicUndefinedDataError"
+                                            ) {
+                                              return "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ";
+                                            }
+                                            throw e;
+                                          }
+                                        })()}
+                                      </React.Fragment>
+                                    }
                                   >
                                     <h2
                                       className={classNames(
@@ -590,23 +615,25 @@ function PlasmicClients__RenderFunc(props: {
                                         sty.h2__aUwh3
                                       )}
                                     >
-                                      {(() => {
-                                        try {
-                                          return $queries.googleInformation.data
-                                            .response.result.reviews[
-                                            currentItem
-                                          ].author_name;
-                                        } catch (e) {
-                                          if (
-                                            e instanceof TypeError ||
-                                            e?.plasmicType ===
-                                              "PlasmicUndefinedDataError"
-                                          ) {
-                                            return "Client name";
+                                      <React.Fragment>
+                                        {(() => {
+                                          try {
+                                            return $queries.googleInformation
+                                              .data.response.result.reviews[
+                                              currentItem
+                                            ].author_name;
+                                          } catch (e) {
+                                            if (
+                                              e instanceof TypeError ||
+                                              e?.plasmicType ===
+                                                "PlasmicUndefinedDataError"
+                                            ) {
+                                              return "Client name";
+                                            }
+                                            throw e;
                                           }
-                                          throw e;
-                                        }
-                                      })()}
+                                        })()}
+                                      </React.Fragment>
                                     </h2>
                                   </Client>
                                 ))

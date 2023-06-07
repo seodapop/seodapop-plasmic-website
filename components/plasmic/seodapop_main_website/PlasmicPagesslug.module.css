@@ -16,7 +16,7 @@
   position: relative;
   width: 1447px;
 }
-.freeBox__tSr9A {
+.freeBox {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -27,39 +27,11 @@
   max-width: 100%;
   padding: 8px;
 }
-.sanityPageFetcher:global(.__wab_instance) {
-  display: flex;
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-  width: 100%;
-  flex-direction: column;
-  min-width: 0;
-  padding: 8px;
-}
-.freeBox__jXwe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  padding: 8px;
-  margin: auto;
-}
-.pageMetadataOverride:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
 .h1 {
   position: relative;
   width: 100%;
   height: auto;
-  max-width: 923px;
-  color: var(--token-DqaU8LCmnXbTsk);
-  padding-bottom: 23px;
+  max-width: 100%;
   min-width: 0;
 }
 .homeFooterTop:global(.__wab_instance) {

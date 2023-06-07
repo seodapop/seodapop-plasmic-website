@@ -714,24 +714,25 @@ function PlasmicContactUs__RenderFunc(props: {
                                       )}
                                       key={currentIndex}
                                     >
-                                      {(() => {
-                                        try {
-                                          return $queries.GooglePlace.data
-                                            .response.result
-                                            .current_opening_hours.weekday_text[
-                                            currentIndex
-                                          ];
-                                        } catch (e) {
-                                          if (
-                                            e instanceof TypeError ||
-                                            e?.plasmicType ===
-                                              "PlasmicUndefinedDataError"
-                                          ) {
-                                            return "1234 Lorem Ipsum .\nLorem Ipsum , GA 30308\n1234567890";
+                                      <React.Fragment>
+                                        {(() => {
+                                          try {
+                                            return $queries.GooglePlace.data
+                                              .response.result
+                                              .current_opening_hours
+                                              .weekday_text[currentIndex];
+                                          } catch (e) {
+                                            if (
+                                              e instanceof TypeError ||
+                                              e?.plasmicType ===
+                                                "PlasmicUndefinedDataError"
+                                            ) {
+                                              return "1234 Lorem Ipsum .\nLorem Ipsum , GA 30308\n1234567890";
+                                            }
+                                            throw e;
                                           }
-                                          throw e;
-                                        }
-                                      })()}
+                                        })()}
+                                      </React.Fragment>
                                     </div>
                                   ))}
                                 </React.Fragment>
@@ -770,19 +771,21 @@ function PlasmicContactUs__RenderFunc(props: {
               sty.text___7ZuaH
             )}
           >
-            {(() => {
-              try {
-                return `Powered by seodaPop copyright © ${new Date().getFullYear()}`;
-              } catch (e) {
-                if (
-                  e instanceof TypeError ||
-                  e?.plasmicType === "PlasmicUndefinedDataError"
-                ) {
-                  return "Enter some text";
+            <React.Fragment>
+              {(() => {
+                try {
+                  return `Powered by seodaPop copyright © ${new Date().getFullYear()}`;
+                } catch (e) {
+                  if (
+                    e instanceof TypeError ||
+                    e?.plasmicType === "PlasmicUndefinedDataError"
+                  ) {
+                    return "Enter some text";
+                  }
+                  throw e;
                 }
-                throw e;
-              }
-            })()}
+              })()}
+            </React.Fragment>
           </div>
         </div>
       </div>

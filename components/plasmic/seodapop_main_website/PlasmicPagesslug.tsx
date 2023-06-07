@@ -43,8 +43,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: UvDP15VkVO5hmb/component
-import { SanityFetcher } from "@plasmicpkgs/plasmic-sanity-io"; // plasmic-import: 9KPt6XktlFK/codeComponent
-import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: P_dmI5SNPE/codeComponent
 import HomeFooterTop from "../../HomeFooterTop"; // plasmic-import: Sh8nt7GR3decD/component
 import FooterMain from "../../FooterMain"; // plasmic-import: I_5el5M-Bk81Xi/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
@@ -60,15 +58,16 @@ export type PlasmicPagesslug__VariantsArgs = {};
 type VariantPropType = keyof PlasmicPagesslug__VariantsArgs;
 export const PlasmicPagesslug__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicPagesslug__ArgsType = {};
+export type PlasmicPagesslug__ArgsType = {
+  pageData?: "Dynamic options";
+};
 type ArgPropType = keyof PlasmicPagesslug__ArgsType;
-export const PlasmicPagesslug__ArgProps = new Array<ArgPropType>();
+export const PlasmicPagesslug__ArgProps = new Array<ArgPropType>("pageData");
 
 export type PlasmicPagesslug__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
-  sanityPageFetcher?: p.Flex<typeof SanityFetcher>;
-  pageMetadataOverride?: p.Flex<typeof PlasmicHead>;
+  freeBox?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
   homeFooterTop?: p.Flex<typeof HomeFooterTop>;
   footerMain?: p.Flex<typeof FooterMain>;
@@ -146,110 +145,37 @@ function PlasmicPagesslug__RenderFunc(props: {
               className={classNames("__wab_instance", sty.header)}
             />
 
-            <div className={classNames(projectcss.all, sty.freeBox__tSr9A)}>
-              <SanityFetcher
-                data-plasmic-name={"sanityPageFetcher"}
-                data-plasmic-override={overrides.sanityPageFetcher}
-                className={classNames("__wab_instance", sty.sanityPageFetcher)}
-                filterParameter={"==" as const}
-                filterValue={(() => {
-                  try {
-                    return $ctx.params.slug;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return undefined;
-                    }
-                    throw e;
-                  }
-                })()}
-                groq={(() => {
-                  try {
-                    return `*[_type == 'page' && slug.current == '${$ctx.params.slug}'] {_id,_createdAt,title,body,publishedAt,'slug': slug.current}`;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return undefined;
-                    }
-                    throw e;
-                  }
-                })()}
-                limit={"1" as const}
-                noAutoRepeat={false}
-                noLayout={false}
+            <div
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              className={classNames(projectcss.all, sty.freeBox)}
+            >
+              <h1
+                data-plasmic-name={"h1"}
+                data-plasmic-override={overrides.h1}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1
+                )}
               >
-                <ph.DataCtxReader>
-                  {$ctx => (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__jXwe)}
-                    >
-                      <PlasmicHead
-                        data-plasmic-name={"pageMetadataOverride"}
-                        data-plasmic-override={overrides.pageMetadataOverride}
-                        canonical={(() => {
-                          try {
-                            return `https://seodapop.com/$ctx.sanityItem.slug`;
-                          } catch (e) {
-                            if (
-                              e instanceof TypeError ||
-                              e?.plasmicType === "PlasmicUndefinedDataError"
-                            ) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                        className={classNames(
-                          "__wab_instance",
-                          sty.pageMetadataOverride
-                        )}
-                        title={(() => {
-                          try {
-                            return $ctx.sanityItems[0].title;
-                          } catch (e) {
-                            if (
-                              e instanceof TypeError ||
-                              e?.plasmicType === "PlasmicUndefinedDataError"
-                            ) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                      />
-
-                      <h1
-                        data-plasmic-name={"h1"}
-                        data-plasmic-override={overrides.h1}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h1,
-                          projectcss.__wab_text,
-                          sty.h1
-                        )}
-                      >
-                        {(() => {
-                          try {
-                            return $ctx.sanityItems[0].title;
-                          } catch (e) {
-                            if (
-                              e instanceof TypeError ||
-                              e?.plasmicType === "PlasmicUndefinedDataError"
-                            ) {
-                              return "You won't believe what happens next.";
-                            }
-                            throw e;
-                          }
-                        })()}
-                      </h1>
-                    </div>
-                  )}
-                </ph.DataCtxReader>
-              </SanityFetcher>
+                <React.Fragment>
+                  {(() => {
+                    try {
+                      return undefined;
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return "You won't believe what happens next.";
+                      }
+                      throw e;
+                    }
+                  })()}
+                </React.Fragment>
+              </h1>
             </div>
             <HomeFooterTop
               data-plasmic-name={"homeFooterTop"}
@@ -270,18 +196,9 @@ function PlasmicPagesslug__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "header",
-    "sanityPageFetcher",
-    "pageMetadataOverride",
-    "h1",
-    "homeFooterTop",
-    "footerMain"
-  ],
+  root: ["root", "header", "freeBox", "h1", "homeFooterTop", "footerMain"],
   header: ["header"],
-  sanityPageFetcher: ["sanityPageFetcher", "pageMetadataOverride", "h1"],
-  pageMetadataOverride: ["pageMetadataOverride"],
+  freeBox: ["freeBox", "h1"],
   h1: ["h1"],
   homeFooterTop: ["homeFooterTop"],
   footerMain: ["footerMain"]
@@ -292,8 +209,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
-  sanityPageFetcher: typeof SanityFetcher;
-  pageMetadataOverride: typeof PlasmicHead;
+  freeBox: "div";
   h1: "h1";
   homeFooterTop: typeof HomeFooterTop;
   footerMain: typeof FooterMain;
@@ -360,8 +276,7 @@ export const PlasmicPagesslug = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
-    sanityPageFetcher: makeNodeComponent("sanityPageFetcher"),
-    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
+    freeBox: makeNodeComponent("freeBox"),
     h1: makeNodeComponent("h1"),
     homeFooterTop: makeNodeComponent("homeFooterTop"),
     footerMain: makeNodeComponent("footerMain"),
