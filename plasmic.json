@@ -537,19 +537,6 @@
           "componentType": "page"
         },
         {
-          "id": "sTPn1uNXQV",
-          "name": "Pagesslug",
-          "type": "managed",
-          "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
-          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicPagesslug.tsx",
-          "importSpec": {
-            "modulePath": "../pages/pages/[slug].tsx"
-          },
-          "cssFilePath": "plasmic/seodapop_main_website/PlasmicPagesslug.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "hHvPWKVFpN",
           "name": "NewPage",
           "type": "managed",
@@ -559,6 +546,19 @@
             "modulePath": "../pages/new-page.tsx"
           },
           "cssFilePath": "plasmic/seodapop_main_website/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "sTPn1uNXQV",
+          "name": "Pagesslug",
+          "type": "managed",
+          "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
+          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicPagesslug.tsx",
+          "importSpec": {
+            "modulePath": "../pages/pages/[slug].tsx"
+          },
+          "cssFilePath": "plasmic/seodapop_main_website/PlasmicPagesslug.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }

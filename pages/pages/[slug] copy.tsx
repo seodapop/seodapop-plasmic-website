@@ -37,11 +37,14 @@ function Pagesslug({ individualPageDetail }: { individualPageDetail: PageDetailP
         params={useRouter()?.query}
         query={useRouter()?.query}
       >
+        {/* <div>{individualPageDetail.title}</div>
+        <RichText values={individualPageDetail.body} /> */}
         <PlasmicPagesslug />
       </ph.PageParamsProvider>
     </GlobalContextsProvider>
   );
 }
+
 
 export const getStaticProps = async ({
   params: { slug },
