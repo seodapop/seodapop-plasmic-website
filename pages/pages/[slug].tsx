@@ -7,9 +7,15 @@ import { PlasmicPagesslug } from "../../components/plasmic/seodapop_main_website
 import { useRouter } from "next/router";
 import sanity from "../../sanity";
 
+interface PagesslugProps {
+  individualPageDetail: {
+    title: string;
+    body: any;
+    mainImage: string
+  }
+}
 
-
-function Pagesslug() {
+function Pagesslug(props: PagesslugProps) {
   // Use PlasmicPagesslug to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
@@ -43,7 +49,7 @@ export const getStaticProps = async ({
 }: {
   params: { slug: string };
 }) => {
-  const individualBlogDetailQuery = `*[_type == "blog" && slug.current == "${slug}"][0] {
+  const individualPageDetailQuery = `*[_type == "page" && slug.current == "${slug}"][0] {
     _id,
     _createdAt,
     title,    
@@ -52,11 +58,12 @@ export const getStaticProps = async ({
 	 }
 	 `;
 
-  const individualBlogDetail = await sanity.fetch(
-    individualBlogDetailQuery
+  const individualPageDetail = await sanity.fetch(
+    individualPageDetailQuery
   );
+
   return {
-    props: { individualBlogDetail },
+    props: { individualPageDetail },
     revalidate: 3600,
   };
 };
