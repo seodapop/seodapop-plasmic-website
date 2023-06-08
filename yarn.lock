@@ -1019,10 +1019,10 @@
     picocolors "^1.0.0"
     tslib "^2.5.0"
 
-"@plasmicapp/cli@^0.1.289":
-  version "0.1.289"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.289.tgz#4b77c0438061c558c06561ba5fe029cf7da1b65c"
-  integrity sha512-u8nlLjmf7YBgL2Z8Lw1AFIchJqv+CMEGS9BqwGnVZomNJnPfqYvgatF3XqO5fOUR5fKmR/hv/0IXL1Oz2Rh/bA==
+"@plasmicapp/cli@^0.1.292":
+  version "0.1.292"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.292.tgz#86c566f6ad7f08d44ad732abb4e2934abf4fbbd2"
+  integrity sha512-l73v5PFWzEU8wIU1b1pBbpV7F+VL4bFYGjfoFZXAfJWHhvA6LZ5VVSKEITLQwoOmPx/zKeg0l3vkAojYoU9KcQ==
   dependencies:
     "@babel/core" "^7.12.3"
     "@babel/generator" "^7.12.1"

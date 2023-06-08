@@ -43,6 +43,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: UvDP15VkVO5hmb/component
+import { SanityFetcher } from "@plasmicpkgs/plasmic-sanity-io"; // plasmic-import: 9KPt6XktlFK/codeComponent
+import { RichText } from "../../PortableText"; // plasmic-import: z4BjgnwqwS/codeComponent
 import HomeFooterTop from "../../HomeFooterTop"; // plasmic-import: Sh8nt7GR3decD/component
 import FooterMain from "../../FooterMain"; // plasmic-import: I_5el5M-Bk81Xi/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
@@ -67,8 +69,10 @@ export const PlasmicPagesslug__ArgProps = new Array<ArgPropType>("pageData");
 export type PlasmicPagesslug__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
-  freeBox?: p.Flex<"div">;
-  h1?: p.Flex<"h1">;
+  sanityFetcher?: p.Flex<typeof SanityFetcher>;
+  text?: p.Flex<"div">;
+  img?: p.Flex<typeof p.PlasmicImg>;
+  richText?: p.Flex<typeof RichText>;
   homeFooterTop?: p.Flex<typeof HomeFooterTop>;
   footerMain?: p.Flex<typeof FooterMain>;
 };
@@ -100,7 +104,16 @@ function PlasmicPagesslug__RenderFunc(props: {
   const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          pageData: "Dynamic options" as const
+        },
+        props.args
+      ),
+    [props.args]
+  );
   const $props = {
     ...args,
     ...variants
@@ -145,37 +158,115 @@ function PlasmicPagesslug__RenderFunc(props: {
               className={classNames("__wab_instance", sty.header)}
             />
 
-            <div
-              data-plasmic-name={"freeBox"}
-              data-plasmic-override={overrides.freeBox}
-              className={classNames(projectcss.all, sty.freeBox)}
-            >
-              <h1
-                data-plasmic-name={"h1"}
-                data-plasmic-override={overrides.h1}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h1,
-                  projectcss.__wab_text,
-                  sty.h1
-                )}
-              >
-                <React.Fragment>
-                  {(() => {
-                    try {
+            <div className={classNames(projectcss.all, sty.freeBox__tSr9A)}>
+              <SanityFetcher
+                data-plasmic-name={"sanityFetcher"}
+                data-plasmic-override={overrides.sanityFetcher}
+                className={classNames("__wab_instance", sty.sanityFetcher)}
+                groq={(() => {
+                  try {
+                    return `*[_type == "page"&& slug.current == "${$ctx.params.slug}" ] {
+    _id,
+    _createdAt,
+    title,    body,'mainImage':mainImage.asset->url
+}`;
+                  } catch (e) {
+                    if (
+                      e instanceof TypeError ||
+                      e?.plasmicType === "PlasmicUndefinedDataError"
+                    ) {
                       return undefined;
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return "You won't believe what happens next.";
-                      }
-                      throw e;
                     }
-                  })()}
-                </React.Fragment>
-              </h1>
+                    throw e;
+                  }
+                })()}
+                noAutoRepeat={true}
+                noLayout={false}
+              >
+                <ph.DataCtxReader>
+                  {$ctx =>
+                    true ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__qaaB1
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={"text"}
+                          data-plasmic-override={overrides.text}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text
+                          )}
+                        >
+                          <React.Fragment>
+                            {(() => {
+                              try {
+                                return $ctx.sanityItems[0].title;
+                              } catch (e) {
+                                if (
+                                  e instanceof TypeError ||
+                                  e?.plasmicType === "PlasmicUndefinedDataError"
+                                ) {
+                                  return "";
+                                }
+                                throw e;
+                              }
+                            })()}
+                          </React.Fragment>
+                        </div>
+                        <p.PlasmicImg
+                          data-plasmic-name={"img"}
+                          data-plasmic-override={overrides.img}
+                          alt={""}
+                          className={classNames(sty.img)}
+                          displayHeight={"auto" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"auto" as const}
+                          loading={"lazy" as const}
+                          src={(() => {
+                            try {
+                              return $ctx.sanityItems[0].mainImage;
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+
+                        <RichText
+                          data-plasmic-name={"richText"}
+                          data-plasmic-override={overrides.richText}
+                          className={classNames("__wab_instance", sty.richText)}
+                          values={(() => {
+                            try {
+                              return $ctx.sanityItems[0].body;
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+                      </div>
+                    ) : null
+                  }
+                </ph.DataCtxReader>
+              </SanityFetcher>
             </div>
             <HomeFooterTop
               data-plasmic-name={"homeFooterTop"}
@@ -196,10 +287,21 @@ function PlasmicPagesslug__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "freeBox", "h1", "homeFooterTop", "footerMain"],
+  root: [
+    "root",
+    "header",
+    "sanityFetcher",
+    "text",
+    "img",
+    "richText",
+    "homeFooterTop",
+    "footerMain"
+  ],
   header: ["header"],
-  freeBox: ["freeBox", "h1"],
-  h1: ["h1"],
+  sanityFetcher: ["sanityFetcher", "text", "img", "richText"],
+  text: ["text"],
+  img: ["img"],
+  richText: ["richText"],
   homeFooterTop: ["homeFooterTop"],
   footerMain: ["footerMain"]
 } as const;
@@ -209,8 +311,10 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
-  freeBox: "div";
-  h1: "h1";
+  sanityFetcher: typeof SanityFetcher;
+  text: "div";
+  img: typeof p.PlasmicImg;
+  richText: typeof RichText;
   homeFooterTop: typeof HomeFooterTop;
   footerMain: typeof FooterMain;
 };
@@ -276,8 +380,10 @@ export const PlasmicPagesslug = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
-    freeBox: makeNodeComponent("freeBox"),
-    h1: makeNodeComponent("h1"),
+    sanityFetcher: makeNodeComponent("sanityFetcher"),
+    text: makeNodeComponent("text"),
+    img: makeNodeComponent("img"),
+    richText: makeNodeComponent("richText"),
     homeFooterTop: makeNodeComponent("homeFooterTop"),
     footerMain: makeNodeComponent("footerMain"),
 

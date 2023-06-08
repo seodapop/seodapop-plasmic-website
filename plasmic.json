@@ -231,8 +231,7 @@
           "displayName": "plasmic-antd5-date-picker",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDatePicker"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "kmmGrmCVRJPgZ5NNJMDQ4v",
@@ -951,6 +950,12 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        },
+        {
+          "id": "z4BjgnwqwS",
+          "name": "RichText",
+          "displayName": "RichText",
+          "componentImportPath": "./components/PortableText"
         }
       ]
     },
@@ -1259,6 +1264,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.289",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.289/dist/plasmic.schema.json"
+  "cliVersion": "0.1.292",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.292/dist/plasmic.schema.json"
 }
