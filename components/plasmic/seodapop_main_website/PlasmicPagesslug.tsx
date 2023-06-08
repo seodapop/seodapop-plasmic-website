@@ -413,7 +413,7 @@ function PlasmicPagesslug__RenderFunc(props: {
                 className={classNames("__wab_instance", sty.sanityFetcher)}
                 groq={(() => {
                   try {
-                    return `*[_type == "page"&& slug.current == "${$props.individualPageDetail.slug.current}" ] {
+                    return `*[_type == "page"&& slug.current == "${$ctx.params.slug}" ] {
     _id,
     _createdAt,
     title,    body,'mainImage':mainImage.asset->url
