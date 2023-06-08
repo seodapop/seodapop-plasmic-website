@@ -5,16 +5,10 @@ import * as ph from "@plasmicapp/react-web/lib/host";
 import GlobalContextsProvider from "../../components/plasmic/seodapop_main_website/PlasmicGlobalContextsProvider";
 import { PlasmicPagesslug } from "../../components/plasmic/seodapop_main_website/PlasmicPagesslug";
 import { useRouter } from "next/router";
-import { GetStaticPaths } from "next/types";
-import sanity from "../../sanity";
 
-interface PageDetailProps {
-  slug: string;
-  _id: string;
-  body: any;
-}
 
-function Pagesslug({ individualPageDetail }: { individualPageDetail: PageDetailProps }) {
+
+function Pagesslug() {
   // Use PlasmicPagesslug to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
@@ -43,42 +37,5 @@ function Pagesslug({ individualPageDetail }: { individualPageDetail: PageDetailP
   );
 }
 
-export const getStaticProps = async ({
-  params: { slug },
-}: {
-  params: { slug: string };
-}) => {
-  const individualPageDetailQuery = `*[_type == "page" && slug.current == "${slug}"][0] {
-		_id,
-		_createdAt,
-		title,
-		body,
-		'slug': slug.current,
-    
-	 }
-	 `;
-  const individualPageDetail = await sanity.fetch(individualPageDetailQuery);
-  return {
-    props: { individualPageDetail },
-    revalidate: 3600,
-  };
-};
 
-export const getStaticPaths: GetStaticPaths = async () => {
-
-  const pageListQuery = `*[_type == "page"] {
-    'slug': slug.current,
-	 }
-	 `;
-
-  const pageList = (await sanity.fetch(pageListQuery)) || [];
-  const paths = pageList.map((page: { slug: string }) => ({
-    params: { slug: page.slug },
-  }));
-  return {
-    paths,
-    fallback: false,
-  };
-
-};
 export default Pagesslug;
