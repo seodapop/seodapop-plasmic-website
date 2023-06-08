@@ -21,12 +21,6 @@ import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
-  usePlasmicDataConfig,
-  executePlasmicDataOp,
-  usePlasmicDataOp
-} from "@plasmicapp/react-web/lib/data-sources";
-
-import {
   hasVariant,
   classNames,
   wrapWithClassName,
@@ -44,10 +38,9 @@ import {
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: UvDP15VkVO5hmb/component
 import { SanityFetcher } from "@plasmicpkgs/plasmic-sanity-io"; // plasmic-import: 9KPt6XktlFK/codeComponent
-import RichText from "../../PortableText"; // plasmic-import: z4BjgnwqwS/codeComponent
+import { RichText } from "../../PortableText"; // plasmic-import: z4BjgnwqwS/codeComponent
 import HomeFooterTop from "../../HomeFooterTop"; // plasmic-import: Sh8nt7GR3decD/component
 import FooterMain from "../../FooterMain"; // plasmic-import: I_5el5M-Bk81Xi/component
-import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -62,9 +55,13 @@ export const PlasmicPagesslug__VariantProps = new Array<VariantPropType>();
 
 export type PlasmicPagesslug__ArgsType = {
   pageData?: "Dynamic options";
+  individualPageDetail?: any;
 };
 type ArgPropType = keyof PlasmicPagesslug__ArgsType;
-export const PlasmicPagesslug__ArgProps = new Array<ArgPropType>("pageData");
+export const PlasmicPagesslug__ArgProps = new Array<ArgPropType>(
+  "pageData",
+  "individualPageDetail"
+);
 
 export type PlasmicPagesslug__OverridesType = {
   root?: p.Flex<"div">;
@@ -108,7 +105,258 @@ function PlasmicPagesslug__RenderFunc(props: {
     () =>
       Object.assign(
         {
-          pageData: "Dynamic options" as const
+          pageData: "Dynamic options" as const,
+          individualPageDetail: {
+            _createdAt: "2023-06-01T20:45:06Z",
+            _id: "drafts.3a81fa47-e82d-45c4-8a0a-65f88e5ace56",
+            _rev: "256c7528-fbea-47a0-85a5-1bc182556ca1",
+            _type: "page",
+            _updatedAt: "2023-06-02T18:47:02Z",
+            body: [
+              {
+                _key: "64c2e46ff2c5",
+                _type: "block",
+                children: [
+                  {
+                    _key: "3f88193799bd0",
+                    _type: "span",
+                    marks: [],
+                    text: "ADA stands for the Americans with Disabilities Act, which aims to ensure equal access and non-discrimination for individuals with disabilities. ADA compliance for websites refers to making websites accessible to people with disabilities, including those with visual, auditory, motor, or cognitive impairments. Here are some key points regarding ADA compliance website updates:"
+                  }
+                ],
+                markDefs: [],
+                style: "normal"
+              },
+              {
+                _key: "f1177657f13f",
+                _type: "block",
+                children: [
+                  {
+                    _key: "24008f68cb450",
+                    _type: "span",
+                    marks: [],
+                    text: "Accessibility Guidelines: "
+                  }
+                ],
+                markDefs: [],
+                style: "h4"
+              },
+              {
+                _key: "483cfe8216c7",
+                _type: "block",
+                children: [
+                  {
+                    _key: "005636528db3",
+                    _type: "span",
+                    marks: [],
+                    text: "ADA compliance for websites typically follows the Web Content Accessibility Guidelines (WCAG), which provide a set of standards and best practices for making web content accessible. The current version of WCAG is WCAG 2.1, which includes guidelines for various accessibility aspects, such as perceivable content, operable user interfaces, understandable information, and robust technology."
+                  }
+                ],
+                markDefs: [],
+                style: "normal"
+              },
+              {
+                _key: "0448ad4b3e88",
+                _type: "block",
+                children: [
+                  {
+                    _key: "bae80ae1c9d40",
+                    _type: "span",
+                    marks: [],
+                    text: "Perceivable Content: "
+                  }
+                ],
+                markDefs: [],
+                style: "h4"
+              },
+              {
+                _key: "dbd6081d7ef1",
+                _type: "block",
+                children: [
+                  {
+                    _key: "4d3f4a34098a",
+                    _type: "span",
+                    marks: [],
+                    text: "ADA compliance involves ensuring that website content is perceivable by individuals with disabilities. This includes providing alternative text for images, captions for videos, text alternatives for non-text content, and the ability to adjust text size and contrast."
+                  }
+                ],
+                markDefs: [],
+                style: "normal"
+              },
+              {
+                _key: "f8416ed913df",
+                _type: "block",
+                children: [
+                  {
+                    _key: "b9150bc3fb220",
+                    _type: "span",
+                    marks: [],
+                    text: "Operable User Interfaces: "
+                  }
+                ],
+                markDefs: [],
+                style: "h4"
+              },
+              {
+                _key: "0cb2b51e4886",
+                _type: "block",
+                children: [
+                  {
+                    _key: "39a679785140",
+                    _type: "span",
+                    marks: [],
+                    text: "Websites should have user interfaces that can be easily operated by people with disabilities. This includes providing keyboard accessibility, ensuring that all functionalities are operable through a keyboard interface, and avoiding design elements that may cause seizures or other physical reactions."
+                  }
+                ],
+                markDefs: [],
+                style: "normal"
+              },
+              {
+                _key: "a93256780901",
+                _type: "block",
+                children: [
+                  {
+                    _key: "e6d4f42b9a620",
+                    _type: "span",
+                    marks: [],
+                    text: "Understandable Information: "
+                  }
+                ],
+                markDefs: [],
+                style: "h4"
+              },
+              {
+                _key: "c2ab4efc3ea3",
+                _type: "block",
+                children: [
+                  {
+                    _key: "99e12399ebd9",
+                    _type: "span",
+                    marks: [],
+                    text: "ADA-compliant websites aim to present information and functionality in a clear and understandable manner. This involves using clear and concise language, providing instructions and cues to help users navigate and interact with the website, and avoiding design elements that may cause confusion."
+                  }
+                ],
+                markDefs: [],
+                style: "normal"
+              },
+              {
+                _key: "c5f25dcad8d0",
+                _type: "block",
+                children: [
+                  {
+                    _key: "6aa7c63ab7840",
+                    _type: "span",
+                    marks: [],
+                    text: "Robust Technology: "
+                  }
+                ],
+                markDefs: [],
+                style: "h4"
+              },
+              {
+                _key: "8db06b249855",
+                _type: "block",
+                children: [
+                  {
+                    _key: "dedffb2e8614",
+                    _type: "span",
+                    marks: [],
+                    text: "ADA compliance considers the use of robust and compatible technology to ensure accessibility. This includes using markup and code that can be correctly interpreted by assistive technologies, supporting industry standards, and testing websites across different browsers and devices."
+                  }
+                ],
+                markDefs: [],
+                style: "normal"
+              },
+              {
+                _key: "f6aa384c59a9",
+                _type: "block",
+                children: [
+                  {
+                    _key: "978b29278b0f0",
+                    _type: "span",
+                    marks: [],
+                    text: "Assistive Technologies: "
+                  }
+                ],
+                markDefs: [],
+                style: "h4"
+              },
+              {
+                _key: "c4b24b0e3fff",
+                _type: "block",
+                children: [
+                  {
+                    _key: "5b7f2637e712",
+                    _type: "span",
+                    marks: [],
+                    text: "ADA-compliant websites should be compatible with assistive technologies, such as screen readers, screen magnifiers, and voice recognition software. Developers need to ensure that the website structure and content are accessible to these technologies, allowing individuals with disabilities to access and interact with the website effectively."
+                  }
+                ],
+                markDefs: [],
+                style: "normal"
+              },
+              {
+                _key: "f72d306a97d2",
+                _type: "block",
+                children: [
+                  {
+                    _key: "d172023ff5400",
+                    _type: "span",
+                    marks: [],
+                    text: "Regular Audits and Updates: "
+                  }
+                ],
+                markDefs: [],
+                style: "h4"
+              },
+              {
+                _key: "83a2159503bc",
+                _type: "block",
+                children: [
+                  {
+                    _key: "1a8d0b10b6bf",
+                    _type: "span",
+                    marks: [],
+                    text: "ADA compliance for websites is an ongoing process. Regular audits and updates are necessary to identify and address any accessibility issues that may arise. This may involve conducting accessibility audits, user testing with individuals with disabilities, and implementing necessary changes to improve accessibility."
+                  }
+                ],
+                markDefs: [],
+                style: "normal"
+              },
+              {
+                _key: "036f4312aa8a",
+                _type: "block",
+                children: [
+                  { _key: "28a47941e52c", _type: "span", marks: [], text: "" }
+                ],
+                markDefs: [],
+                style: "normal"
+              },
+              {
+                _key: "c0e430e03293",
+                _type: "block",
+                children: [
+                  {
+                    _key: "fbec02e288d30",
+                    _type: "span",
+                    marks: [],
+                    text: "ADA compliance website updates are important to ensure inclusivity, provide equal access to information and services, and avoid potential legal issues. By making websites accessible, businesses can reach a broader audience, improve user experience, and demonstrate their commitment to inclusivity and social responsibility."
+                  }
+                ],
+                markDefs: [],
+                style: "normal"
+              }
+            ],
+            mainImage: {
+              _type: "image",
+              asset: {
+                _ref: "image-70e7aab01133cfec061c2bc30dc55ce7a8b28059-6000x4000-jpg",
+                _type: "reference"
+              }
+            },
+            slug: { _type: "slug", current: "ada-updates" },
+            title: "ADA Updates"
+          }
         },
         props.args
       ),
@@ -165,7 +413,7 @@ function PlasmicPagesslug__RenderFunc(props: {
                 className={classNames("__wab_instance", sty.sanityFetcher)}
                 groq={(() => {
                   try {
-                    return `*[_type == "page"&& slug.current == "${$ctx.params.slug}" ] {
+                    return `*[_type == "page"&& slug.current == "${$props.individualPageDetail.slug.current}" ] {
     _id,
     _createdAt,
     title,    body,'mainImage':mainImage.asset->url
@@ -297,7 +545,6 @@ const PlasmicDescendants = {
     "homeFooterTop",
     "footerMain"
   ],
-
   header: ["header"],
   sanityFetcher: ["sanityFetcher", "text", "img", "richText"],
   text: ["text"],
@@ -325,7 +572,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicPagesslug__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

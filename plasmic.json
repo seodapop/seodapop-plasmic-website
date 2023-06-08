@@ -958,8 +958,7 @@
           "displayName": "RichText",
           "componentImportPath": "./components/PortableText"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "YUiM7yqBWAqsh8KSnrdj7",
