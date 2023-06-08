@@ -242,6 +242,7 @@ function PlasmicNewPage__RenderFunc(props: {
                                 </React.Fragment>
                               </h2>
                             }
+
                             <React.Fragment>{""}</React.Fragment>
                           </React.Fragment>
                         </div>
@@ -297,6 +298,7 @@ function PlasmicNewPage__RenderFunc(props: {
                         {"But, Do you really need SEO?"}
                       </h3>
                     }
+
                     <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
@@ -410,6 +412,7 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicNewPage__OverridesType,
   DescendantsType<T>
 >;
+
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

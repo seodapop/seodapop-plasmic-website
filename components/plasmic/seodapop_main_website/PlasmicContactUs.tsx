@@ -161,6 +161,7 @@ function PlasmicContactUs__RenderFunc(props: {
         initFunc: ({ $props, $state, $queries, $ctx }) => "" as const
       }
     ],
+
     [$props, $ctx]
   );
   const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
@@ -179,6 +180,7 @@ function PlasmicContactUs__RenderFunc(props: {
           property="og:title"
           content={PlasmicContactUs.pageMetadata.title}
         />
+
         <meta
           key="twitter:title"
           name="twitter:title"
@@ -813,6 +815,7 @@ const PlasmicDescendants = {
     "homeFooterTop",
     "footerMain"
   ],
+
   header: ["header"],
   banner: ["banner", "foreground2", "h1"],
   foreground2: ["foreground2", "h1"],
@@ -828,6 +831,7 @@ const PlasmicDescendants = {
     "button",
     "dataFetcher"
   ],
+
   formWrapper: [
     "formWrapper",
     "name",
@@ -837,6 +841,7 @@ const PlasmicDescendants = {
     "textarea",
     "button"
   ],
+
   name: ["name", "svg"],
   svg: ["svg"],
   name2: ["name2"],
@@ -876,6 +881,7 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicContactUs__OverridesType,
   DescendantsType<T>
 >;
+
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

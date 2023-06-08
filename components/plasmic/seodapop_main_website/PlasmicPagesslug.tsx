@@ -297,6 +297,7 @@ const PlasmicDescendants = {
     "homeFooterTop",
     "footerMain"
   ],
+
   header: ["header"],
   sanityFetcher: ["sanityFetcher", "text", "img", "richText"],
   text: ["text"],
@@ -324,6 +325,7 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicPagesslug__OverridesType,
   DescendantsType<T>
 >;
+
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {
