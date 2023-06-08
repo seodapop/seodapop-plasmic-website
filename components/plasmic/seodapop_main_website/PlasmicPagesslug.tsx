@@ -44,7 +44,7 @@ import {
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: UvDP15VkVO5hmb/component
 import { SanityFetcher } from "@plasmicpkgs/plasmic-sanity-io"; // plasmic-import: 9KPt6XktlFK/codeComponent
-import { RichText } from "../../PortableText"; // plasmic-import: z4BjgnwqwS/codeComponent
+import RichText from "../../PortableText"; // plasmic-import: z4BjgnwqwS/codeComponent
 import HomeFooterTop from "../../HomeFooterTop"; // plasmic-import: Sh8nt7GR3decD/component
 import FooterMain from "../../FooterMain"; // plasmic-import: I_5el5M-Bk81Xi/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
