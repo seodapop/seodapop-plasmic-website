@@ -21,12 +21,6 @@ import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
-  usePlasmicDataConfig,
-  executePlasmicDataOp,
-  usePlasmicDataOp
-} from "@plasmicapp/react-web/lib/data-sources";
-
-import {
   hasVariant,
   classNames,
   wrapWithClassName,
@@ -47,7 +41,6 @@ import { SanityFetcher } from "@plasmicpkgs/plasmic-sanity-io"; // plasmic-impor
 import RichText from "../../PortableText"; // plasmic-import: z4BjgnwqwS/codeComponent
 import HomeFooterTop from "../../HomeFooterTop"; // plasmic-import: Sh8nt7GR3decD/component
 import FooterMain from "../../FooterMain"; // plasmic-import: I_5el5M-Bk81Xi/component
-import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -77,7 +70,7 @@ export type PlasmicPagesslug__OverridesType = {
   footerMain?: p.Flex<typeof FooterMain>;
 };
 
-export interface DefaultPagesslugProps {}
+export interface DefaultPagesslugProps { }
 
 const __wrapUserFunction =
   globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
@@ -90,7 +83,7 @@ const __wrapUserPromise =
 function useNextRouter() {
   try {
     return useRouter();
-  } catch {}
+  } catch { }
   return undefined;
 }
 
@@ -297,7 +290,6 @@ const PlasmicDescendants = {
     "homeFooterTop",
     "footerMain"
   ],
-
   header: ["header"],
   sanityFetcher: ["sanityFetcher", "text", "img", "richText"],
   text: ["text"],
@@ -325,7 +317,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicPagesslug__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {
@@ -334,17 +325,17 @@ type NodeComponentProps<T extends NodeNameType> =
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicPagesslug__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     /* Specify args directly as props*/ Omit<
-      PlasmicPagesslug__ArgsType,
-      ReservedPropsType
-    > &
+    PlasmicPagesslug__ArgsType,
+    ReservedPropsType
+  > &
     /* Specify overrides for each element directly as props*/ Omit<
-      NodeOverridesType<T>,
-      ReservedPropsType | VariantPropType | ArgPropType
-    > &
+    NodeOverridesType<T>,
+    ReservedPropsType | VariantPropType | ArgPropType
+  > &
     /* Specify props for the root element*/ Omit<
-      Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
-      ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
-    >;
+    Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
+    ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
+  >;
 
 function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   type PropsType = NodeComponentProps<NodeName> & { key?: React.Key };

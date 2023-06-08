@@ -127,7 +127,6 @@ function PlasmicServices__RenderFunc(props: {
           property="og:title"
           content={PlasmicServices.pageMetadata.title}
         />
-
         <meta
           key="twitter:title"
           name="twitter:title"
@@ -558,6 +557,55 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.text__sLzPj
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToPagesslug"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "ekmAyyOWW",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () =>
+                                          `/pages/${"expert-witness-in-technology"}`
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "ekmAyyOWW",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToPagesslug"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "ekmAyyOWW",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToPagesslug"]
+                                  );
+                              }
+                            }}
                           >
                             {"Expert Witness In Technology"}
                           </div>
@@ -875,7 +923,6 @@ const PlasmicDescendants = {
     "homeFooterTop",
     "footerMain"
   ],
-
   header: ["header"],
   aboutUsBanner: ["aboutUsBanner", "foreground2", "h1"],
   foreground2: ["foreground2", "h1"],
@@ -909,7 +956,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicServices__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {
