@@ -8,22 +8,30 @@ import * as React from "react";
 import { hasVariant, ensureGlobalVariants } from "@plasmicapp/react-web";
 import { WordpressProvider } from "@plasmicpkgs/plasmic-wordpress"; // plasmic-import: ABVULPU3AuC/codeComponent
 import { AntdConfigProvider } from "@plasmicpkgs/antd5/skinny/registerConfigProvider"; // plasmic-import: DmrLLHGTjGTE/codeComponent
+import { SanityCredentialsProvider } from "@plasmicpkgs/plasmic-sanity-io"; // plasmic-import: XenoJpDQeDb/codeComponent
 
 export interface GlobalContextsProviderProps {
   children?: React.ReactElement;
   wordpressProviderProps?: Partial<
     Omit<React.ComponentProps<typeof WordpressProvider>, "children">
   >;
-
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
+  >;
+  sanityCredentialsProviderProps?: Partial<
+    Omit<React.ComponentProps<typeof SanityCredentialsProvider>, "children">
   >;
 }
 
 export default function GlobalContextsProvider(
   props: GlobalContextsProviderProps
 ) {
-  const { children, wordpressProviderProps, antdConfigProviderProps } = props;
+  const {
+    children,
+    wordpressProviderProps,
+    antdConfigProviderProps,
+    sanityCredentialsProviderProps
+  } = props;
 
   return (
     <WordpressProvider
@@ -116,7 +124,41 @@ export default function GlobalContextsProvider(
             : false
         }
       >
-        {children}
+        <SanityCredentialsProvider
+          {...sanityCredentialsProviderProps}
+          apiVersion={
+            sanityCredentialsProviderProps &&
+            "apiVersion" in sanityCredentialsProviderProps
+              ? sanityCredentialsProviderProps.apiVersion!
+              : ("2023-05-10" as const)
+          }
+          dataset={
+            sanityCredentialsProviderProps &&
+            "dataset" in sanityCredentialsProviderProps
+              ? sanityCredentialsProviderProps.dataset!
+              : ("production" as const)
+          }
+          projectId={
+            sanityCredentialsProviderProps &&
+            "projectId" in sanityCredentialsProviderProps
+              ? sanityCredentialsProviderProps.projectId!
+              : ("lj78j8wf" as const)
+          }
+          token={
+            sanityCredentialsProviderProps &&
+            "token" in sanityCredentialsProviderProps
+              ? sanityCredentialsProviderProps.token!
+              : ("skvO7VjTraglOA5cKBWuI1pcRTKoSjfFvmXPFGToDUCtjguWtyx5rSXI2cvZG4G05HWgLYjk0dgCaGHMt1l6gQW8JSMHtYtvm2YAIeU6Z3NEUNZFsFueTVpODtJ5VZpdc2PZ0qQIQmYnm02JGcagus9AwRN7kUufWLBHAGvGLk6b3hbeAiU3" as const)
+          }
+          useCdn={
+            sanityCredentialsProviderProps &&
+            "useCdn" in sanityCredentialsProviderProps
+              ? sanityCredentialsProviderProps.useCdn!
+              : false
+          }
+        >
+          {children}
+        </SanityCredentialsProvider>
       </AntdConfigProvider>
     </WordpressProvider>
   );
