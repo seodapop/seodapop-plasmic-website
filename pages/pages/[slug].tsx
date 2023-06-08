@@ -5,6 +5,7 @@ import * as ph from "@plasmicapp/react-web/lib/host";
 import GlobalContextsProvider from "../../components/plasmic/seodapop_main_website/PlasmicGlobalContextsProvider";
 import { PlasmicPagesslug } from "../../components/plasmic/seodapop_main_website/PlasmicPagesslug";
 import { useRouter } from "next/router";
+import sanity from "../../sanity";
 
 
 
@@ -37,5 +38,45 @@ function Pagesslug() {
   );
 }
 
+export const getStaticProps = async ({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) => {
+  const individualBlogDetailQuery = `*[_type == "blog" && slug.current == "${slug}"][0] {
+    _id,
+    _createdAt,
+    title,    
+    body,
+    'mainImage':mainImage.asset->url
+	 }
+	 `;
+
+  const individualBlogDetail = await sanity.fetch(
+    individualBlogDetailQuery
+  );
+  return {
+    props: { individualBlogDetail },
+    revalidate: 3600,
+  };
+};
+
+export async function getStaticPaths() {
+  const pageListQuery = `*[_type == "page"] {
+    'slug': slug.current,
+    'thumbnail': thumbnail.asset->url
+	 }
+	 `;
+
+  const pageList = (await sanity.fetch(pageListQuery)) || [];
+  const paths = pageList.map((item: any) => ({
+    params: { slug: item.slug },
+  }));
+  return {
+    paths,
+    fallback: false,
+
+  };
+}
 
 export default Pagesslug;
