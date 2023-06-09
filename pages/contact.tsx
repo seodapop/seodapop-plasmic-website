@@ -3,9 +3,9 @@
 import * as React from "react";
 import * as ph from "@plasmicapp/react-web/lib/host";
 import GlobalContextsProvider from "../components/plasmic/seodapop_main_website/PlasmicGlobalContextsProvider";
-import { ScreenVariantProvider } from "../components/plasmic/seodapop_main_website/PlasmicGlobalVariant__Screen";
 import { PlasmicContactUs } from "../components/plasmic/seodapop_main_website/PlasmicContactUs";
 import { useRouter } from "next/router";
+import ContactForm from "../components/customComponents/contactForm";
 
 function ContactUs() {
   // Use PlasmicContactUs to render this component as it was
@@ -30,6 +30,8 @@ function ContactUs() {
         params={useRouter()?.query}
         query={useRouter()?.query}
       >
+
+        {/* <ContactForm /> */}
         <PlasmicContactUs />
       </ph.PageParamsProvider>
     </GlobalContextsProvider>

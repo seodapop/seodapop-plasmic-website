@@ -220,7 +220,7 @@ function PlasmicPagesslug__RenderFunc(props: {
                           displayMaxWidth={"100%" as const}
                           displayMinHeight={"0" as const}
                           displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
+                          displayWidth={"685px" as const}
                           loading={"lazy" as const}
                           src={(() => {
                             try {

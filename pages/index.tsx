@@ -3,7 +3,6 @@
 import * as React from "react";
 import * as ph from "@plasmicapp/react-web/lib/host";
 import GlobalContextsProvider from "../components/plasmic/seodapop_main_website/PlasmicGlobalContextsProvider";
-import { ScreenVariantProvider } from "../components/plasmic/seodapop_main_website/PlasmicGlobalVariant__Screen";
 import { PlasmicHome } from "../components/plasmic/seodapop_main_website/PlasmicHome";
 import { useRouter } from "next/router";
 

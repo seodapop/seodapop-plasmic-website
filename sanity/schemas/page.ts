@@ -9,7 +9,13 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
-      validation: Rule => Rule.required()
+      validation: Rule => Rule.required().min(10).max(60)
+    }),
+    defineField({
+      name: 'metaDescription',
+      title: 'Meta Description',
+      type: 'text',
+      validation: Rule => Rule.max(160).warning('Should be under 160 characters')
     }),
     defineField({
       name: 'slug',

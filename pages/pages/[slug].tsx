@@ -6,16 +6,18 @@ import GlobalContextsProvider from "../../components/plasmic/seodapop_main_websi
 import { PlasmicPagesslug } from "../../components/plasmic/seodapop_main_website/PlasmicPagesslug";
 import { useRouter } from "next/router";
 import sanity from "../../sanity";
+import Head from "next/head";
 
-// interface PagesslugProps {
-//   individualPageDetail: {
-//     title: string;
-//     body: any;
-//     mainImage: string
-//   }
-// }
+interface PagesslugProps {
+  individualPageDetail: {
+    title: string;
+    body: any;
+    mainImage: string;
+    metaDescription: string;
+  }
+}
 
-function Pagesslug() {
+function Pagesslug(props: PagesslugProps) {
   // Use PlasmicPagesslug to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
@@ -38,52 +40,57 @@ function Pagesslug() {
         params={useRouter()?.query}
         query={useRouter()?.query}
       >
+        <Head>
+          <title>{props.individualPageDetail.title}</title>
+          <meta name="description" content={props.individualPageDetail.metaDescription} />
+        </Head>
         <PlasmicPagesslug />
       </ph.PageParamsProvider>
     </GlobalContextsProvider>
   );
 }
 
-// export const getStaticProps = async ({
-//   params: { slug },
-// }: {
-//   params: { slug: string };
-// }) => {
-//   const individualPageDetailQuery = `*[_type == "page" && slug.current == "${slug}"][0] {
-//     _id,
-//     _createdAt,
-//     title,    
-//     body,
-//     'mainImage':mainImage.asset->url
-// 	 }
-// 	 `;
+export const getStaticProps = async ({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) => {
+  const individualPageDetailQuery = `*[_type == "page" && slug.current == "${slug}"][0] {
+    _id,
+    _createdAt,
+    title,    
+    body,
+    metaDescription,
+    'mainImage':mainImage.asset->url
+	 }
+	 `;
 
-//   const individualPageDetail = await sanity.fetch(
-//     individualPageDetailQuery
-//   );
+  const individualPageDetail = await sanity.fetch(
+    individualPageDetailQuery
+  );
 
-//   return {
-//     props: { individualPageDetail },
-//     revalidate: 3600,
-//   };
-// };
+  return {
+    props: { individualPageDetail },
+    revalidate: 3600,
+  };
+};
 
-// export async function getStaticPaths() {
-//   const pageListQuery = `*[_type == "page"] {
-//     'slug': slug.current,
-//     'thumbnail': thumbnail.asset->url
-// 	 }
-// 	 `;
+export async function getStaticPaths() {
+  const pageListQuery = `*[_type == "page"] {
+    'slug': slug.current,
+    'thumbnail': thumbnail.asset->url
+	 }
+	 `;
 
-//   const pageList = (await sanity.fetch(pageListQuery)) || [];
-//   const paths = pageList.map((item: any) => ({
-//     params: { slug: item.slug },
-//   }));
-//   return {
-//     paths,
-//     fallback: false,
+  const pageList = (await sanity.fetch(pageListQuery)) || [];
+  const paths = pageList.map((item: any) => ({
+    params: { slug: item.slug },
+  }));
+  return {
+    paths,
+    fallback: "blocking",
 
-//   };
-// }
+  };
+}
 
 export default Pagesslug;

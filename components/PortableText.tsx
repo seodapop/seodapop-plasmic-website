@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { PortableText } from '@portabletext/react'
-import type { PortableTextBlock } from '@portabletext/types'
+import type { PortableTextBlock } from '@portabletext/types';
+import BlockContentParser from './customComponents/BlockContentParser';
+
+
 
 const RichText = ({ values, className }: { values: PortableTextBlock[], className?: string }) => {
   return (
     <div className={className ? className : ''}>
-      <PortableText
-        value={values}
-      />
+      <BlockContentParser content={values as any} />
     </div>
   )
 }
