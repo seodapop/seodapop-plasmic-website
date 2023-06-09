@@ -38,7 +38,7 @@ import {
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: UvDP15VkVO5hmb/component
 import { SanityFetcher } from "@plasmicpkgs/plasmic-sanity-io"; // plasmic-import: 9KPt6XktlFK/codeComponent
-import { RichText } from "../../PortableText"; // plasmic-import: z4BjgnwqwS/codeComponent
+import RichText from "../../PortableText"; // plasmic-import: z4BjgnwqwS/codeComponent
 import HomeFooterTop from "../../HomeFooterTop"; // plasmic-import: Sh8nt7GR3decD/component
 import FooterMain from "../../FooterMain"; // plasmic-import: I_5el5M-Bk81Xi/component
 
@@ -70,7 +70,7 @@ export type PlasmicPagesslug__OverridesType = {
   footerMain?: p.Flex<typeof FooterMain>;
 };
 
-export interface DefaultPagesslugProps {}
+export interface DefaultPagesslugProps { }
 
 const __wrapUserFunction =
   globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
@@ -83,7 +83,7 @@ const __wrapUserPromise =
 function useNextRouter() {
   try {
     return useRouter();
-  } catch {}
+  } catch { }
   return undefined;
 }
 
@@ -325,17 +325,17 @@ type NodeComponentProps<T extends NodeNameType> =
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicPagesslug__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     /* Specify args directly as props*/ Omit<
-      PlasmicPagesslug__ArgsType,
-      ReservedPropsType
-    > &
+    PlasmicPagesslug__ArgsType,
+    ReservedPropsType
+  > &
     /* Specify overrides for each element directly as props*/ Omit<
-      NodeOverridesType<T>,
-      ReservedPropsType | VariantPropType | ArgPropType
-    > &
+    NodeOverridesType<T>,
+    ReservedPropsType | VariantPropType | ArgPropType
+  > &
     /* Specify props for the root element*/ Omit<
-      Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
-      ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
-    >;
+    Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
+    ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
+  >;
 
 function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   type PropsType = NodeComponentProps<NodeName> & { key?: React.Key };
