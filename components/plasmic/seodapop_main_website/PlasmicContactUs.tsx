@@ -43,8 +43,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: UvDP15VkVO5hmb/component
-import TextInput from "../../TextInput"; // plasmic-import: SaP3xqfQev-ptP/component
-import Button from "../../Button"; // plasmic-import: mOwRf0tmmKT0O/component
+import { ContactForm } from "../../customComponents/contactForm"; // plasmic-import: cQL4MDLUTB/codeComponent
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
 import HomeFooterTop from "../../HomeFooterTop"; // plasmic-import: Sh8nt7GR3decD/component
 import FooterMain from "../../FooterMain"; // plasmic-import: I_5el5M-Bk81Xi/component
@@ -56,9 +55,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_seodapop_main_website.module.css"; // plasmic-import: eSHiknYGb4WLC3QGLYLFnQ/projectcss
 import sty from "./PlasmicContactUs.module.css"; // plasmic-import: eO_Tuq4B0ZmZFE/css
-
-import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: t-AVM4cittjWAE/icon
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: -xNTt_1SqG6hDH/icon
 
 export type PlasmicContactUs__VariantMembers = {};
 export type PlasmicContactUs__VariantsArgs = {};
@@ -76,13 +72,7 @@ export type PlasmicContactUs__OverridesType = {
   foreground2?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
   clientsSection5?: p.Flex<"div">;
-  formWrapper?: p.Flex<"div">;
-  name?: p.Flex<typeof TextInput>;
-  svg?: p.Flex<"svg">;
-  name2?: p.Flex<typeof TextInput>;
-  name4?: p.Flex<typeof TextInput>;
-  textarea?: p.Flex<"textarea">;
-  button?: p.Flex<typeof Button>;
+  contactForm?: p.Flex<typeof ContactForm>;
   dataFetcher?: p.Flex<typeof Fetcher>;
   footerTopSection?: p.Flex<"div">;
   homeFooterTop?: p.Flex<typeof HomeFooterTop>;
@@ -128,44 +118,6 @@ function PlasmicContactUs__RenderFunc(props: {
 
   const [$queries, setDollarQueries] = React.useState({});
 
-  const stateSpecs = React.useMemo(
-    () => [
-      {
-        path: "name.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "" as const
-      },
-      {
-        path: "name2.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "" as const
-      },
-      {
-        path: "name3.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "" as const
-      },
-      {
-        path: "name3.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "" as const
-      },
-      {
-        path: "name4.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "" as const
-      }
-    ],
-
-    [$props, $ctx]
-  );
-  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
-
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantspgBiFjijh7ROsO()
   });
@@ -180,7 +132,6 @@ function PlasmicContactUs__RenderFunc(props: {
           property="og:title"
           content={PlasmicContactUs.pageMetadata.title}
         />
-
         <meta
           key="twitter:title"
           name="twitter:title"
@@ -293,319 +244,14 @@ function PlasmicContactUs__RenderFunc(props: {
                           sty.column__h7SRr
                         )}
                       >
-                        <div
-                          data-plasmic-name={"formWrapper"}
-                          data-plasmic-override={overrides.formWrapper}
+                        <ContactForm
+                          data-plasmic-name={"contactForm"}
+                          data-plasmic-override={overrides.contactForm}
                           className={classNames(
-                            projectcss.all,
-                            sty.formWrapper
+                            "__wab_instance",
+                            sty.contactForm
                           )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.columns__cub3O
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column___1IsIx
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__wpijf
-                                )}
-                              >
-                                {"First name"}
-                              </div>
-                              {true ? (
-                                <TextInput
-                                  data-plasmic-name={"name"}
-                                  data-plasmic-override={overrides.name}
-                                  className={classNames(
-                                    "__wab_instance",
-                                    sty.name
-                                  )}
-                                  endIcon={
-                                    true ? (
-                                      <ChecksvgIcon
-                                        data-plasmic-name={"svg"}
-                                        data-plasmic-override={overrides.svg}
-                                        className={classNames(
-                                          projectcss.all,
-                                          sty.svg
-                                        )}
-                                        role={"img"}
-                                      />
-                                    ) : null
-                                  }
-                                  onChange={(...eventArgs) => {
-                                    p.generateStateOnChangeProp($state, [
-                                      "name",
-                                      "value"
-                                    ])(
-                                      (e => e.target?.value).apply(
-                                        null,
-                                        eventArgs
-                                      )
-                                    );
-                                  }}
-                                  placeholder={"" as const}
-                                  value={
-                                    p.generateStateValueProp($state, [
-                                      "name",
-                                      "value"
-                                    ]) ?? ""
-                                  }
-                                />
-                              ) : null}
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__bBhr5
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__y70Dj
-                                )}
-                              >
-                                {"Last name"}
-                              </div>
-                              <TextInput
-                                data-plasmic-name={"name2"}
-                                data-plasmic-override={overrides.name2}
-                                className={classNames(
-                                  "__wab_instance",
-                                  sty.name2
-                                )}
-                                onChange={(...eventArgs) => {
-                                  p.generateStateOnChangeProp($state, [
-                                    "name2",
-                                    "value"
-                                  ])(
-                                    (e => e.target?.value).apply(
-                                      null,
-                                      eventArgs
-                                    )
-                                  );
-                                }}
-                                placeholder={"" as const}
-                                value={
-                                  p.generateStateValueProp($state, [
-                                    "name2",
-                                    "value"
-                                  ]) ?? ""
-                                }
-                              />
-                            </div>
-                          </div>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.columns__rNKh
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__fGmZn
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__laG5H
-                                )}
-                              >
-                                {"Email address"}
-                              </div>
-                              <TextInput
-                                className={classNames(
-                                  "__wab_instance",
-                                  sty.textInput__uExu
-                                )}
-                                onChange={(...eventArgs) => {
-                                  p.generateStateOnChangeProp($state, [
-                                    "name3",
-                                    "value"
-                                  ])(
-                                    (e => e.target?.value).apply(
-                                      null,
-                                      eventArgs
-                                    )
-                                  );
-                                }}
-                                placeholder={"" as const}
-                                value={
-                                  p.generateStateValueProp($state, [
-                                    "name3",
-                                    "value"
-                                  ]) ?? ""
-                                }
-                              />
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__jbLlX
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__uImjT
-                                )}
-                              >
-                                {"Phone number"}
-                              </div>
-                              <TextInput
-                                className={classNames(
-                                  "__wab_instance",
-                                  sty.textInput__pVtVj
-                                )}
-                                onChange={(...eventArgs) => {
-                                  p.generateStateOnChangeProp($state, [
-                                    "name3",
-                                    "value"
-                                  ])(
-                                    (e => e.target?.value).apply(
-                                      null,
-                                      eventArgs
-                                    )
-                                  );
-                                }}
-                                placeholder={"" as const}
-                                value={
-                                  p.generateStateValueProp($state, [
-                                    "name3",
-                                    "value"
-                                  ]) ?? ""
-                                }
-                              />
-                            </div>
-                          </div>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.columns__e8LZ5
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__yu2X
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__ff9Mw
-                                )}
-                              >
-                                {"Company"}
-                              </div>
-                              <TextInput
-                                data-plasmic-name={"name4"}
-                                data-plasmic-override={overrides.name4}
-                                className={classNames(
-                                  "__wab_instance",
-                                  sty.name4
-                                )}
-                                onChange={(...eventArgs) => {
-                                  p.generateStateOnChangeProp($state, [
-                                    "name4",
-                                    "value"
-                                  ])(
-                                    (e => e.target?.value).apply(
-                                      null,
-                                      eventArgs
-                                    )
-                                  );
-                                }}
-                                placeholder={"" as const}
-                                value={
-                                  p.generateStateValueProp($state, [
-                                    "name4",
-                                    "value"
-                                  ]) ?? ""
-                                }
-                              />
-                            </div>
-                          </div>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.columns__dh7Gj
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__cxPr9
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__w5CjH
-                                )}
-                              >
-                                {"Message"}
-                              </div>
-                              <textarea
-                                data-plasmic-name={"textarea"}
-                                data-plasmic-override={overrides.textarea}
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.textarea,
-                                  sty.textarea
-                                )}
-                                value={"" as const}
-                              />
-
-                              {true ? (
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.freeBox___3RN
-                                  )}
-                                >
-                                  <Button
-                                    data-plasmic-name={"button"}
-                                    data-plasmic-override={overrides.button}
-                                    className={classNames(
-                                      "__wab_instance",
-                                      sty.button
-                                    )}
-                                    submitsForm={true}
-                                  >
-                                    <div
-                                      className={classNames(
-                                        projectcss.all,
-                                        projectcss.__wab_text,
-                                        sty.text__kfY8L
-                                      )}
-                                    >
-                                      {"Submit"}
-                                    </div>
-                                  </Button>
-                                </div>
-                              ) : null}
-                            </div>
-                          </div>
-                        </div>
+                        />
                       </div>
                       <div
                         className={classNames(
@@ -803,51 +449,18 @@ const PlasmicDescendants = {
     "foreground2",
     "h1",
     "clientsSection5",
-    "formWrapper",
-    "name",
-    "svg",
-    "name2",
-    "name4",
-    "textarea",
-    "button",
+    "contactForm",
     "dataFetcher",
     "footerTopSection",
     "homeFooterTop",
     "footerMain"
   ],
-
   header: ["header"],
   banner: ["banner", "foreground2", "h1"],
   foreground2: ["foreground2", "h1"],
   h1: ["h1"],
-  clientsSection5: [
-    "clientsSection5",
-    "formWrapper",
-    "name",
-    "svg",
-    "name2",
-    "name4",
-    "textarea",
-    "button",
-    "dataFetcher"
-  ],
-
-  formWrapper: [
-    "formWrapper",
-    "name",
-    "svg",
-    "name2",
-    "name4",
-    "textarea",
-    "button"
-  ],
-
-  name: ["name", "svg"],
-  svg: ["svg"],
-  name2: ["name2"],
-  name4: ["name4"],
-  textarea: ["textarea"],
-  button: ["button"],
+  clientsSection5: ["clientsSection5", "contactForm", "dataFetcher"],
+  contactForm: ["contactForm"],
   dataFetcher: ["dataFetcher"],
   footerTopSection: ["footerTopSection", "homeFooterTop"],
   homeFooterTop: ["homeFooterTop"],
@@ -863,13 +476,7 @@ type NodeDefaultElementType = {
   foreground2: "div";
   h1: "h1";
   clientsSection5: "div";
-  formWrapper: "div";
-  name: typeof TextInput;
-  svg: "svg";
-  name2: typeof TextInput;
-  name4: typeof TextInput;
-  textarea: "textarea";
-  button: typeof Button;
+  contactForm: typeof ContactForm;
   dataFetcher: typeof Fetcher;
   footerTopSection: "div";
   homeFooterTop: typeof HomeFooterTop;
@@ -881,7 +488,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicContactUs__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {
@@ -942,13 +548,7 @@ export const PlasmicContactUs = Object.assign(
     foreground2: makeNodeComponent("foreground2"),
     h1: makeNodeComponent("h1"),
     clientsSection5: makeNodeComponent("clientsSection5"),
-    formWrapper: makeNodeComponent("formWrapper"),
-    _name: makeNodeComponent("name"),
-    svg: makeNodeComponent("svg"),
-    name2: makeNodeComponent("name2"),
-    name4: makeNodeComponent("name4"),
-    textarea: makeNodeComponent("textarea"),
-    button: makeNodeComponent("button"),
+    contactForm: makeNodeComponent("contactForm"),
     dataFetcher: makeNodeComponent("dataFetcher"),
     footerTopSection: makeNodeComponent("footerTopSection"),
     homeFooterTop: makeNodeComponent("homeFooterTop"),

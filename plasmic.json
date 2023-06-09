@@ -511,32 +511,6 @@
           "componentType": "component"
         },
         {
-          "id": "g6PgRV9F1F",
-          "name": "Blog",
-          "type": "managed",
-          "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
-          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicBlog.tsx",
-          "importSpec": {
-            "modulePath": "../pages/blog.tsx"
-          },
-          "cssFilePath": "plasmic/seodapop_main_website/PlasmicBlog.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "H_9_PzWWma",
-          "name": "Blogslug",
-          "type": "managed",
-          "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
-          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicBlogslug.tsx",
-          "importSpec": {
-            "modulePath": "../pages/blog/[slug].tsx"
-          },
-          "cssFilePath": "plasmic/seodapop_main_website/PlasmicBlogslug.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "hHvPWKVFpN",
           "name": "NewPage",
           "type": "managed",
@@ -561,6 +535,20 @@
           "cssFilePath": "plasmic/seodapop_main_website/PlasmicPagesslug.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "ijauRjypRvZ9",
+          "name": "Button2",
+          "type": "managed",
+          "projectId": "eSHiknYGb4WLC3QGLYLFnQ",
+          "renderModuleFilePath": "plasmic/seodapop_main_website/PlasmicButton2.tsx",
+          "importSpec": {
+            "modulePath": "Button2.tsx"
+          },
+          "cssFilePath": "plasmic/seodapop_main_website/PlasmicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [
@@ -613,6 +601,11 @@
           "id": "gjJAKpMz6GI",
           "name": "Icon38Icon",
           "moduleFilePath": "plasmic/seodapop_main_website/icons/PlasmicIcon__Icon38.tsx"
+        },
+        {
+          "id": "InSiecUHBEeW",
+          "name": "Icon6Icon",
+          "moduleFilePath": "plasmic/seodapop_main_website/icons/PlasmicIcon__Icon6.tsx"
         }
       ],
       "images": [
@@ -935,6 +928,106 @@
           "id": "sr7HOGUDu",
           "name": "image 7",
           "filePath": "../public/plasmic/seodapop_main_website/images/image7.jpg"
+        },
+        {
+          "id": "bfgkcnJYAQ-Y",
+          "name": "image 8",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image8.png"
+        },
+        {
+          "id": "Osduy1Ursa9a",
+          "name": "image 9",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image9.png"
+        },
+        {
+          "id": "ZJP0wMJ2OlEr",
+          "name": "image 10",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image10.svg"
+        },
+        {
+          "id": "lMWSOWGYUcKW",
+          "name": "image 11",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image11.svg"
+        },
+        {
+          "id": "n6Sgl7wOCEUO",
+          "name": "image 12",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image12.svg"
+        },
+        {
+          "id": "hL9_wSJaOzVa",
+          "name": "image 13",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image13.svg"
+        },
+        {
+          "id": "Plu6SbKVHadW",
+          "name": "image 14",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image14.svg"
+        },
+        {
+          "id": "RNoqLZae9Out",
+          "name": "image 15",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image15.svg"
+        },
+        {
+          "id": "uloxI9YLzpM4",
+          "name": "image 16",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image16.svg"
+        },
+        {
+          "id": "-Y4Z5Zex4XpJ",
+          "name": "image 17",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image17.png"
+        },
+        {
+          "id": "ry3yVAShQkVD",
+          "name": "image 18",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image18.png"
+        },
+        {
+          "id": "I7lWo1mifa-X",
+          "name": "image 19",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image19.png"
+        },
+        {
+          "id": "czPcwGIKrKsB",
+          "name": "image 20",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image20.png"
+        },
+        {
+          "id": "zONzhZeoxRAY",
+          "name": "image 21",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image21.png"
+        },
+        {
+          "id": "XPVrzjcFxJ2F",
+          "name": "image 22",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image22.png"
+        },
+        {
+          "id": "GoRpFlJvxT1F",
+          "name": "image 23",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image23.png"
+        },
+        {
+          "id": "Mcw4AAkQf09O",
+          "name": "image 24",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image24.svg"
+        },
+        {
+          "id": "rIa9-jKfxoxd",
+          "name": "image 25",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image25.svg"
+        },
+        {
+          "id": "k2g_dNwJpW_P",
+          "name": "image 26",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image26.svg"
+        },
+        {
+          "id": "PXiR6MBGqFCP",
+          "name": "image 27",
+          "filePath": "../public/plasmic/seodapop_main_website/images/image27.svg"
         }
       ],
       "indirect": false,
@@ -957,6 +1050,12 @@
           "name": "RichText",
           "displayName": "RichText",
           "componentImportPath": "./components/PortableText"
+        },
+        {
+          "id": "cQL4MDLUTB",
+          "name": "ContactForm",
+          "displayName": "ContactForm",
+          "componentImportPath": "./components/customComponents/contactForm"
         }
       ]
     },
