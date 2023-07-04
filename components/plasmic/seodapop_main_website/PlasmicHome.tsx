@@ -272,7 +272,18 @@ function PlasmicHome__RenderFunc(props: {
                         const $steps = {};
                         $steps["goToContactUs"] = true
                           ? (() => {
-                              const actionArgs = {};
+                              const actionArgs = {
+                                destination: __wrapUserFunction(
+                                  {
+                                    type: "InteractionArgLoc",
+                                    actionName: "navigation",
+                                    interactionUuid: "Ai3Xu8vIQ",
+                                    componentUuid: "ZGwlmbejnPqDZ",
+                                    argName: "destination"
+                                  },
+                                  () => `/contact`
+                                )
+                              };
                               return __wrapUserFunction(
                                 {
                                   type: "InteractionLoc",
@@ -319,6 +330,52 @@ function PlasmicHome__RenderFunc(props: {
                           projectcss.__wab_text,
                           sty.text__gJd47
                         )}
+                        onClick={async event => {
+                          const $steps = {};
+                          $steps["goToContactUs"] = true
+                            ? (() => {
+                                const actionArgs = {
+                                  destination: __wrapUserFunction(
+                                    {
+                                      type: "InteractionArgLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "21XojdMPG",
+                                      componentUuid: "ZGwlmbejnPqDZ",
+                                      argName: "destination"
+                                    },
+                                    () => `/contact`
+                                  )
+                                };
+                                return __wrapUserFunction(
+                                  {
+                                    type: "InteractionLoc",
+                                    actionName: "navigation",
+                                    interactionUuid: "21XojdMPG",
+                                    componentUuid: "ZGwlmbejnPqDZ"
+                                  },
+                                  () =>
+                                    (({ destination }) => {
+                                      __nextRouter?.push(destination);
+                                    })?.apply(null, [actionArgs]),
+                                  actionArgs
+                                );
+                              })()
+                            : undefined;
+                          if (
+                            typeof $steps["goToContactUs"] === "object" &&
+                            typeof $steps["goToContactUs"].then === "function"
+                          ) {
+                            $steps["goToContactUs"] = await __wrapUserPromise(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "navigation",
+                                interactionUuid: "21XojdMPG",
+                                componentUuid: "ZGwlmbejnPqDZ"
+                              },
+                              $steps["goToContactUs"]
+                            );
+                          }
+                        }}
                       >
                         {"Speak with us"}
                       </div>

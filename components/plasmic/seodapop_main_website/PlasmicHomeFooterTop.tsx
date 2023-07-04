@@ -242,6 +242,52 @@ function PlasmicHomeFooterTop__RenderFunc(props: {
                     projectcss.__wab_text,
                     sty.text__sfxf1
                   )}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToContactUs"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            destination: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "navigation",
+                                interactionUuid: "0MI0y45db",
+                                componentUuid: "Sh8nt7GR3decD",
+                                argName: "destination"
+                              },
+                              () => `/contact`
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "navigation",
+                              interactionUuid: "0MI0y45db",
+                              componentUuid: "Sh8nt7GR3decD"
+                            },
+                            () =>
+                              (({ destination }) => {
+                                __nextRouter?.push(destination);
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToContactUs"] === "object" &&
+                      typeof $steps["goToContactUs"].then === "function"
+                    ) {
+                      $steps["goToContactUs"] = await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "0MI0y45db",
+                          componentUuid: "Sh8nt7GR3decD"
+                        },
+                        $steps["goToContactUs"]
+                      );
+                    }
+                  }}
                 >
                   {"Get IN Touch"}
                 </div>
