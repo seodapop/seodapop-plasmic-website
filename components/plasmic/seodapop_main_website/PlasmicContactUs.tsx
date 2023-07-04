@@ -43,7 +43,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: UvDP15VkVO5hmb/component
-import ContactForm from "../../customComponents/contactForm"; // plasmic-import: cQL4MDLUTB/codeComponent
+import { ContactForm } from "../../customComponents/contactForm"; // plasmic-import: cQL4MDLUTB/codeComponent
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Qr2f3ugv3a/codeComponent
 import HomeFooterTop from "../../HomeFooterTop"; // plasmic-import: Sh8nt7GR3decD/component
 import FooterMain from "../../FooterMain"; // plasmic-import: I_5el5M-Bk81Xi/component
@@ -79,7 +79,7 @@ export type PlasmicContactUs__OverridesType = {
   footerMain?: p.Flex<typeof FooterMain>;
 };
 
-export interface DefaultContactUsProps { }
+export interface DefaultContactUsProps {}
 
 const __wrapUserFunction =
   globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
@@ -92,7 +92,7 @@ const __wrapUserPromise =
 function useNextRouter() {
   try {
     return useRouter();
-  } catch { }
+  } catch {}
   return undefined;
 }
 
@@ -318,7 +318,7 @@ function PlasmicContactUs__RenderFunc(props: {
                                             if (
                                               e instanceof TypeError ||
                                               e?.plasmicType ===
-                                              "PlasmicUndefinedDataError"
+                                                "PlasmicUndefinedDataError"
                                             ) {
                                               return "1234 Lorem Ipsum .\nLorem Ipsum , GA 30308\n1234567890";
                                             }
@@ -346,7 +346,7 @@ function PlasmicContactUs__RenderFunc(props: {
                                         if (
                                           e instanceof TypeError ||
                                           e?.plasmicType ===
-                                          "PlasmicUndefinedDataError"
+                                            "PlasmicUndefinedDataError"
                                         ) {
                                           return [];
                                         }
@@ -373,7 +373,7 @@ function PlasmicContactUs__RenderFunc(props: {
                                             if (
                                               e instanceof TypeError ||
                                               e?.plasmicType ===
-                                              "PlasmicUndefinedDataError"
+                                                "PlasmicUndefinedDataError"
                                             ) {
                                               return "1234 Lorem Ipsum .\nLorem Ipsum , GA 30308\n1234567890";
                                             }
@@ -496,17 +496,17 @@ type NodeComponentProps<T extends NodeNameType> =
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicContactUs__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     /* Specify args directly as props*/ Omit<
-    PlasmicContactUs__ArgsType,
-    ReservedPropsType
-  > &
+      PlasmicContactUs__ArgsType,
+      ReservedPropsType
+    > &
     /* Specify overrides for each element directly as props*/ Omit<
-    NodeOverridesType<T>,
-    ReservedPropsType | VariantPropType | ArgPropType
-  > &
+      NodeOverridesType<T>,
+      ReservedPropsType | VariantPropType | ArgPropType
+    > &
     /* Specify props for the root element*/ Omit<
-    Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
-    ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
-  >;
+      Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
+      ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
+    >;
 
 function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   type PropsType = NodeComponentProps<NodeName> & { key?: React.Key };

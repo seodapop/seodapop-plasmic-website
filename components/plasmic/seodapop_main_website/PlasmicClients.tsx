@@ -132,7 +132,6 @@ function PlasmicClients__RenderFunc(props: {
           property="og:title"
           content={PlasmicClients.pageMetadata.title}
         />
-
         <meta
           key="twitter:title"
           name="twitter:title"
@@ -810,7 +809,6 @@ const PlasmicDescendants = {
     "homeFooterTop",
     "footerMain"
   ],
-
   header: ["header"],
   banner: ["banner", "foreground2", "h1", "text"],
   foreground2: ["foreground2", "h1", "text"],
@@ -844,7 +842,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicClients__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

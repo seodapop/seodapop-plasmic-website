@@ -28,6 +28,35 @@
 .rootshowStartIcon {
   padding-left: 16px;
 }
+.rootshowEndIcon {
+  padding-right: 16px;
+}
+.rootisDisabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.rootshape_rounded {
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 100px;
+  border-radius: 999px;
+}
+.rootshape_round {
+  border-radius: 50%;
+  padding: 12px;
+}
+.rootsize_compact {
+  padding: 6px 12px;
+}
+.rootsize_minimal {
+  padding: 0px;
+}
+.rootcolor_blue {
+  background: #0091ff;
+}
+.rootcolor_green {
+  background: #30a46c;
+}
 .rootcolor_yellow {
   background: #f5d90a;
 }
@@ -58,38 +87,6 @@
 .rootcolor_link {
   background: #ffffff00;
 }
-.rootshowEndIcon {
-  padding-right: 16px;
-}
-.rootisDisabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-.rootshape_rounded {
-  padding-left: 20px;
-  padding-right: 20px;
-  min-width: 100px;
-  border-radius: 999px;
-}
-.rootshape_round {
-  border-radius: 50%;
-  padding: 12px;
-}
-.rootsize_compact {
-  padding: 6px 12px;
-}
-.rootsize_minimal {
-  padding: 0px;
-}
-.rootcolor_blue {
-  background: #0091ff;
-}
-.rootcolor_green {
-  background: #30a46c;
-}
-.rootshape_round_size_compact {
-  padding: 6px;
-}
 .rootshape_rounded_showStartIcon {
   padding-left: 16px;
 }
@@ -102,8 +99,17 @@
 .rootshowEndIcon_size_compact {
   padding-right: 8px;
 }
+.rootshape_round_size_compact {
+  padding: 6px;
+}
 .root:hover {
   background: #ffffff;
+}
+.rootcolor_blue:hover {
+  background: #369eff;
+}
+.rootcolor_green:hover {
+  background: #3cb179;
 }
 .rootcolor_yellow:hover {
   background: #ffef5c;
@@ -135,12 +141,6 @@
 .rootcolor_link:hover {
   background: #ffffff00;
 }
-.rootcolor_blue:hover {
-  background: #369eff;
-}
-.rootcolor_green:hover {
-  background: #3cb179;
-}
 .root:focus-within {
   box-shadow: 0px 0px 0px 3px #96c7f2;
   outline: none;
@@ -151,6 +151,12 @@
 }
 .root:active {
   background: #2e2e2b;
+}
+.rootcolor_blue:active {
+  background: #52a9ff;
+}
+.rootcolor_green:active {
+  background: #4cc38a;
 }
 .rootcolor_yellow:active {
   background: #f0c000;
@@ -181,12 +187,6 @@
 }
 .rootcolor_link:active {
   background: #ffffff00;
-}
-.rootcolor_blue:active {
-  background: #52a9ff;
-}
-.rootcolor_green:active {
-  background: #4cc38a;
 }
 .startIconContainer {
   display: flex;
@@ -253,6 +253,12 @@
   font-weight: 500;
   white-space: pre;
 }
+.slotTargetChildrencolor_blue {
+  color: #ffffff;
+}
+.slotTargetChildrencolor_green {
+  color: #ffffff;
+}
 .slotTargetChildrencolor_yellow {
   color: #35290f;
 }
@@ -282,12 +288,6 @@
 }
 .slotTargetChildrencolor_link {
   color: #0091ff;
-}
-.slotTargetChildrencolor_blue {
-  color: #ffffff;
-}
-.slotTargetChildrencolor_green {
-  color: #ffffff;
 }
 .root:hover .slotTargetChildren {
   color: var(--token-DqaU8LCmnXbTsk);

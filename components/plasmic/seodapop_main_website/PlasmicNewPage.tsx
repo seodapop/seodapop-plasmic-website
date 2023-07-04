@@ -242,7 +242,6 @@ function PlasmicNewPage__RenderFunc(props: {
                                 </React.Fragment>
                               </h2>
                             }
-
                             <React.Fragment>{""}</React.Fragment>
                           </React.Fragment>
                         </div>
@@ -298,7 +297,6 @@ function PlasmicNewPage__RenderFunc(props: {
                         {"But, Do you really need SEO?"}
                       </h3>
                     }
-
                     <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
@@ -330,7 +328,7 @@ function PlasmicNewPage__RenderFunc(props: {
               )}
             >
               {
-                "And guess what? When search engines get it, they'll reward you with higher rankings! That means more people will find your page when they search for something related to what you offer. Pretty cool, right? Plus, with good SEO, you'll build strong connections with other reputable websites, boost your user experience, and make sure your page loads lightning fast. So, don't miss out on all the SEO fun – it's your ticket to online success!"
+                "And guess what? When search engines get it, they'll reward you with higher rankings! That means more people will find your page when they search for something related to what you offer. Pretty cool, right? Plus, with good SEO, you'll build strong connections with other reputable websites, boost your user experience, and make sure your page loads lightning fast. So, don't miss out on all the SEO fun \u2013 it's your ticket to online success!"
               }
             </div>
           </section>
@@ -412,7 +410,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicNewPage__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

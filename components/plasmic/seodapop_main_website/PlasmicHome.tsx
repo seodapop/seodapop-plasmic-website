@@ -124,7 +124,6 @@ function PlasmicHome__RenderFunc(props: {
           property="og:title"
           content={PlasmicHome.pageMetadata.title}
         />
-
         <meta
           key="twitter:title"
           name="twitter:title"
@@ -250,7 +249,6 @@ function PlasmicHome__RenderFunc(props: {
                             </React.Fragment>
                           </h3>
                         }
-
                         <React.Fragment>{""}</React.Fragment>
                       </React.Fragment>
                     </div>
@@ -507,7 +505,7 @@ function PlasmicHome__RenderFunc(props: {
                     >
                       {hasVariant(globalVariants, "screen", "md")
                         ? "With over 30 years of combined experience in the field we will help you achieve your goals and surpass your expectations. Our expertise includes: Web Development, Web Service Integration, Comprehensive Digital Solutions, Managed Servers, Marketing Services, Creative Design, and much more. Come and meet the masterminds behind it all.\n"
-                        : "It's more important than ever to have a digital presence. Get your small business online with our flexible and hassle-free service that works around you.  Our easy, hassle-free, guided process will hold your hand every step of the way. \nWe have a friendly team of supportive project managers who will prompt and guide you gently for every step you need to take with us. \nWe advise all costs upfront so there are no nasty surprises.​​"}
+                        : "It's more important than ever to have a digital presence. Get your small business online with our flexible and hassle-free service that works around you.  Our easy, hassle-free, guided process will hold your hand every step of the way. \nWe have a friendly team of supportive project managers who will prompt and guide you gently for every step you need to take with us. \nWe advise all costs upfront so there are no nasty surprises.\u200b\u200b"}
                     </div>
                     <p.Stack
                       as={"div"}
@@ -998,7 +996,6 @@ const PlasmicDescendants = {
     "homeFooterTop",
     "footerMain"
   ],
-
   header: ["header"],
   foreground2: ["foreground2", "h1", "h3", "contactButton"],
   h1: ["h1"],
@@ -1028,7 +1025,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicHome__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {

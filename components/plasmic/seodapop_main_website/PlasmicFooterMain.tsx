@@ -154,7 +154,7 @@ function PlasmicFooterMain__RenderFunc(props: {
                     sty.text__u2And
                   )}
                 >
-                  {"© SeodaPop. All rights reserved. "}
+                  {"\u00a9 SeodaPop. All rights reserved. "}
                 </div>
                 <p.PlasmicLink
                   className={classNames(
@@ -456,7 +456,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicFooterMain__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {
