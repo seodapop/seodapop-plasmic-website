@@ -4,7 +4,7 @@ import BlockContentParser from './customComponents/BlockContentParser';
 
 
 
-const RichText = ({ values, className }: { values: PortableTextBlock[], className?: string }) => {
+export const RichText = ({ values, className }: { values: PortableTextBlock[], className?: string }) => {
   return (
     <div className={className ? className : ''}>
       <BlockContentParser content={values as any} />

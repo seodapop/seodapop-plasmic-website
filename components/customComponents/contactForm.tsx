@@ -24,7 +24,7 @@ const mutation = gql`
 }
 `
 
-const ContactForm = ({ className = '' }: { className?: string }) => {
+export const ContactForm = ({ className = '' }: { className?: string }) => {
   const [sendData, { loading, error }] = useMutation(mutation)
   const [formSuccess, setSuccess] = useState(false)
   const {
