@@ -746,6 +746,54 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.h3__uIajj
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToPagesslug"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "nl61K0BEo",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => `/pages/${"web-development"}`
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "nl61K0BEo",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToPagesslug"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "nl61K0BEo",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToPagesslug"]
+                                  );
+                              }
+                            }}
                           >
                             {"Website Development"}
                           </h3>
@@ -772,6 +820,54 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.h3__hdkom
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToPagesslug"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "IWLcoFSkQ",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => `/pages/${"api-design"}`
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "IWLcoFSkQ",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToPagesslug"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "IWLcoFSkQ",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToPagesslug"]
+                                  );
+                              }
+                            }}
                           >
                             {"API Design"}
                           </h3>
@@ -798,6 +894,54 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.h3__g7A3
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToPagesslug"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "cwsyke3UM",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => `/pages/${"cms-development"}`
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "cwsyke3UM",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToPagesslug"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "cwsyke3UM",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToPagesslug"]
+                                  );
+                              }
+                            }}
                           >
                             {"CMS Development"}
                           </h3>
@@ -824,6 +968,55 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.h3__nvvY
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToPagesslug"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "Kp7jQrfwz",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () =>
+                                          `/pages/${"mobile-application-development"}`
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "Kp7jQrfwz",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToPagesslug"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "Kp7jQrfwz",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToPagesslug"]
+                                  );
+                              }
+                            }}
                           >
                             {"Mobile Application Development "}
                           </h3>
@@ -850,6 +1043,54 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.h3__kMwZy
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToPagesslug"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "PHPTFo46T",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => `/pages/${"ada-updates"}`
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "PHPTFo46T",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToPagesslug"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "PHPTFo46T",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToPagesslug"]
+                                  );
+                              }
+                            }}
                           >
                             {"ADA Upgrade"}
                           </h3>
@@ -876,6 +1117,55 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.h3__uk5Fy
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToPagesslug"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "1q4eLZ1hq",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () =>
+                                          `/pages/${"ux-ui-research-and-design"}`
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "1q4eLZ1hq",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToPagesslug"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "1q4eLZ1hq",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToPagesslug"]
+                                  );
+                              }
+                            }}
                           >
                             {"UI/UX Research and design"}
                           </h3>
