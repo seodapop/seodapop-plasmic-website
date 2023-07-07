@@ -275,6 +275,54 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.h3__bUIxJ
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToPagesslug"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "X58NKMRsB",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => `/pages/${"seo"}`
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "X58NKMRsB",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToPagesslug"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "X58NKMRsB",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToPagesslug"]
+                                  );
+                              }
+                            }}
                           >
                             {"SEO \nSearch engine optimization"}
                           </h3>
