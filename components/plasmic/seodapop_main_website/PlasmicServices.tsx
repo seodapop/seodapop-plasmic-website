@@ -349,6 +349,55 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.h3__eXD
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToSocialMediaMarketing"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "abOypmf7w",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => "social-media-marketing"
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "abOypmf7w",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToSocialMediaMarketing"] ===
+                                  "object" &&
+                                typeof $steps["goToSocialMediaMarketing"]
+                                  .then === "function"
+                              ) {
+                                $steps["goToSocialMediaMarketing"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "abOypmf7w",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToSocialMediaMarketing"]
+                                  );
+                              }
+                            }}
                           >
                             {"SMM \nSocial Media Marketing"}
                           </h3>
@@ -385,6 +434,55 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.h3__fkdIf
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToPpcPayPerClick"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "fc8XyjKHE",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => "ppc-pay-per-click"
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "fc8XyjKHE",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToPpcPayPerClick"] ===
+                                  "object" &&
+                                typeof $steps["goToPpcPayPerClick"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToPpcPayPerClick"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "fc8XyjKHE",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToPpcPayPerClick"]
+                                  );
+                              }
+                            }}
                           >
                             {"PPC (Pay-per-click optimization)"}
                           </h3>
@@ -421,6 +519,99 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.h3__quIf6
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToRetargeting"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "KHKi11Vfc",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => "retargeting"
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "KHKi11Vfc",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToRetargeting"] === "object" &&
+                                typeof $steps["goToRetargeting"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToRetargeting"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "KHKi11Vfc",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToRetargeting"]
+                                  );
+                              }
+                              $steps["updateStateVariable"] = true
+                                ? (() => {
+                                    const actionArgs = {};
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "updateVariable",
+                                        interactionUuid: "z2koYWrIw",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({
+                                          variable,
+                                          value,
+                                          startIndex,
+                                          deleteCount
+                                        }) => {
+                                          if (!variable) {
+                                            return;
+                                          }
+                                          const { objRoot, variablePath } =
+                                            variable;
+                                          undefined;
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["updateStateVariable"] ===
+                                  "object" &&
+                                typeof $steps["updateStateVariable"].then ===
+                                  "function"
+                              ) {
+                                $steps["updateStateVariable"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "updateVariable",
+                                      interactionUuid: "z2koYWrIw",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["updateStateVariable"]
+                                  );
+                              }
+                            }}
                           >
                             {"RETARGETING"}
                           </h3>
@@ -447,6 +638,55 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.h3__u0Eis
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToWhiteboardAnimations"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "Ep9yHFpMn",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => "whiteboard-animations"
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "Ep9yHFpMn",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToWhiteboardAnimations"] ===
+                                  "object" &&
+                                typeof $steps["goToWhiteboardAnimations"]
+                                  .then === "function"
+                              ) {
+                                $steps["goToWhiteboardAnimations"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "Ep9yHFpMn",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToWhiteboardAnimations"]
+                                  );
+                              }
+                            }}
                           >
                             {"Whiteboard Animated Videos "}
                           </h3>
@@ -473,6 +713,55 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.h3__jOJo3
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToInboundMarketing"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "rfenTW7Jr",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => "inbound-marketing"
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "rfenTW7Jr",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToInboundMarketing"] ===
+                                  "object" &&
+                                typeof $steps["goToInboundMarketing"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToInboundMarketing"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "rfenTW7Jr",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToInboundMarketing"]
+                                  );
+                              }
+                            }}
                           >
                             {"Inbound Marketing"}
                           </h3>
@@ -555,6 +844,55 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.text__eWipQ
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToWebArchitecturalDesign"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "1ObrMRZ4E",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => "web-architectural-design"
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "1ObrMRZ4E",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToWebArchitecturalDesign"] ===
+                                  "object" &&
+                                typeof $steps["goToWebArchitecturalDesign"]
+                                  .then === "function"
+                              ) {
+                                $steps["goToWebArchitecturalDesign"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "1ObrMRZ4E",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToWebArchitecturalDesign"]
+                                  );
+                              }
+                            }}
                           >
                             {"Architectual Design"}
                           </div>
@@ -580,6 +918,55 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.text___50FsP
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToCodeBaseAudit"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "cb7quOPs2",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => "code-base-audit"
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "cb7quOPs2",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToCodeBaseAudit"] ===
+                                  "object" &&
+                                typeof $steps["goToCodeBaseAudit"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToCodeBaseAudit"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "cb7quOPs2",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToCodeBaseAudit"]
+                                  );
+                              }
+                            }}
                           >
                             {"Code Base Audit"}
                           </div>
@@ -679,6 +1066,55 @@ function PlasmicServices__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.text__wvl3G
                             )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToIntegrations"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "6r5ntJjsR",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => "integrations"
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "6r5ntJjsR",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToIntegrations"] ===
+                                  "object" &&
+                                typeof $steps["goToIntegrations"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToIntegrations"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "6r5ntJjsR",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToIntegrations"]
+                                  );
+                              }
+                            }}
                           >
                             {"Integrations"}
                           </div>
@@ -698,7 +1134,64 @@ function PlasmicServices__RenderFunc(props: {
                             "We specialize in conducting comprehensive audits for various compliance standards, including HIPAA, PCI, GDPR, and ADA.  Whether you need to ensure the security and privacy of healthcare data, protect sensitive payment card information, comply with data protection laws in the European Union, or make your application accessible for individuals with disabilities, we've got you covered. Our auditing process will identify any gaps or areas of non-compliance, allowing us to provide actionable recommendations and help you achieve and maintain the necessary standards. Rest assured that your application will meet the compliance requirements relevant to your industry."
                           }
                         >
-                          {"Compliance Audit"}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__aD9Ez
+                            )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToCodeBaseAudit"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "bNexzyyLy",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => "code-base-audit"
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "bNexzyyLy",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToCodeBaseAudit"] ===
+                                  "object" &&
+                                typeof $steps["goToCodeBaseAudit"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToCodeBaseAudit"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "bNexzyyLy",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToCodeBaseAudit"]
+                                  );
+                              }
+                            }}
+                          >
+                            {"Compliance Audit"}
+                          </div>
                         </ServiceDark>
                       ) : null}
                     </div>
@@ -715,7 +1208,64 @@ function PlasmicServices__RenderFunc(props: {
                             "If you're looking to upgrade your legacy code to modern standards with a focus on proper architecture, we've got you covered. Our team specializes in transforming outdated codebases into efficient, maintainable, and scalable solutions. We understand the challenges that come with legacy systems, and we're here to help you navigate the upgrade process seamlessly bring it up to date with the latest technologies. Rest assured, we offer our services at an affordable price, ensuring that you receive exceptional value for your investment. Let us handle the code upgrade, so you can enjoy the benefits of a modern, robust, and cost-effective application."
                           }
                         >
-                          {"Legacy Upgrades"}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__fea5L
+                            )}
+                            onClick={async event => {
+                              const $steps = {};
+                              $steps["goToLegacyUpdates"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      destination: __wrapUserFunction(
+                                        {
+                                          type: "InteractionArgLoc",
+                                          actionName: "navigation",
+                                          interactionUuid: "Gc2A-I-DM",
+                                          componentUuid: "A3je2_yhMh6rvk",
+                                          argName: "destination"
+                                        },
+                                        () => "legacy-updates"
+                                      )
+                                    };
+                                    return __wrapUserFunction(
+                                      {
+                                        type: "InteractionLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "Gc2A-I-DM",
+                                        componentUuid: "A3je2_yhMh6rvk"
+                                      },
+                                      () =>
+                                        (({ destination }) => {
+                                          __nextRouter?.push(destination);
+                                        })?.apply(null, [actionArgs]),
+                                      actionArgs
+                                    );
+                                  })()
+                                : undefined;
+                              if (
+                                typeof $steps["goToLegacyUpdates"] ===
+                                  "object" &&
+                                typeof $steps["goToLegacyUpdates"].then ===
+                                  "function"
+                              ) {
+                                $steps["goToLegacyUpdates"] =
+                                  await __wrapUserPromise(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "Gc2A-I-DM",
+                                      componentUuid: "A3je2_yhMh6rvk"
+                                    },
+                                    $steps["goToLegacyUpdates"]
+                                  );
+                              }
+                            }}
+                          >
+                            {"Legacy Upgrades"}
+                          </div>
                         </ServiceDark>
                       ) : null}
                     </div>

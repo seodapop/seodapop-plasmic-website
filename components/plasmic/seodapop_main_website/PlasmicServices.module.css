@@ -384,6 +384,11 @@
 .h3__eXD {
   height: auto;
   margin-top: 0px;
+  transition-property: all;
+  transition-duration: 1s;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
 }
 .blueBdr___43OC3:global(.__wab_instance) {
   position: relative;
@@ -406,6 +411,9 @@
 }
 .serviceWhite__a9Ih:global(.__wab_instance) {
   position: relative;
+}
+.h3__fkdIf {
+  cursor: pointer;
 }
 .blueBdr__vAcCx:global(.__wab_instance) {
   position: relative;
@@ -434,6 +442,7 @@
 }
 .h3__quIf6 {
   height: auto;
+  cursor: pointer;
 }
 .blueBdr___6I9RU:global(.__wab_instance) {
   position: relative;
@@ -460,6 +469,9 @@
 .serviceWhite__jx7E:global(.__wab_instance) {
   position: relative;
 }
+.h3__u0Eis {
+  cursor: pointer;
+}
 .blueBdr__fir6U:global(.__wab_instance) {
   position: relative;
   align-self: auto;
@@ -481,6 +493,9 @@
 }
 .serviceWhite___1MfRc:global(.__wab_instance) {
   position: relative;
+}
+.h3__jOJo3 {
+  cursor: pointer;
 }
 .blueBdr___8Yh8M:global(.__wab_instance) {
   position: relative;
@@ -760,6 +775,7 @@
 }
 .text__eWipQ {
   height: auto;
+  cursor: pointer;
 }
 .column__shBx {
   display: flex;
@@ -779,6 +795,7 @@
 }
 .text___50FsP {
   padding-right: 0px;
+  cursor: pointer;
 }
 .column___4KfVz {
   display: flex;
@@ -818,6 +835,7 @@
 }
 .text__wvl3G {
   height: auto;
+  cursor: pointer;
 }
 .column__zvOd {
   display: flex;
@@ -835,6 +853,9 @@
 .serviceDark___9HqNz:global(.__wab_instance) {
   position: relative;
 }
+.text__aD9Ez {
+  cursor: pointer;
+}
 .column__fp32 {
   display: flex;
   position: relative;
@@ -850,6 +871,9 @@
 }
 .serviceDark__in0A:global(.__wab_instance) {
   position: relative;
+}
+.text__fea5L {
+  cursor: pointer;
 }
 .freeBox__eljaB {
   display: flex;
@@ -1115,6 +1139,9 @@
 .serviceWhite__r5Ago:global(.__wab_instance) {
   position: relative;
 }
+.h3__uIajj {
+  cursor: pointer;
+}
 .blueBdr___6XpQu:global(.__wab_instance) {
   position: relative;
   align-self: auto;
@@ -1136,6 +1163,9 @@
 }
 .serviceWhite__y7W7S:global(.__wab_instance) {
   position: relative;
+}
+.h3__hdkom {
+  cursor: pointer;
 }
 .blueBdr__iqqRu:global(.__wab_instance) {
   position: relative;
@@ -1159,6 +1189,9 @@
 .serviceWhite__dbP7:global(.__wab_instance) {
   position: relative;
 }
+.h3__g7A3 {
+  cursor: pointer;
+}
 .blueBdr__tHdvf:global(.__wab_instance) {
   position: relative;
   align-self: auto;
@@ -1180,6 +1213,9 @@
 }
 .serviceWhite__qqSFh:global(.__wab_instance) {
   position: relative;
+}
+.h3__nvvY {
+  cursor: pointer;
 }
 .blueBdr__njw4Y:global(.__wab_instance) {
   position: relative;
@@ -1203,6 +1239,9 @@
 .serviceWhite__zSuDn:global(.__wab_instance) {
   position: relative;
 }
+.h3__kMwZy {
+  cursor: pointer;
+}
 .blueBdr__fkwld:global(.__wab_instance) {
   position: relative;
   align-self: auto;
@@ -1224,6 +1263,9 @@
 }
 .serviceWhite__sjIGu:global(.__wab_instance) {
   position: relative;
+}
+.h3__uk5Fy {
+  cursor: pointer;
 }
 .blueBdr__zDm1X:global(.__wab_instance) {
   position: relative;
