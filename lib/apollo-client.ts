@@ -7,7 +7,7 @@ const client = new ApolloClient({
     credentials: "same-origin",
     headers: {
       // Authorization: process.env.HASHNODE_AUTH,
-      "x-api-key": process.env.NEXT_PUBLIC_API_KEY_CONFIG,
+      "x-api-key": process.env.NEXT_PUBLIC_API_KEY_CONFIG || "",
     },
   }),
   cache: new InMemoryCache(),
