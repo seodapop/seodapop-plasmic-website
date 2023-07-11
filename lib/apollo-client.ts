@@ -3,11 +3,11 @@ import { ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client";
 const client = new ApolloClient({
   ssrMode: true,
   link: createHttpLink({
-    uri: "https://config-gql.api.seodapop.com/graphql",
+    uri: process.env.NEXT_PUBLIC_GQL_URL_CONFIG,
     credentials: "same-origin",
     headers: {
       // Authorization: process.env.HASHNODE_AUTH,
-      "x-api-key": "da2-qmka7esa6bggzlsb4wykodvuda"
+      "x-api-key": process.env.NEXT_PUBLIC_API_KEY_CONFIG,
     },
   }),
   cache: new InMemoryCache(),
