@@ -47,6 +47,8 @@ import sty from "./PlasmicHomeFooterTop.module.css"; // plasmic-import: Sh8nt7GR
 
 import Icon29Icon from "./icons/PlasmicIcon__Icon29"; // plasmic-import: 6Qw7--xFaSy2Vf/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicHomeFooterTop__VariantMembers = {};
 export type PlasmicHomeFooterTop__VariantsArgs = {};
 type VariantPropType = keyof PlasmicHomeFooterTop__VariantsArgs;
@@ -93,6 +95,7 @@ function PlasmicHomeFooterTop__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -314,7 +317,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   foreground3: "div";

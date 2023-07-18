@@ -48,6 +48,8 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostl
 import projectcss from "./plasmic_seodapop_main_website.module.css"; // plasmic-import: eSHiknYGb4WLC3QGLYLFnQ/projectcss
 import sty from "./PlasmicPagesslug.module.css"; // plasmic-import: sTPn1uNXQV/css
 
+createPlasmicElementProxy;
+
 export type PlasmicPagesslug__VariantMembers = {};
 export type PlasmicPagesslug__VariantsArgs = {};
 type VariantPropType = keyof PlasmicPagesslug__VariantsArgs;
@@ -107,6 +109,7 @@ function PlasmicPagesslug__RenderFunc(props: {
       ),
     [props.args]
   );
+
   const $props = {
     ...args,
     ...variants
@@ -300,7 +303,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;

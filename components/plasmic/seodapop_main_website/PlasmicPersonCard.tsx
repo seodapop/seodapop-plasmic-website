@@ -47,6 +47,8 @@ import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: iDiNuYAvxR-
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: M9-850zOT1Vnhe/icon
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: ZKG3Ga_S7-iqvH/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicPersonCard__VariantMembers = {};
 export type PlasmicPersonCard__VariantsArgs = {};
 type VariantPropType = keyof PlasmicPersonCard__VariantsArgs;
@@ -120,6 +122,7 @@ function PlasmicPersonCard__RenderFunc(props: {
       ),
     [props.args]
   );
+
   const $props = {
     ...args,
     ...variants
@@ -261,7 +264,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   img: typeof p.PlasmicImg;

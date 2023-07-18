@@ -43,6 +43,8 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostl
 import projectcss from "./plasmic_seodapop_main_website.module.css"; // plasmic-import: eSHiknYGb4WLC3QGLYLFnQ/projectcss
 import sty from "./PlasmicBlueBdr.module.css"; // plasmic-import: FQ-Q35VXL2xeid/css
 
+createPlasmicElementProxy;
+
 export type PlasmicBlueBdr__VariantMembers = {};
 export type PlasmicBlueBdr__VariantsArgs = {};
 type VariantPropType = keyof PlasmicBlueBdr__VariantsArgs;
@@ -86,6 +88,7 @@ function PlasmicBlueBdr__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -123,7 +126,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
 };

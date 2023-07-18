@@ -47,6 +47,8 @@ import sty from "./PlasmicButton2.module.css"; // plasmic-import: ijauRjypRvZ9/c
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: -xNTt_1SqG6hDH/icon
 import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: gjJAKpMz6GI/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicButton2__VariantMembers = {
   showStartIcon: "showStartIcon";
   showEndIcon: "showEndIcon";
@@ -173,6 +175,7 @@ function PlasmicButton2__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -642,6 +645,7 @@ function useBehavior<P extends pp.PlumeButtonProps>(
     },
     ref
   );
+
   if (b.plasmicProps.overrides.root.as === "a") {
     b.plasmicProps.overrides.root.as = p.PlasmicLink;
     b.plasmicProps.overrides.root.props.component = Link;
@@ -658,7 +662,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "button";
   startIconContainer: "div";

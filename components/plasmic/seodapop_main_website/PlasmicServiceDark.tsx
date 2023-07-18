@@ -43,6 +43,8 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostl
 import projectcss from "./plasmic_seodapop_main_website.module.css"; // plasmic-import: eSHiknYGb4WLC3QGLYLFnQ/projectcss
 import sty from "./PlasmicServiceDark.module.css"; // plasmic-import: iZiKFaA41wnFXi/css
 
+createPlasmicElementProxy;
+
 export type PlasmicServiceDark__VariantMembers = {};
 export type PlasmicServiceDark__VariantsArgs = {};
 type VariantPropType = keyof PlasmicServiceDark__VariantsArgs;
@@ -97,6 +99,7 @@ function PlasmicServiceDark__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -169,7 +172,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   h3: "h3";

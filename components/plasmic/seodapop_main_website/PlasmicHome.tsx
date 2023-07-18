@@ -50,6 +50,8 @@ import sty from "./PlasmicHome.module.css"; // plasmic-import: ZGwlmbejnPqDZ/css
 
 import Icon29Icon from "./icons/PlasmicIcon__Icon29"; // plasmic-import: 6Qw7--xFaSy2Vf/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicHome__VariantMembers = {};
 export type PlasmicHome__VariantsArgs = {};
 type VariantPropType = keyof PlasmicHome__VariantsArgs;
@@ -99,6 +101,7 @@ function PlasmicHome__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -1064,7 +1067,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;

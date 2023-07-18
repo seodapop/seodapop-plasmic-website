@@ -47,6 +47,8 @@ import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: iDiNuYAvxR-
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: M9-850zOT1Vnhe/icon
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: ZKG3Ga_S7-iqvH/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicSocialIcons__VariantMembers = {};
 export type PlasmicSocialIcons__VariantsArgs = {};
 type VariantPropType = keyof PlasmicSocialIcons__VariantsArgs;
@@ -90,6 +92,7 @@ function PlasmicSocialIcons__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -146,7 +149,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
 };

@@ -47,6 +47,8 @@ import sty from "./PlasmicTextInput.module.css"; // plasmic-import: SaP3xqfQev-p
 import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: t-AVM4cittjWAE/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: -xNTt_1SqG6hDH/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicTextInput__VariantMembers = {
   showStartIcon: "showStartIcon";
   showEndIcon: "showEndIcon";
@@ -160,6 +162,7 @@ function PlasmicTextInput__RenderFunc(props: {
       ),
     [props.args]
   );
+
   const $props = {
     ...args,
     ...variants
@@ -406,7 +409,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   startIconContainer: "div";

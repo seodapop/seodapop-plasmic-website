@@ -51,6 +51,8 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostl
 import projectcss from "./plasmic_seodapop_main_website.module.css"; // plasmic-import: eSHiknYGb4WLC3QGLYLFnQ/projectcss
 import sty from "./PlasmicServices.module.css"; // plasmic-import: A3je2_yhMh6rvk/css
 
+createPlasmicElementProxy;
+
 export type PlasmicServices__VariantMembers = {};
 export type PlasmicServices__VariantsArgs = {};
 type VariantPropType = keyof PlasmicServices__VariantsArgs;
@@ -102,6 +104,7 @@ function PlasmicServices__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -436,7 +439,7 @@ function PlasmicServices__RenderFunc(props: {
                             )}
                             onClick={async event => {
                               const $steps = {};
-                              $steps["goToPpcPayPerClick"] = true
+                              $steps["goToPagesslug"] = true
                                 ? (() => {
                                     const actionArgs = {
                                       destination: __wrapUserFunction(
@@ -447,7 +450,8 @@ function PlasmicServices__RenderFunc(props: {
                                           componentUuid: "A3je2_yhMh6rvk",
                                           argName: "destination"
                                         },
-                                        () => "ppc-pay-per-click"
+                                        () =>
+                                          `/pages/${"pay-per-click-optimization"}`
                                       )
                                     };
                                     return __wrapUserFunction(
@@ -466,12 +470,11 @@ function PlasmicServices__RenderFunc(props: {
                                   })()
                                 : undefined;
                               if (
-                                typeof $steps["goToPpcPayPerClick"] ===
-                                  "object" &&
-                                typeof $steps["goToPpcPayPerClick"].then ===
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
                                   "function"
                               ) {
-                                $steps["goToPpcPayPerClick"] =
+                                $steps["goToPagesslug"] =
                                   await __wrapUserPromise(
                                     {
                                       type: "InteractionLoc",
@@ -479,7 +482,7 @@ function PlasmicServices__RenderFunc(props: {
                                       interactionUuid: "fc8XyjKHE",
                                       componentUuid: "A3je2_yhMh6rvk"
                                     },
-                                    $steps["goToPpcPayPerClick"]
+                                    $steps["goToPagesslug"]
                                   );
                               }
                             }}
@@ -521,7 +524,7 @@ function PlasmicServices__RenderFunc(props: {
                             )}
                             onClick={async event => {
                               const $steps = {};
-                              $steps["goToRetargeting"] = true
+                              $steps["goToPagesslug"] = true
                                 ? (() => {
                                     const actionArgs = {
                                       destination: __wrapUserFunction(
@@ -532,7 +535,7 @@ function PlasmicServices__RenderFunc(props: {
                                           componentUuid: "A3je2_yhMh6rvk",
                                           argName: "destination"
                                         },
-                                        () => "retargeting"
+                                        () => `/pages/${"retargeting"}`
                                       )
                                     };
                                     return __wrapUserFunction(
@@ -551,11 +554,11 @@ function PlasmicServices__RenderFunc(props: {
                                   })()
                                 : undefined;
                               if (
-                                typeof $steps["goToRetargeting"] === "object" &&
-                                typeof $steps["goToRetargeting"].then ===
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
                                   "function"
                               ) {
-                                $steps["goToRetargeting"] =
+                                $steps["goToPagesslug"] =
                                   await __wrapUserPromise(
                                     {
                                       type: "InteractionLoc",
@@ -563,52 +566,7 @@ function PlasmicServices__RenderFunc(props: {
                                       interactionUuid: "KHKi11Vfc",
                                       componentUuid: "A3je2_yhMh6rvk"
                                     },
-                                    $steps["goToRetargeting"]
-                                  );
-                              }
-                              $steps["updateStateVariable"] = true
-                                ? (() => {
-                                    const actionArgs = {};
-                                    return __wrapUserFunction(
-                                      {
-                                        type: "InteractionLoc",
-                                        actionName: "updateVariable",
-                                        interactionUuid: "z2koYWrIw",
-                                        componentUuid: "A3je2_yhMh6rvk"
-                                      },
-                                      () =>
-                                        (({
-                                          variable,
-                                          value,
-                                          startIndex,
-                                          deleteCount
-                                        }) => {
-                                          if (!variable) {
-                                            return;
-                                          }
-                                          const { objRoot, variablePath } =
-                                            variable;
-                                          undefined;
-                                        })?.apply(null, [actionArgs]),
-                                      actionArgs
-                                    );
-                                  })()
-                                : undefined;
-                              if (
-                                typeof $steps["updateStateVariable"] ===
-                                  "object" &&
-                                typeof $steps["updateStateVariable"].then ===
-                                  "function"
-                              ) {
-                                $steps["updateStateVariable"] =
-                                  await __wrapUserPromise(
-                                    {
-                                      type: "InteractionLoc",
-                                      actionName: "updateVariable",
-                                      interactionUuid: "z2koYWrIw",
-                                      componentUuid: "A3je2_yhMh6rvk"
-                                    },
-                                    $steps["updateStateVariable"]
+                                    $steps["goToPagesslug"]
                                   );
                               }
                             }}
@@ -640,7 +598,7 @@ function PlasmicServices__RenderFunc(props: {
                             )}
                             onClick={async event => {
                               const $steps = {};
-                              $steps["goToWhiteboardAnimations"] = true
+                              $steps["goToPagesslug"] = true
                                 ? (() => {
                                     const actionArgs = {
                                       destination: __wrapUserFunction(
@@ -651,7 +609,8 @@ function PlasmicServices__RenderFunc(props: {
                                           componentUuid: "A3je2_yhMh6rvk",
                                           argName: "destination"
                                         },
-                                        () => "whiteboard-animations"
+                                        () =>
+                                          `/pages/${"whiteboard-animated-videos"}`
                                       )
                                     };
                                     return __wrapUserFunction(
@@ -670,12 +629,11 @@ function PlasmicServices__RenderFunc(props: {
                                   })()
                                 : undefined;
                               if (
-                                typeof $steps["goToWhiteboardAnimations"] ===
-                                  "object" &&
-                                typeof $steps["goToWhiteboardAnimations"]
-                                  .then === "function"
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
+                                  "function"
                               ) {
-                                $steps["goToWhiteboardAnimations"] =
+                                $steps["goToPagesslug"] =
                                   await __wrapUserPromise(
                                     {
                                       type: "InteractionLoc",
@@ -683,7 +641,7 @@ function PlasmicServices__RenderFunc(props: {
                                       interactionUuid: "Ep9yHFpMn",
                                       componentUuid: "A3je2_yhMh6rvk"
                                     },
-                                    $steps["goToWhiteboardAnimations"]
+                                    $steps["goToPagesslug"]
                                   );
                               }
                             }}
@@ -715,7 +673,7 @@ function PlasmicServices__RenderFunc(props: {
                             )}
                             onClick={async event => {
                               const $steps = {};
-                              $steps["goToInboundMarketing"] = true
+                              $steps["goToPagesslug"] = true
                                 ? (() => {
                                     const actionArgs = {
                                       destination: __wrapUserFunction(
@@ -726,7 +684,7 @@ function PlasmicServices__RenderFunc(props: {
                                           componentUuid: "A3je2_yhMh6rvk",
                                           argName: "destination"
                                         },
-                                        () => "inbound-marketing"
+                                        () => `/pages/${"inbound-marketing"}`
                                       )
                                     };
                                     return __wrapUserFunction(
@@ -745,12 +703,11 @@ function PlasmicServices__RenderFunc(props: {
                                   })()
                                 : undefined;
                               if (
-                                typeof $steps["goToInboundMarketing"] ===
-                                  "object" &&
-                                typeof $steps["goToInboundMarketing"].then ===
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
                                   "function"
                               ) {
-                                $steps["goToInboundMarketing"] =
+                                $steps["goToPagesslug"] =
                                   await __wrapUserPromise(
                                     {
                                       type: "InteractionLoc",
@@ -758,7 +715,7 @@ function PlasmicServices__RenderFunc(props: {
                                       interactionUuid: "rfenTW7Jr",
                                       componentUuid: "A3je2_yhMh6rvk"
                                     },
-                                    $steps["goToInboundMarketing"]
+                                    $steps["goToPagesslug"]
                                   );
                               }
                             }}
@@ -846,7 +803,7 @@ function PlasmicServices__RenderFunc(props: {
                             )}
                             onClick={async event => {
                               const $steps = {};
-                              $steps["goToWebArchitecturalDesign"] = true
+                              $steps["goToPagesslug"] = true
                                 ? (() => {
                                     const actionArgs = {
                                       destination: __wrapUserFunction(
@@ -857,7 +814,7 @@ function PlasmicServices__RenderFunc(props: {
                                           componentUuid: "A3je2_yhMh6rvk",
                                           argName: "destination"
                                         },
-                                        () => "web-architectural-design"
+                                        () => `/pages/${"architectual-design"}`
                                       )
                                     };
                                     return __wrapUserFunction(
@@ -876,12 +833,11 @@ function PlasmicServices__RenderFunc(props: {
                                   })()
                                 : undefined;
                               if (
-                                typeof $steps["goToWebArchitecturalDesign"] ===
-                                  "object" &&
-                                typeof $steps["goToWebArchitecturalDesign"]
-                                  .then === "function"
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
+                                  "function"
                               ) {
-                                $steps["goToWebArchitecturalDesign"] =
+                                $steps["goToPagesslug"] =
                                   await __wrapUserPromise(
                                     {
                                       type: "InteractionLoc",
@@ -889,7 +845,7 @@ function PlasmicServices__RenderFunc(props: {
                                       interactionUuid: "1ObrMRZ4E",
                                       componentUuid: "A3je2_yhMh6rvk"
                                     },
-                                    $steps["goToWebArchitecturalDesign"]
+                                    $steps["goToPagesslug"]
                                   );
                               }
                             }}
@@ -920,7 +876,7 @@ function PlasmicServices__RenderFunc(props: {
                             )}
                             onClick={async event => {
                               const $steps = {};
-                              $steps["goToCodeBaseAudit"] = true
+                              $steps["goToPagesslug"] = true
                                 ? (() => {
                                     const actionArgs = {
                                       destination: __wrapUserFunction(
@@ -931,7 +887,7 @@ function PlasmicServices__RenderFunc(props: {
                                           componentUuid: "A3je2_yhMh6rvk",
                                           argName: "destination"
                                         },
-                                        () => "code-base-audit"
+                                        () => `/pages/${"code-base-audit"}`
                                       )
                                     };
                                     return __wrapUserFunction(
@@ -950,12 +906,11 @@ function PlasmicServices__RenderFunc(props: {
                                   })()
                                 : undefined;
                               if (
-                                typeof $steps["goToCodeBaseAudit"] ===
-                                  "object" &&
-                                typeof $steps["goToCodeBaseAudit"].then ===
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
                                   "function"
                               ) {
-                                $steps["goToCodeBaseAudit"] =
+                                $steps["goToPagesslug"] =
                                   await __wrapUserPromise(
                                     {
                                       type: "InteractionLoc",
@@ -963,7 +918,7 @@ function PlasmicServices__RenderFunc(props: {
                                       interactionUuid: "cb7quOPs2",
                                       componentUuid: "A3je2_yhMh6rvk"
                                     },
-                                    $steps["goToCodeBaseAudit"]
+                                    $steps["goToPagesslug"]
                                   );
                               }
                             }}
@@ -1068,7 +1023,7 @@ function PlasmicServices__RenderFunc(props: {
                             )}
                             onClick={async event => {
                               const $steps = {};
-                              $steps["goToIntegrations"] = true
+                              $steps["goToPagesslug"] = true
                                 ? (() => {
                                     const actionArgs = {
                                       destination: __wrapUserFunction(
@@ -1079,7 +1034,7 @@ function PlasmicServices__RenderFunc(props: {
                                           componentUuid: "A3je2_yhMh6rvk",
                                           argName: "destination"
                                         },
-                                        () => "integrations"
+                                        () => `/pages/${"integrations"}`
                                       )
                                     };
                                     return __wrapUserFunction(
@@ -1098,12 +1053,11 @@ function PlasmicServices__RenderFunc(props: {
                                   })()
                                 : undefined;
                               if (
-                                typeof $steps["goToIntegrations"] ===
-                                  "object" &&
-                                typeof $steps["goToIntegrations"].then ===
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
                                   "function"
                               ) {
-                                $steps["goToIntegrations"] =
+                                $steps["goToPagesslug"] =
                                   await __wrapUserPromise(
                                     {
                                       type: "InteractionLoc",
@@ -1111,7 +1065,7 @@ function PlasmicServices__RenderFunc(props: {
                                       interactionUuid: "6r5ntJjsR",
                                       componentUuid: "A3je2_yhMh6rvk"
                                     },
-                                    $steps["goToIntegrations"]
+                                    $steps["goToPagesslug"]
                                   );
                               }
                             }}
@@ -1142,7 +1096,7 @@ function PlasmicServices__RenderFunc(props: {
                             )}
                             onClick={async event => {
                               const $steps = {};
-                              $steps["goToCodeBaseAudit"] = true
+                              $steps["goToPagesslug"] = true
                                 ? (() => {
                                     const actionArgs = {
                                       destination: __wrapUserFunction(
@@ -1153,7 +1107,7 @@ function PlasmicServices__RenderFunc(props: {
                                           componentUuid: "A3je2_yhMh6rvk",
                                           argName: "destination"
                                         },
-                                        () => "code-base-audit"
+                                        () => `/pages/${"compliance-audit"}`
                                       )
                                     };
                                     return __wrapUserFunction(
@@ -1172,12 +1126,11 @@ function PlasmicServices__RenderFunc(props: {
                                   })()
                                 : undefined;
                               if (
-                                typeof $steps["goToCodeBaseAudit"] ===
-                                  "object" &&
-                                typeof $steps["goToCodeBaseAudit"].then ===
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
                                   "function"
                               ) {
-                                $steps["goToCodeBaseAudit"] =
+                                $steps["goToPagesslug"] =
                                   await __wrapUserPromise(
                                     {
                                       type: "InteractionLoc",
@@ -1185,7 +1138,7 @@ function PlasmicServices__RenderFunc(props: {
                                       interactionUuid: "bNexzyyLy",
                                       componentUuid: "A3je2_yhMh6rvk"
                                     },
-                                    $steps["goToCodeBaseAudit"]
+                                    $steps["goToPagesslug"]
                                   );
                               }
                             }}
@@ -1216,7 +1169,7 @@ function PlasmicServices__RenderFunc(props: {
                             )}
                             onClick={async event => {
                               const $steps = {};
-                              $steps["goToLegacyUpdates"] = true
+                              $steps["goToPagesslug"] = true
                                 ? (() => {
                                     const actionArgs = {
                                       destination: __wrapUserFunction(
@@ -1227,7 +1180,7 @@ function PlasmicServices__RenderFunc(props: {
                                           componentUuid: "A3je2_yhMh6rvk",
                                           argName: "destination"
                                         },
-                                        () => "legacy-updates"
+                                        () => `/pages/${"legacy-updates"}`
                                       )
                                     };
                                     return __wrapUserFunction(
@@ -1246,12 +1199,11 @@ function PlasmicServices__RenderFunc(props: {
                                   })()
                                 : undefined;
                               if (
-                                typeof $steps["goToLegacyUpdates"] ===
-                                  "object" &&
-                                typeof $steps["goToLegacyUpdates"].then ===
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
                                   "function"
                               ) {
-                                $steps["goToLegacyUpdates"] =
+                                $steps["goToPagesslug"] =
                                   await __wrapUserPromise(
                                     {
                                       type: "InteractionLoc",
@@ -1259,7 +1211,7 @@ function PlasmicServices__RenderFunc(props: {
                                       interactionUuid: "Gc2A-I-DM",
                                       componentUuid: "A3je2_yhMh6rvk"
                                     },
-                                    $steps["goToLegacyUpdates"]
+                                    $steps["goToPagesslug"]
                                   );
                               }
                             }}
@@ -1824,7 +1776,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
