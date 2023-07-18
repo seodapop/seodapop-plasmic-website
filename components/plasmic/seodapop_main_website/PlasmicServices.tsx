@@ -354,7 +354,7 @@ function PlasmicServices__RenderFunc(props: {
                             )}
                             onClick={async event => {
                               const $steps = {};
-                              $steps["goToSocialMediaMarketing"] = true
+                              $steps["goToPagesslug"] = true
                                 ? (() => {
                                     const actionArgs = {
                                       destination: __wrapUserFunction(
@@ -365,7 +365,8 @@ function PlasmicServices__RenderFunc(props: {
                                           componentUuid: "A3je2_yhMh6rvk",
                                           argName: "destination"
                                         },
-                                        () => "social-media-marketing"
+                                        () =>
+                                          `/pages/${"social-media-marketing"}`
                                       )
                                     };
                                     return __wrapUserFunction(
@@ -384,12 +385,11 @@ function PlasmicServices__RenderFunc(props: {
                                   })()
                                 : undefined;
                               if (
-                                typeof $steps["goToSocialMediaMarketing"] ===
-                                  "object" &&
-                                typeof $steps["goToSocialMediaMarketing"]
-                                  .then === "function"
+                                typeof $steps["goToPagesslug"] === "object" &&
+                                typeof $steps["goToPagesslug"].then ===
+                                  "function"
                               ) {
-                                $steps["goToSocialMediaMarketing"] =
+                                $steps["goToPagesslug"] =
                                   await __wrapUserPromise(
                                     {
                                       type: "InteractionLoc",
@@ -397,7 +397,7 @@ function PlasmicServices__RenderFunc(props: {
                                       interactionUuid: "abOypmf7w",
                                       componentUuid: "A3je2_yhMh6rvk"
                                     },
-                                    $steps["goToSocialMediaMarketing"]
+                                    $steps["goToPagesslug"]
                                   );
                               }
                             }}
@@ -450,8 +450,7 @@ function PlasmicServices__RenderFunc(props: {
                                           componentUuid: "A3je2_yhMh6rvk",
                                           argName: "destination"
                                         },
-                                        () =>
-                                          `/pages/${"pay-per-click-optimization"}`
+                                        () => `/pages/${"ppc-pay-per-click"}`
                                       )
                                     };
                                     return __wrapUserFunction(
